@@ -1,7 +1,0 @@
-agents:
-  schema_designer:
-    name: "Schema_Designer"
-    description: "This agent processes the abstract information and extracts the relevant data on materials."
-    model: "gemini-2.5-flash"
-    prompt_file: "prompts/Schema_Designer.md"
-    tools: []
