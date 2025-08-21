@@ -1,21 +1,12 @@
-from rich import print
 from langchain.docstore.document import Document
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.chains import create_extraction_chain
-from typing import Optional,List
-from langchain.chains import create_extraction_chain_pydantic
-from rich import print
+from typing import List
 from langchain.docstore.document import Document
-from langchain_community.vectorstores import Chroma
-from langchain_community import embeddings
-from langchain_core.runnables import RunnablePassthrough
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate
+
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
-from langchain_ollama import OllamaEmbeddings
 from pydantic import BaseModel
 from langchain import hub
 from langchain_text_splitters import RecursiveCharacterTextSplitter
