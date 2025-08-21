@@ -115,3 +115,4 @@ pyproject.toml
 .venv
 .pdf
 .env
+db
