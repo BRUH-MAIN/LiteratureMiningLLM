@@ -112,3 +112,7 @@ venv.bak/
 dmypy.json
 .env
 Carbon_adsorption.pdf
+Carbon_adsorption1.pdf
+data/
+output/
+uv.lock

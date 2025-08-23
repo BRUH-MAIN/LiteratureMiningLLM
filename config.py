@@ -25,4 +25,5 @@ LLM_TEMPERATURE = 0.2
 LLM_MAX_TOKENS = 32000
 RETRIEVER_TOP_K = 20
 
-PDF_FILE = "Carbon_adsorption.pdf"
+PDF_FILE = "data/Carbon_adsorption1.pdf"
+OUTPUT_FILE = "output/abstracts_with_answers.csv"

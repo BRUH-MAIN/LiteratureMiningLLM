@@ -7,27 +7,18 @@ from config import (
 
 def initialize_pinecone():
     print("Initializing Pinecone...")
-    
     if not PINECONE_API_KEY:
         raise ValueError("PINECONE_API_KEY not found in environment variables.")
-    
+
+    index_name = "langchain-test-index"  # change if desired
     pc = Pinecone(api_key=PINECONE_API_KEY)
-    if not pc.has_index(INDEX_NAME):
+    if not pc.has_index(index_name):
         pc.create_index(
-            name=INDEX_NAME,
+            name=index_name,
             dimension=PINECONE_DIMENSION,
             metric=PINECONE_METRIC,
             spec=ServerlessSpec(cloud=PINECONE_CLOUD, region=PINECONE_REGION),
         )
-    
-    index = pc.Index(INDEX_NAME)
+
+    index = pc.Index(index_name)
     return pc, index
-
-
-def delete_pinecone_index():
-    pc = Pinecone(api_key=PINECONE_API_KEY)
-    if pc.has_index(INDEX_NAME):
-        pc.delete_index(INDEX_NAME)
-        print(f"Index {INDEX_NAME} deleted.")
-    else:
-        print(f"Index {INDEX_NAME} does not exist.")
