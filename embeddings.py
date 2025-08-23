@@ -4,10 +4,9 @@ from config import COHERE_EMBEDDING_MODEL
 
 
 def initialize_embeddings():
-    """Initialize dense and sparse embeddings"""
     print("Initializing embeddings...")
     
-    # Dense embeddings using Cohere
+    # Dense embeddings 
     embeddings = CohereEmbeddings(model=COHERE_EMBEDDING_MODEL)
     
     # Sparse embeddings using BM25

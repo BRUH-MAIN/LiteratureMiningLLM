@@ -8,7 +8,6 @@ from config import (
 
 
 def initialize_retriever(embeddings, bm25_encoder, index):
-    """Initialize hybrid search retriever"""
     print("Initializing retriever with hybrid search...")
     
     retriever = PineconeHybridSearchRetriever(
@@ -24,10 +23,8 @@ def initialize_retriever(embeddings, bm25_encoder, index):
 
 
 def initialize_llm():
-    """Initialize the language model"""
     if not GROQ_API_KEY:
         raise ValueError("GROQ_API_KEY not found in environment variables.")
-    
     llm = ChatGroq(
         model=GROQ_MODEL,
         temperature=LLM_TEMPERATURE,
@@ -38,7 +35,6 @@ def initialize_llm():
 
 
 def initialize_reranker():
-    """Initialize Cohere reranker"""
     print("Initializing Cohere reranker...")
     
     if not COHERE_API_KEY:

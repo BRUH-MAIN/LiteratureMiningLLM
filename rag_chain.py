@@ -2,7 +2,6 @@ from langchain.chains import ConversationalRetrievalChain
 
 
 def create_rag_chain(llm, retriever):
-    """Create Conversational RAG Chain"""
     print("Creating Conversational RAG Chain...")
 
     qa_chain = ConversationalRetrievalChain.from_llm(
@@ -17,7 +16,6 @@ def create_rag_chain(llm, retriever):
 
 
 def run_rag_agent(qa_chain, reranker):
-    """Run the RAG agent with interactive chat"""
     print("\n--- RAG Agent is Ready ---")
     chat_history = []
     
@@ -27,8 +25,6 @@ def run_rag_agent(qa_chain, reranker):
             break
         
         result = qa_chain({"question": query, "chat_history": chat_history})
-        
-        # Rerank the retrieved documents
         reranked_docs = reranker.compress_documents(
             documents=result['source_documents'],
             query=query
@@ -41,5 +37,4 @@ def run_rag_agent(qa_chain, reranker):
             print(f"Source: {doc.metadata['source']}, Page: {doc.metadata['page']}")
             print(f"Content: {doc.page_content[:200]}...")
             print("-" * 20)
-            
         chat_history.append((query, result["answer"]))
