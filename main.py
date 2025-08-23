@@ -52,7 +52,7 @@ def main():
         print(f"Error: {e}")
     finally:
         # Optional: Clean up by deleting the index
-        # delete_pinecone_index()
+        delete_pinecone_index()
         pass
 
 
