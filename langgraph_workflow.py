@@ -5,6 +5,7 @@ from agents.vector_retriever_agent import VectorStoreRetrieverAgent
 from agents.schema_designer_agent import SchemaDesignerAgent
 from agents.result_aggregator_agent import ResultAggregatorAgent
 from agents.exporter_agent import ExporterAgent
+from config import PROCESSING_BATCH_SIZE
 
 
 class WorkflowState(TypedDict):
@@ -12,13 +13,17 @@ class WorkflowState(TypedDict):
     total_chunks: int
     vector_store_ready: bool
     current_chunk_index: int
-    current_chunk: Any
+    current_chunks: List[Any]  # Changed to support multiple chunks
+    batch_size: int  # New field for batch size
     processing_complete: bool
-    extraction_result: Dict[str, Any]
+    extraction_results: List[Dict[str, Any]]  # Changed to support multiple results
     aggregated_results: List[Dict[str, Any]]
     csv_data: List[Dict[str, Any]]
     export_complete: bool
     csv_file: str
+    common_properties: List[str]
+    total_unique_properties: int
+    common_property_count: int
 
 
 class LiteratureMiningWorkflow:
@@ -84,13 +89,17 @@ class LiteratureMiningWorkflow:
                 total_chunks=0,
                 vector_store_ready=False,
                 current_chunk_index=0,
-                current_chunk=None,
+                current_chunks=[],  # Changed to support multiple chunks
+                batch_size=PROCESSING_BATCH_SIZE,  # Use configuration value
                 processing_complete=False,
-                extraction_result={},
+                extraction_results=[],  # Changed to support multiple results
                 aggregated_results=[],
                 csv_data=[],
                 export_complete=False,
-                csv_file=""
+                csv_file="",
+                common_properties=[],
+                total_unique_properties=0,
+                common_property_count=0
             )
         
         print("🚀 Starting Literature Mining Multi-Agent Workflow...")

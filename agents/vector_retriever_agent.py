@@ -33,21 +33,26 @@ class VectorStoreRetrieverAgent:
         return {**state, 'vector_store_ready': True, 'current_chunk_index': 0}
     
     def get_next_chunk(self, state: Dict[str, Any]) -> Dict[str, Any]:
-        """Retrieve next abstract chunk for processing"""
+        """Retrieve next batch of abstract chunks for processing"""
         chunks = state.get('chunks', [])
         current_idx = state.get('current_chunk_index', 0)
+        batch_size = state.get('batch_size', 2)
         
         if current_idx >= len(chunks):
             print("🏁 All chunks processed")
-            return {**state, 'processing_complete': True, 'current_chunk': None}
+            return {**state, 'processing_complete': True, 'current_chunks': []}
         
-        current_chunk = chunks[current_idx]
-        print(f"📝 Processing chunk {current_idx + 1}/{len(chunks)}: {current_chunk.metadata['abstract_id']}")
+        # Get the next batch of chunks
+        end_idx = min(current_idx + batch_size, len(chunks))
+        current_chunks = chunks[current_idx:end_idx]
+        
+        chunk_ids = [chunk.metadata['abstract_id'] for chunk in current_chunks]
+        print(f"📝 Processing batch {current_idx//batch_size + 1}: chunks {current_idx + 1}-{end_idx}/{len(chunks)} ({', '.join(chunk_ids)})")
         
         return {
             **state, 
-            'current_chunk': current_chunk,
-            'current_chunk_index': current_idx + 1,
+            'current_chunks': current_chunks,
+            'current_chunk_index': end_idx,
             'processing_complete': False
         }
     

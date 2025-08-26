@@ -16,14 +16,15 @@ PINECONE_REGION = "us-east-1"
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 BATCH_SIZE = 100
+PROCESSING_BATCH_SIZE = 2  # Number of chunks to process at once in the workflow
 
 
 COHERE_EMBEDDING_MODEL = "embed-english-v3.0"
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "llama-3.1-8b-instant"
 COHERE_RERANK_MODEL = "rerank-english-v3.0"
 LLM_TEMPERATURE = 0.2
 LLM_MAX_TOKENS = 32000
 RETRIEVER_TOP_K = 20
 
-PDF_FILE = "data/Carbon_adsorption1.pdf"
+PDF_FILE = "/home/rohan/S5/projdump/Carbon_adsorption.pdf"
 OUTPUT_FILE = "output/abstracts_with_answers.csv"

@@ -7,13 +7,14 @@ class ResultAggregatorAgent:
         pass
     
     def aggregate_results(self, state: Dict[str, Any]) -> Dict[str, Any]:
-        """Collect and store extraction results"""
-        extraction_result = state.get('extraction_result')
+        """Collect and store extraction results from batch processing"""
+        extraction_results = state.get('extraction_results', [])
         aggregated_results = state.get('aggregated_results', [])
         
-        if extraction_result:
-            aggregated_results.append(extraction_result)
-            print(f"📊 Aggregated result from {extraction_result['abstract_id']} - Total: {len(aggregated_results)}")
+        if extraction_results:
+            aggregated_results.extend(extraction_results)
+            abstract_ids = [result['abstract_id'] for result in extraction_results]
+            print(f"📊 Aggregated {len(extraction_results)} results from batch ({', '.join(abstract_ids)}) - Total: {len(aggregated_results)}")
         
         return {**state, 'aggregated_results': aggregated_results}
     
