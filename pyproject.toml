@@ -1,0 +1,17 @@
+[project]
+name = "literatureminingllm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.27",
+    "langchain-cohere>=0.4.5",
+    "langchain-community>=0.3.27",
+    "langchain-groq>=0.3.7",
+    "langchain-pinecone>=0.2.11",
+    "langgraph>=0.6.6",
+    "pandas>=2.3.2",
+    "pinecone-text>=0.11.0",
+    "pypdf>=6.0.0",
+]

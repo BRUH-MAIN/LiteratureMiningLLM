@@ -1,26 +1,57 @@
-# Scientific Literature Mining with LLMs
+# Literature Mining LLM
 
-This project explores the use of Large Language Models (LLMs) to contextually mine scientific literature and extract structured data through strategic prompting and reasoning techniques.
+A RAG-based system for mining literature using LangChain, Pinecone, and various LLMs.
 
-## 🧠 Objective
+## Project Structure
 
-Deploy contextual capabilities of LLMs (e.g., few-shot prompting and chain-of-thought reasoning) to extract relevant information from scientific texts.
+```
+LiteratureMiningLLM/
+├── main.py                 # Main application entry point
+├── config.py              # Configuration and environment variables
+├── document_processor.py   # Document loading and text splitting
+├── pinecone_manager.py     # Pinecone initialization and management
+├── embeddings.py          # Dense and sparse embedding initialization
+├── vector_store.py        # Document upserting to Pinecone
+├── retrieval.py           # Retriever, LLM, and reranker setup
+├── rag_chain.py           # RAG chain creation and agent execution
+├── t.ipynb               # Original notebook (for reference)
+└── Carbon_adsorption.pdf  # Sample PDF document
+```
 
-## 🔍 Workflow
+## Features
 
-**Input**: Published scientific literature (textual corpus)
+- **Document Processing**: Load and split PDF documents into chunks
+- **Hybrid Search**: Combines dense (Cohere) and sparse (BM25) embeddings
+- **Vector Storage**: Uses Pinecone for scalable vector storage
+- **Retrieval**: Hybrid search retriever with configurable top-k
+- **Reranking**: Cohere reranker for improved relevance
+- **LLM Integration**: Uses Groq's Llama model for question answering
+- **Conversational**: Maintains chat history for context-aware responses
 
-**Processing**:
+## Usage
 
-* Few-shot prompting with LLMs
-* Chain-of-thought reasoning
+1. Set up your environment variables in a `.env` file:
+   ```
+   PINECONE_API_KEY=your_pinecone_key
+   COHERE_API_KEY=your_cohere_key
+   GROQ_API_KEY=your_groq_key
+   ```
 
-**Output**: Clean, tabulated dataset with extracted insights
+2. Run the main application:
+   ```bash
+   python main.py
+   ```
 
-## 📦 Output
+3. Interact with the system through the command-line interface.
 
-A structured dataset representing distilled, domain-relevant information from unstructured literature.
+## Dependencies
 
-## 🚧 Status
-
-**In progress** – Initial framework and pipeline setup underway.
+- langchain
+- langchain-community
+- langchain-cohere
+- langchain-groq
+- pinecone-client
+- pinecone-text
+- python-dotenv
+- tqdm
+- pypdf
