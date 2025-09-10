@@ -1,105 +1,153 @@
-# Literature Mining LLM
+# ScienceDirect Citation Processing Project
 
-A comprehensive RAG-based multi-agent system for mining literature using LangChain, Pinecone, and various LLMs with enhanced hybrid search capabilities.
+This project provides tools to convert ScienceDirect citation text files into structured JSON format and perform comprehensive analysis.
 
-## 🚀 Recent Enhancements
-
-This project now features an **Enhanced RAG Tool** with hybrid search capabilities that combines semantic and keyword search for superior information retrieval. See [RAG_ENHANCEMENT.md](RAG_ENHANCEMENT.md) for detailed documentation.
-
-### Key New Features:
-- **Hybrid Search**: Combines semantic (dense vector) and keyword (BM25) search
-- **Direct PineconeVectorStore Integration**: Simplified architecture using `langchain_pinecone`
-- **Enhanced Schema Designer**: Context-aware property extraction with RAG integration
-- **Flexible Search Modes**: Hybrid, semantic-only, or keyword-only search options
-- **Multi-Agent Workflow**: Complete LangGraph-based processing pipeline
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 LiteratureMiningLLM/
-├── main.py                          # Main application entry point
-├── config.py                        # Configuration and environment variables
-├── langgraph_workflow.py           # Enhanced multi-agent workflow
-├── demo_rag.py                     # RAG tool demonstration
-├── test_rag_integration.py         # Integration tests
-├── tools/
-│   └── rag.py                      # 🆕 Enhanced RAG tool with hybrid search
-├── agents/
-│   ├── pdf_chunking_agent.py       # PDF processing agent
-│   ├── enhanced_vector_retriever_agent.py  # 🆕 Enhanced vector retriever
-│   ├── schema_designer_agent.py    # 🆕 RAG-enhanced schema extraction
-│   ├── result_aggregator_agent.py  # Results aggregation
-│   └── exporter_agent.py          # Data export agent
-├── prompts/
-│   └── schema_designer_agent.py    # Extraction prompts
-├── output/                         # Generated output files
-├── depreciated/                    # Legacy implementations
-└── documents/
-    ├── RAG_ENHANCEMENT.md          # 🆕 RAG tool documentation
-    └── RAG_Multi_Agent_Workflow.md # Workflow documentation
+├── dataset/
+│   ├── raw/                    # Original text files
+│   │   ├── ScienceDirect_citations_1756226791775.txt
+│   │   ├── ScienceDirect_citations_1756226833643.txt
+│   │   └── ScienceDirect_citations_1756226850223.txt
+│   └── processed/              # Processed JSON files and reports
+│       ├── individual JSON files (one per input file)
+│       ├── combined_citations.json
+│       ├── analysis_results.json
+│       └── processing_report.txt
+├── preprocessing/              # Processing scripts
+│   ├── process_citations.py   # Main preprocessing pipeline
+│   ├── analyze_data.py        # Data analysis tools
+│   └── generate_summary.py    # Project summary generator
+└── README.md
 ```
 
-## Features
+## 🚀 Quick Start
 
-### Core Capabilities
-- **📄 Document Processing**: Intelligent PDF loading and chunking
-- **🔍 Hybrid Search**: Advanced retrieval combining semantic and keyword search
-- **🗄️ Vector Storage**: Scalable Pinecone vector database with dual embedding support
-- **🤖 Multi-Agent System**: Specialized agents for different processing tasks
-- **🧠 LLM Integration**: Multiple LLM providers (Groq, OpenAI, etc.)
-- **📊 Schema Extraction**: Automated property extraction from research papers
-- **📈 Export Pipeline**: CSV and console output generation
+### Basic Usage
 
-### Enhanced RAG Features
-- **Hybrid Retrieval**: Configurable balance between semantic and keyword search
-- **Context Enhancement**: Cross-document information retrieval
-- **Multiple Search Modes**: Adaptive search strategies
-- **Real-time Integration**: Seamless workflow integration
-- **Performance Optimization**: Efficient vector operations
+To process all citation files and generate cleaned JSON data:
 
-## Quick Start
-
-### 1. Environment Setup
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd LiteratureMiningLLM
-
-# Install dependencies
-uv sync
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your API keys
+python preprocessing/process_citations.py
 ```
 
-### 2. Required API Keys
-```env
-PINECONE_API_KEY=your_pinecone_key
-COHERE_API_KEY=your_cohere_key
-GROQ_API_KEY=your_groq_key
-```
+This single command will:
+- Process all `.txt` files in `dataset/raw/`
+- Extract and structure citation data
+- Clean and validate the data
+- Generate comprehensive analysis
+- Save results to `dataset/processed/`
 
-### 3. Run the Enhanced Workflow
+## 📊 What the Cleaning Process Does
+
+The cleaning script performs the following operations:
+
+1. **Text Normalization**:
+   - Removes trailing commas from author names
+   - Trims whitespace from all text fields
+   - Standardizes field formats
+
+2. **Data Enhancement**:
+   - Extracts publication years from volume information when missing
+   - Cleans and normalizes keyword lists
+   - Removes empty keyword entries
+
+3. **Quality Improvement**:
+   - Identifies and flags potential duplicate papers
+   - Validates ISSN formats
+   - Ensures data consistency across fields
+
+4. **Field Standardization**:
+   - Consistent author name formatting
+   - Standardized journal names
+   - Cleaned abstract text
+
+## 📋 Output Files
+
+After processing, you'll find these files in `dataset/processed/`:
+
+- **`combined_citations.json`**: All citations in a single structured file
+- **`analysis_results.json`**: Comprehensive statistics and insights
+- **`processing_report.txt`**: Human-readable processing summary
+- **Individual files**: `ScienceDirect_citations_*.json` (one per input file)
+
+## 📈 Analysis Features
+
+The processing pipeline automatically generates:
+
+- **Citation Statistics**: Total papers, unique journals, authors, keywords
+- **Temporal Analysis**: Publication year distribution
+- **Journal Analysis**: Top publishing venues
+- **Author Analysis**: Most prolific researchers
+- **Keyword Analysis**: Research trends and topics
+- **Quality Metrics**: Data completion rates and validation results
+- **Duplicate Detection**: Identification of potential duplicate papers
+
+## 🔧 Advanced Usage
+
+### Processing Specific Files
+
 ```bash
-# Run the complete multi-agent workflow
-uv run python main.py
-
-# Or demonstrate the RAG tool specifically
-uv run python demo_rag.py
-
-# Run integration tests
-uv run python test_rag_integration.py
+# Modify the raw_data_dir parameter in the script
+processor = CitationProcessor(raw_data_dir="path/to/your/files")
 ```
 
-## Dependencies
+### Custom Output Location
 
-- langchain
-- langchain-community
-- langchain-cohere
-- langchain-groq
-- pinecone-client
-- pinecone-text
-- python-dotenv
-- tqdm
-- pypdf
+```bash
+# Modify the output_dir parameter
+processor = CitationProcessor(output_dir="path/to/output")
+```
+
+## 📊 Data Structure
+
+Each citation in the JSON files contains:
+
+```json
+{
+  "authors": "Author1, Author2, Author3",
+  "title": "Paper Title",
+  "journal": "Journal Name",
+  "volume_info": ["Volume X", "2024", "Article ID"],
+  "year": 2024,
+  "article_id": "123456",
+  "issn": "1234-5678",
+  "doi_url": "https://doi.org/10.1016/...",
+  "sciencedirect_url": "https://www.sciencedirect.com/...",
+  "abstract": "Paper abstract text...",
+  "keywords": ["keyword1", "keyword2", "keyword3"]
+}
+```
+
+## 🎯 Current Dataset Overview
+
+**Latest Processing Results** (296 total citations):
+- **Journals**: 68 unique venues
+- **Authors**: 1,598 unique researchers  
+- **Keywords**: 768 unique terms
+- **Top Research Areas**: MXene materials, Supercapacitors, Energy storage
+- **Data Quality**: 100% completion for core fields (title, authors, journal)
+
+## 💡 Usage Tips
+
+1. **For Analysis**: Use `combined_citations.json` as your primary dataset
+2. **For Quality Insights**: Check `processing_report.txt` for data quality metrics
+3. **For Research Trends**: Analyze the keyword and temporal distributions
+4. **For Collaboration Networks**: Use the author data for network analysis
+
+## 🛠️ Available Tools
+
+The preprocessing folder contains three focused scripts:
+
+- **`process_citations.py`**: Main conversion pipeline (text → JSON + analysis)
+- **`analyze_data.py`**: Interactive data exploration and analysis
+- **`generate_summary.py`**: Project overview and documentation
+
+## 📝 Notes
+
+- The main script automatically handles encoding issues (UTF-8/Latin-1)
+- Duplicate detection is based on title similarity
+- ISSN validation uses standard format checking
+- All output files use UTF-8 encoding for international character support

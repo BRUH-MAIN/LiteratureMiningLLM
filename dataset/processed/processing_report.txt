@@ -1,0 +1,58 @@
+================================================================================
+CITATION PROCESSING REPORT
+================================================================================
+Generated: 2025-08-31 12:08:32
+
+📊 PROCESSING SUMMARY
+Total Citations Processed: 296
+Input Files: 3
+Unique Journals: 68
+Unique Authors: 1598
+Unique Keywords: 768
+Year Range: 2017 - 2026
+
+📁 FILE PROCESSING DETAILS
+  • ScienceDirect_citations_1756226850223.txt: 99 citations (187.7 KB)
+  • ScienceDirect_citations_1756226833643.txt: 98 citations (190.8 KB)
+  • ScienceDirect_citations_1756226791775.txt: 99 citations (195.2 KB)
+
+✅ DATA QUALITY
+  title: 296/296 (100.0%)
+  authors: 296/296 (100.0%)
+  journal: 296/296 (100.0%)
+  year: 296/296 (100.0%)
+  abstract: 296/296 (100.0%)
+  keywords: 285/296 (96.3%)
+  doi_url: 296/296 (100.0%)
+  issn: 296/296 (100.0%)
+
+🔄 DUPLICATE DETECTION
+Found 2 groups of potential duplicates
+  Group 1: Citations [64, 162]
+  Group 2: Citations [142, 243]
+
+📖 TOP JOURNALS
+  • Journal of Energy Storage: 40 papers
+  • Chemical Engineering Journal: 35 papers
+  • Journal of Alloys and Compounds: 28 papers
+  • Journal of Power Sources: 25 papers
+  • Electrochimica Acta: 23 papers
+
+🔑 TOP KEYWORDS
+  • MXene: 118 mentions
+  • Supercapacitor: 95 mentions
+  • Supercapacitors: 54 mentions
+  • Ti3C2Tx MXene: 38 mentions
+  • Ti3C2Tx: 37 mentions
+  • Energy storage: 19 mentions
+  • MXenes: 16 mentions
+  • Energy density: 12 mentions
+  • Electrochemical performance: 12 mentions
+  • Flexible supercapacitor: 12 mentions
+
+🧹 CLEANING PERFORMED
+  • Removed trailing commas from author names
+  • Trimmed whitespace from all text fields
+  • Cleaned and normalized keywords
+  • Extracted years from volume information when missing
+  • Standardized field formats
