@@ -1,0 +1,25 @@
+
+Literature Mining Database Summary Report
+========================================
+
+Database Overview:
+- Total Papers: 1
+- Total Materials: 2
+- Total Properties: 3
+- Total Applications: 7
+
+Property Types Distribution:
+- Fracture_Stress: 1
+- Young_Modulus: 1
+- Conductivity: 1
+
+Application Types Distribution:
+- sensors: 6
+- AI_applications: 1
+
+Conductivity Statistics:
+- Count: 1
+- Mean: 353.77 S/m
+- Min: 353.77 S/m
+- Max: 353.77 S/m
+- Median: 353.77 S/m

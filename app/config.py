@@ -41,6 +41,7 @@ class Config:
     # Common LLM settings
     MAX_RETRIES = 3
     RETRY_DELAY = 1  # seconds
+    REQUEST_DELAY = 0.5  # seconds between LLM requests (can be reduced for fast mode)
     
     # Database settings
     DB_BATCH_SIZE = 10  # Number of papers to process before committing

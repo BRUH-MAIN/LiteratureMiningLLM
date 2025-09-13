@@ -1,0 +1,3 @@
+I want to modify the given codebase such that
+1) I want the llm prompt to be written in seperate folder in .txt
+2) I want another agent with uses another llamacpp model (which will be thinking I can't run them both at once first give me what options are present before starting to edit the codebase), input(json entry of the given paper, info extracted from given paper) -> checks whether the info matches and removes and fixes any hallucinatioons

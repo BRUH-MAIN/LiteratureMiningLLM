@@ -13,6 +13,7 @@ from typing import List, Dict, Any, Optional
 import time
 
 from app.llm_interface import LLMInterface
+from app.prompt_loader import prompt_loader
 from app.config import Config
 
 
@@ -33,60 +34,57 @@ class Extractor:
         pass
     
     def create_extraction_prompt(self, title: str, abstract: str, conclusion: str) -> str:
-        """Create a schema-guided prompt for data extraction"""
+        """Create a schema-guided prompt for data extraction from loaded prompt file"""
         
-        prompt = f"""
-You are an expert materials science researcher specializing in MXenes. 
-Extract structured data from the following research paper about MXenes.
-
-PAPER TITLE: {title}
-
+        # Load prompt from file and format with paper data
+        formatted_prompt = prompt_loader.format_prompt(
+            "extraction_prompt",
+            title=title,
+            abstract=abstract,
+            conclusion=conclusion
+        )
+        
+        if not formatted_prompt:
+            self.logger.error("Failed to load extraction prompt from file")
+            # Fallback to a basic prompt if file loading fails
+            return f"""
+Extract structured data from this MXene research paper:
+TITLE: {title}
 ABSTRACT: {abstract}
-
 CONCLUSION: {conclusion}
 
-Please extract the following information and return it as a valid JSON object with this exact structure:
-
-{{
-    "materials": [
-        {{
-            "mxene_composition": "string (e.g., Ti3C2Tx, Ti2CTx, etc.)",
-            "composite_material": "string (any composite materials mentioned)",
-            "synthesis_method": "string (method used to synthesize the MXene)",
-            "fabrication_method": "string (method used to fabricate the final material/device)"
-        }}
-    ],
-    "properties": [
-        {{
-            "property_type": "string (standardized: Conductivity, Modulus, Stress, Seebeck_Coefficient, Resistivity, etc.)",
-            "value": "number (numeric value only)",
-            "unit": "string (standardized unit)",
-            "test_conditions": "string (any testing conditions mentioned)"
-        }}
-    ],
-    "applications": [
-        {{
-            "application_type": "string (sensors, energy_storage, shielding, AI_applications, etc.)",
-            "metric": "string (sensitivity, response_time, accuracy, threshold, etc.)",
-            "value": "number (numeric value only)",
-            "unit": "string (unit of the metric)",
-            "notes": "string (additional context)"
-        }}
-    ]
-}}
-
-EXTRACTION RULES:
-1. Only extract information explicitly mentioned in the text
-2. For property_type, use standardized names: "Conductivity", "Young_Modulus", "Fracture_Stress", "Seebeck_Coefficient", "Resistivity", "Capacitance", "Energy_Density", etc.
-3. For values, extract only numeric values (e.g., from "353.77 S m−1", extract 353.77)
-4. For units, use standardized forms (e.g., "S/m" for conductivity, "MPa" for stress, "GPa" for modulus)
-5. If MXene composition is not explicitly mentioned, leave as empty string
-6. If no relevant data found for a category, return empty array []
-7. Remove any duplicate entries within the same category
-
-Return only the JSON object, no additional text. /no_think
+Return a JSON object with materials, properties, and applications data.
 """
-        return prompt
+        
+        return formatted_prompt
+    
+    def extract_and_validate_data(self, title: str, abstract: str, conclusion: str, validator_agent=None) -> Optional[Dict[str, Any]]:
+        """Extract data and optionally validate with validator agent"""
+        # First, do normal extraction
+        extracted_data = self.extract_data_from_text(title, abstract, conclusion)
+        
+        if not extracted_data:
+            return None
+        
+        # If validator agent is provided, run validation and correction
+        if validator_agent:
+            try:
+                final_data, validation_summary = validator_agent.validate_and_correct(
+                    title, abstract, conclusion, extracted_data
+                )
+                
+                # Add validation metadata to the result
+                result = final_data.copy()
+                result['_validation_summary'] = validation_summary
+                
+                return result
+                
+            except Exception as e:
+                self.logger.error(f"Error during validation for paper: {title[:50]}...: {e}")
+                # Return original extraction if validation fails
+                return extracted_data
+        
+        return extracted_data
     
     def extract_data_from_text(self, title: str, abstract: str, conclusion: str) -> Optional[Dict[str, Any]]:
         """Extract structured data from paper text using configured LLM"""
@@ -167,7 +165,7 @@ Return only the JSON object, no additional text. /no_think
                 
                 # Add small delay to respect API rate limits
                 if i < len(papers) - 1:  # Don't delay after the last paper
-                    time.sleep(0.5)  # 500ms delay between requests
+                    time.sleep(Config.REQUEST_DELAY)  # 500ms delay between requests
                     
             except Exception as e:
                 self.logger.error(f"Error processing paper {i+1}: {e}")
@@ -187,4 +185,99 @@ Return only the JSON object, no additional text. /no_think
         self.logger.info(f"Extraction completed for {len(extracted_papers)} papers")
         self.logger.info(f"Successfully extracted: {len(extracted_papers) - failed_count}, Failed: {failed_count}")
         self.logger.info(f"Overall success rate: {success_rate:.1f}%")
+        return extracted_papers
+    
+    def extract_from_papers_with_validation(self, papers: List[Dict[str, Any]], validator_agent=None) -> List[Dict[str, Any]]:
+        """
+        Extract data from multiple papers with optional validation
+        
+        Args:
+            papers: List of paper dictionaries
+            validator_agent: Optional ValidatorAgent for hallucination detection
+            
+        Returns:
+            List of papers with extracted data and validation results
+        """
+        if not papers:
+            self.logger.warning("No papers provided for extraction")
+            return []
+        
+        self.logger.info(f"Starting extraction from {len(papers)} papers")
+        if validator_agent:
+            self.logger.info("Validation and correction enabled")
+        
+        extracted_papers = []
+        failed_count = 0
+        validation_summaries = []
+        
+        for i, paper in enumerate(papers):
+            try:
+                self.logger.info(f"Processing paper {i+1}/{len(papers)}: {paper.get('title', 'Unknown')[:50]}...")
+                
+                title = paper.get('title', '')
+                abstract = paper.get('abstract', '')
+                conclusion = paper.get('conclusion', '')
+                
+                # Extract data with validation if validator agent provided
+                extracted_data = self.extract_and_validate_data(title, abstract, conclusion, validator_agent)
+                
+                if extracted_data:
+                    # Extract validation summary if present
+                    validation_summary = extracted_data.pop('_validation_summary', None)
+                    if validation_summary:
+                        validation_summaries.append(validation_summary)
+                    
+                    # Combine original paper metadata with extracted data
+                    paper_with_extraction = paper.copy()
+                    paper_with_extraction['extracted_data'] = extracted_data
+                    
+                    # Add validation metadata if available
+                    if validation_summary:
+                        paper_with_extraction['validation_summary'] = validation_summary
+                    
+                    extracted_papers.append(paper_with_extraction)
+                else:
+                    # Still include paper but mark as failed extraction
+                    paper_with_extraction = paper.copy()
+                    paper_with_extraction['extracted_data'] = {
+                        "materials": [],
+                        "properties": [],
+                        "applications": []
+                    }
+                    paper_with_extraction['extraction_failed'] = True
+                    extracted_papers.append(paper_with_extraction)
+                    failed_count += 1
+                
+                # Add small delay to respect API rate limits
+                if i < len(papers) - 1:  # Don't delay after the last paper
+                    time.sleep(Config.REQUEST_DELAY)  # 500ms delay between requests
+                    
+            except Exception as e:
+                self.logger.error(f"Error processing paper {i+1}: {e}")
+                # Still include paper with empty extraction
+                paper_with_extraction = paper.copy()
+                paper_with_extraction['extracted_data'] = {
+                    "materials": [],
+                    "properties": [],
+                    "applications": []
+                }
+                paper_with_extraction['extraction_failed'] = True
+                extracted_papers.append(paper_with_extraction)
+                failed_count += 1
+                continue
+        
+        success_rate = ((len(extracted_papers) - failed_count) / len(extracted_papers) * 100) if extracted_papers else 0
+        self.logger.info(f"Extraction completed for {len(extracted_papers)} papers")
+        self.logger.info(f"Successfully extracted: {len(extracted_papers) - failed_count}, Failed: {failed_count}")
+        self.logger.info(f"Overall success rate: {success_rate:.1f}%")
+        
+        # Log validation statistics if validation was performed
+        if validator_agent and validation_summaries:
+            validation_stats = validator_agent.get_validation_stats(validation_summaries)
+            self.logger.info("Validation Statistics:")
+            self.logger.info(f"  Validation rate: {validation_stats.get('validation_rate', 0):.2%}")
+            self.logger.info(f"  Correction rate: {validation_stats.get('correction_rate', 0):.2%}")
+            self.logger.info(f"  Average issues per paper: {validation_stats.get('avg_issues_per_paper', 0):.1f}")
+            self.logger.info(f"  Status distribution: {validation_stats.get('status_distribution', {})}")
+        
         return extracted_papers

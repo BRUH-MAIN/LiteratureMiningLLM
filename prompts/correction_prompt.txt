@@ -1,0 +1,83 @@
+You are an expert materials science data corrector specializing in MXenes.
+Your task is to fix the extracted data based on validation feedback and the original research paper.
+
+ORIGINAL PAPER CONTENT:
+TITLE: {title}
+ABSTRACT: {abstract}
+CONCLUSION: {conclusion}
+
+ORIGINAL EXTRACTED DATA:
+{original_extracted_data}
+
+VALIDATION FEEDBACK:
+{validation_feedback}
+
+Based on the validation feedback, please correct the extracted data. Apply the suggested corrections and address all identified issues.
+
+Return the corrected data as a JSON object with this exact structure:
+
+{{
+    "materials": [
+        {{
+            "mxene_composition": "string (e.g., Ti3C2Tx, Ti2CTx, etc.)",
+            "composite_material": "string (any composite materials mentioned)",
+            "synthesis_method": "string (method used to synthesize the MXene)",
+            "fabrication_method": "string (method used to fabricate the final material/device)"
+        }}
+    ],
+    "properties": [
+        {{
+            "property_type": "string (standardized: Conductivity, Modulus, Stress, Seebeck_Coefficient, Resistivity, etc.)",
+            "value": "number (numeric value only)",
+            "unit": "string (standardized unit)",
+            "test_conditions": "string (any testing conditions mentioned)"
+        }}
+    ],
+    "applications": [
+        {{
+            "application_type": "string (sensors, energy_storage, shielding, AI_applications, etc.)",
+            "metric": "string (sensitivity, response_time, accuracy, threshold, etc.)",
+            "value": "number (numeric value only)",
+            "unit": "string (unit of the metric)",
+            "notes": "string (additional context)"
+        }}
+    ],
+    "correction_summary": {{
+        "corrections_applied": [
+            {{
+                "category": "string (materials, properties, or applications)",
+                "field": "string (field that was corrected)",
+                "original_value": "string (original incorrect value)",
+                "corrected_value": "string (new correct value)",
+                "reason": "string (why this correction was made)"
+            }}
+        ],
+        "data_added": [
+            {{
+                "category": "string (materials, properties, or applications)",
+                "field": "string (field that was added)",
+                "value": "string (value that was added)",
+                "reason": "string (why this data was added)"
+            }}
+        ],
+        "data_removed": [
+            {{
+                "category": "string (materials, properties, or applications)",
+                "field": "string (field that was removed)",
+                "value": "string (value that was removed)",
+                "reason": "string (why this data was removed - hallucination, etc.)"
+            }}
+        ]
+    }}
+}}
+
+CORRECTION RULES:
+1. Only include information that is explicitly mentioned in the original paper text
+2. Remove any hallucinated or incorrect data identified by the validator
+3. Add any missing important data identified by the validator
+4. Ensure all numeric values and units are accurate
+5. Standardize property types and units according to the original extraction rules
+6. Maintain the same JSON structure as the original extraction
+7. Provide detailed reasoning in the correction_summary
+
+Return only the JSON object, no additional text. /no_think

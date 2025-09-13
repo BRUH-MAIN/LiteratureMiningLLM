@@ -1,0 +1,63 @@
+You are an expert materials science fact-checker specializing in MXenes. 
+Your task is to verify extracted data against the original research paper and detect any hallucinations or inconsistencies.
+
+ORIGINAL PAPER CONTENT:
+TITLE: {title}
+ABSTRACT: {abstract}
+CONCLUSION: {conclusion}
+
+EXTRACTED DATA TO VALIDATE:
+{extracted_data}
+
+Please carefully analyze the extracted data and check for the following issues:
+
+1. HALLUCINATIONS: Information that was extracted but not actually present in the paper
+2. MISINTERPRETATIONS: Correct information from the paper but incorrectly categorized or formatted
+3. MISSING DATA: Important information from the paper that was not extracted
+4. INCONSISTENCIES: Contradictory or conflicting information within the extracted data
+5. FORMATTING ERRORS: Incorrect units, values, or data types
+
+Return your analysis as a JSON object with this exact structure:
+
+{{
+    "validation_status": "string (VALID, NEEDS_CORRECTION, or INVALID)",
+    "confidence_score": "number (0.0 to 1.0)",
+    "issues_found": [
+        {{
+            "issue_type": "string (HALLUCINATION, MISINTERPRETATION, MISSING_DATA, INCONSISTENCY, or FORMATTING_ERROR)",
+            "category": "string (materials, properties, or applications)",
+            "description": "string (detailed description of the issue)",
+            "original_text": "string (relevant text from the paper, if any)",
+            "extracted_value": "string (the problematic extracted value)",
+            "severity": "string (HIGH, MEDIUM, or LOW)"
+        }}
+    ],
+    "suggested_corrections": [
+        {{
+            "category": "string (materials, properties, or applications)",
+            "field": "string (specific field to correct)",
+            "current_value": "string (current incorrect value)",
+            "suggested_value": "string (suggested correct value)",
+            "reasoning": "string (explanation for the correction)"
+        }}
+    ],
+    "missing_data": [
+        {{
+            "category": "string (materials, properties, or applications)",
+            "field": "string (field that should be added)",
+            "value": "string (value that should be extracted)",
+            "source_text": "string (text from paper supporting this extraction)"
+        }}
+    ]
+}}
+
+VALIDATION RULES:
+1. Be extremely strict - only mark as VALID if you are 100% confident
+2. Cross-reference every extracted value with the original text
+3. Check that numeric values and units match exactly
+4. Verify that material compositions are correctly identified
+5. Ensure property types are accurately categorized
+6. Confirm that application metrics are properly extracted
+7. Look for any information that seems too good to be true or unusually precise
+
+Return only the JSON object, no additional text. /no_think

@@ -1,0 +1,49 @@
+You are an expert materials science researcher specializing in MXenes. 
+Extract structured data from the following research paper about MXenes.
+
+PAPER TITLE: {title}
+
+ABSTRACT: {abstract}
+
+CONCLUSION: {conclusion}
+
+Please extract the following information and return it as a valid JSON object with this exact structure:
+
+{{
+    "materials": [
+        {{
+            "mxene_composition": "string (e.g., Ti3C2Tx, Ti2CTx, etc.)",
+            "composite_material": "string (any composite materials mentioned)",
+            "synthesis_method": "string (method used to synthesize the MXene)",
+            "fabrication_method": "string (method used to fabricate the final material/device)"
+        }}
+    ],
+    "properties": [
+        {{
+            "property_type": "string (standardized: Conductivity, Modulus, Stress, Seebeck_Coefficient, Resistivity, etc.)",
+            "value": "number (numeric value only)",
+            "unit": "string (standardized unit)",
+            "test_conditions": "string (any testing conditions mentioned)"
+        }}
+    ],
+    "applications": [
+        {{
+            "application_type": "string (sensors, energy_storage, shielding, AI_applications, etc.)",
+            "metric": "string (sensitivity, response_time, accuracy, threshold, etc.)",
+            "value": "number (numeric value only)",
+            "unit": "string (unit of the metric)",
+            "notes": "string (additional context)"
+        }}
+    ]
+}}
+
+EXTRACTION RULES:
+1. Only extract information explicitly mentioned in the text
+2. For property_type, use standardized names: "Conductivity", "Young_Modulus", "Fracture_Stress", "Seebeck_Coefficient", "Resistivity", "Capacitance", "Energy_Density", etc.
+3. For values, extract only numeric values (e.g., from "353.77 S m−1", extract 353.77)
+4. For units, use standardized forms (e.g., "S/m" for conductivity, "MPa" for stress, "GPa" for modulus)
+5. If MXene composition is not explicitly mentioned, leave as empty string
+6. If no relevant data found for a category, return empty array []
+7. Remove any duplicate entries within the same category
+
+Return only the JSON object, no additional text. /no_think
