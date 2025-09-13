@@ -38,6 +38,12 @@ class Config:
     LLAMACPP_TEMPERATURE = float(os.getenv('LLAMACPP_TEMPERATURE', '0.1'))
     LLAMACPP_MAX_TOKENS = int(os.getenv('LLAMACPP_MAX_TOKENS', '2048'))
     
+    # LM Studio settings (through OpenAI-compatible API)
+    LM_STUDIO_BASE_URL = os.getenv('LM_STUDIO_PORT', 'http://localhost:1234/v1')
+    LM_STUDIO_MODEL = os.getenv('model_name', 'local-model')
+    LM_STUDIO_TEMPERATURE = float(os.getenv('LM_STUDIO_TEMPERATURE', '0.1'))
+    LM_STUDIO_MAX_TOKENS = int(os.getenv('LM_STUDIO_MAX_TOKENS', '2048'))
+    
     # Common LLM settings
     MAX_RETRIES = 3
     RETRY_DELAY = 1  # seconds
@@ -56,8 +62,15 @@ class Config:
         elif cls.LLM_PROVIDER == 'llamacpp':
             if not cls.LLAMACPP_BASE_URL:
                 raise ValueError("LLAMACPP_BASE_URL environment variable not set")
+        elif cls.LLM_PROVIDER == 'lmstudio':
+            if not cls.LM_STUDIO_BASE_URL:
+                raise ValueError("LM_STUDIO_BASE_URL environment variable not set")
+        elif cls.LLM_PROVIDER == 'loadbalanced':
+            # Load balanced mode doesn't require specific validation
+            # Individual providers will be validated when initialized
+            pass
         else:
-            raise ValueError(f"Invalid LLM_PROVIDER: {cls.LLM_PROVIDER}. Must be 'gemini' or 'llamacpp'")
+            raise ValueError(f"Invalid LLM_PROVIDER: {cls.LLM_PROVIDER}. Must be 'gemini', 'llamacpp', 'lmstudio', or 'loadbalanced'")
         
         if not cls.POSTGRES_URL:
             raise ValueError("POSTGRES_URL environment variable not set")

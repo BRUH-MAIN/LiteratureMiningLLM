@@ -50,8 +50,10 @@ def main():
                        help='Run in demo mode (process only 5 papers)')
     parser.add_argument('--demo-count', type=int, default=5,
                        help='Number of papers to process in demo mode (default: 5)')
-    parser.add_argument('--llm-provider', choices=['gemini', 'llamacpp'],
-                       help='Override LLM provider (gemini or llamacpp)')
+    parser.add_argument('--llm-provider', choices=['gemini', 'llamacpp', 'lmstudio', 'loadbalanced'],
+                       help='Override LLM provider (gemini, llamacpp, lmstudio, or loadbalanced)')
+    parser.add_argument('--load-balanced', action='store_true',
+                       help='Use load balanced mode across multiple models')
     parser.add_argument('--fast', action='store_true',
                        help='Fast mode: skip LLM validation (extraction only)')
     parser.add_argument('--validate-only', action='store_true',
@@ -76,6 +78,10 @@ def main():
     if args.llm_provider:
         Config.LLM_PROVIDER = args.llm_provider
         logger.info(f"LLM provider overridden to: {Config.LLM_PROVIDER}")
+    
+    if args.load_balanced:
+        Config.LLM_PROVIDER = 'loadbalanced'
+        logger.info("Load balanced mode enabled across multiple models")
     
     # Set fast mode configurations for better performance
     if args.fast or args.demo:
