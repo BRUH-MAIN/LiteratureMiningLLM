@@ -1,39 +1,36 @@
 """
-Extraction Agent using Gemini Flash LLM
+Extraction Agent using configurable LLM providers
 
 This module handles:
-- Using Gemini LLM with schema-guided prompts
+- Using multiple LLM providers (Gemini, Llama.cpp) with schema-guided prompts
 - Extracting materials, properties, applications from abstract + conclusion
 - Ensuring output follows normalized JSON schema
 """
 
 import json
 import logging
-import google.generativeai as genai
 from typing import List, Dict, Any, Optional
-import os
 import time
-from dotenv import load_dotenv
 
-load_dotenv()
+from app.llm_interface import LLMInterface
+from app.config import Config
 
 
 class Extractor:
-    """Extraction agent using Gemini Flash for structured data extraction"""
+    """Extraction agent using configurable LLM providers for structured data extraction"""
     
-    def __init__(self):
+    def __init__(self, llm_provider: str = None):
         self.logger = logging.getLogger(__name__)
-        self.setup_gemini()
+        self.llm = LLMInterface(llm_provider)
+        
+        # Log which provider is being used
+        provider_info = self.llm.get_provider_info()
+        self.logger.info(f"Initialized extractor with {provider_info['provider']} - {provider_info.get('model', 'N/A')}")
         
     def setup_gemini(self):
-        """Setup Gemini API client"""
-        api_key = os.getenv('GEMINI_API_KEY')
-        if not api_key:
-            raise ValueError("GEMINI_API_KEY environment variable not set")
-        
-        genai.configure(api_key=api_key)
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
-        self.logger.info("Gemini Flash model initialized")
+        """Deprecated method - keeping for backward compatibility"""
+        self.logger.warning("setup_gemini() is deprecated. LLM initialization is now handled by LLMInterface")
+        pass
     
     def create_extraction_prompt(self, title: str, abstract: str, conclusion: str) -> str:
         """Create a schema-guided prompt for data extraction"""
@@ -87,12 +84,12 @@ EXTRACTION RULES:
 6. If no relevant data found for a category, return empty array []
 7. Remove any duplicate entries within the same category
 
-Return only the JSON object, no additional text.
+Return only the JSON object, no additional text. /no_think
 """
         return prompt
     
     def extract_data_from_text(self, title: str, abstract: str, conclusion: str) -> Optional[Dict[str, Any]]:
-        """Extract structured data from paper text using Gemini"""
+        """Extract structured data from paper text using configured LLM"""
         try:
             # Combine abstract and conclusion for better context
             combined_text = f"{abstract}\n\n{conclusion}"
@@ -104,33 +101,23 @@ Return only the JSON object, no additional text.
             
             prompt = self.create_extraction_prompt(title, abstract, conclusion)
             
-            # Call Gemini API
-            response = self.model.generate_content(prompt)
+            # Call LLM API through unified interface
+            response_text = self.llm.generate_response(prompt)
             
-            if not response.text:
-                self.logger.error(f"Empty response from Gemini for paper: {title[:50]}...")
-                self.logger.debug(f"Response object: {response}")
+            if not response_text:
+                self.logger.error(f"Empty response from LLM for paper: {title[:50]}...")
                 return None
             
-            self.logger.debug(f"Raw Gemini response: {response.text[:200]}...")
+            self.logger.debug(f"Raw LLM response: {response_text[:200]}...")
             
-            # Parse JSON response
-            try:
-                # Clean up the response text
-                clean_text = response.text.strip()
-                if clean_text.startswith("```json"):
-                    clean_text = clean_text[7:]
-                if clean_text.endswith("```"):
-                    clean_text = clean_text[:-3]
-                clean_text = clean_text.strip()
-                
-                extracted_data = json.loads(clean_text)
+            # Parse JSON response using the unified interface
+            extracted_data = self.llm.extract_json_from_response(response_text)
+            
+            if extracted_data:
                 self.logger.debug(f"Successfully extracted data for paper: {title[:50]}...")
                 return extracted_data
-                
-            except json.JSONDecodeError as e:
-                self.logger.error(f"JSON parsing error for paper {title[:50]}...: {e}")
-                self.logger.debug(f"Raw response: {response.text}")
+            else:
+                self.logger.error(f"Failed to parse JSON from LLM response for paper: {title[:50]}...")
                 return None
                 
         except Exception as e:
@@ -142,7 +129,7 @@ Return only the JSON object, no additional text.
         extracted_papers = []
         failed_count = 0
         
-        self.logger.info(f"Starting extraction for {len(papers)} papers...")
+        self.logger.info(f"Starting extraction for {len(papers)} papers using {self.llm.get_provider_info()['provider']}...")
         self.logger.info(f"Estimated processing time: {len(papers) * 3 / 60:.1f} minutes")
         
         for i, paper in enumerate(papers):

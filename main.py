@@ -1,16 +1,7 @@
 """
 Main runner for the Literature Mining LLM application
-
-This module orchestrates the complete agentic flow:
-1. Load JSON data from data/processed
-2. Run preprocessing 
-3. Run extraction with Gemini LLM
-4. Validate results
-5. Insert into PostgreSQL
-6. Run analytics queries
 """
 
-import os
 import logging
 import sys
 from pathlib import Path
@@ -58,7 +49,12 @@ def main():
         # Initialize all agents
         logger.info("Initializing agents...")
         preprocessor = Preprocessor()
-        extractor = Extractor()
+        
+        # Initialize extractor with configured LLM provider
+        from app.config import Config
+        logger.info(f"Using LLM provider: {Config.LLM_PROVIDER}")
+        extractor = Extractor()  # Will use Config.LLM_PROVIDER by default
+        
         validator = Validator()
         db_loader = DBLoader()
         analytics = Analytics()
@@ -79,7 +75,6 @@ def main():
         logger.info(f"Preprocessed {len(processed_papers)} papers")
         
         # Check if demo mode is enabled
-        from app.config import Config
         if Config.DEMO_MODE:
             demo_papers = processed_papers[:Config.DEMO_PAPER_COUNT]
             logger.info(f"Demo mode: Processing only first {len(demo_papers)} papers")
@@ -88,8 +83,8 @@ def main():
             logger.info(f"Full processing mode: Processing all {len(processed_papers)} papers")
             papers_to_process = processed_papers
         
-        # 3. Run extraction with Gemini LLM
-        logger.info("Step 3: Running extraction with Gemini LLM...")
+        # 3. Run extraction with configured LLM
+        logger.info(f"Step 3: Running extraction with {Config.LLM_PROVIDER.upper()} LLM...")
         extracted_papers = extractor.extract_from_papers(papers_to_process)
         logger.info(f"Extraction completed for {len(extracted_papers)} papers")
         
@@ -130,30 +125,16 @@ def main():
         
         # Generate visualizations
         try:
-            logger.info("Generating visualizations...")
             analytics.plot_conductivity_histogram(str(output_dir / "conductivity_histogram.png"))
             analytics.plot_mxene_composition_distribution(str(output_dir / "mxene_composition_distribution.png"))
-            logger.info("Visualizations saved to results directory")
+            logger.info("Visualizations generated")
         except Exception as e:
-            logger.warning(f"Error generating visualizations: {e}")
+            logger.warning(f"Visualization error: {e}")
         
-        logger.info("Literature Mining Pipeline completed successfully!")
-        
-        # Print final summary
-        print("\n" + "="*50)
-        print("LITERATURE MINING PIPELINE SUMMARY")
-        print("="*50)
-        print(f"Input papers: {len(papers)}")
-        print(f"Processed papers: {len(processed_papers)}")
-        print(f"Papers with extraction: {len(extracted_papers)}")
-        print(f"Papers validated: {len(validated_papers)}")
-        print(f"Database insert stats: {load_stats}")
-        print(f"Database current stats: {db_stats}")
-        print(f"Results saved to: {output_dir}")
-        print("="*50)
+        logger.info("Pipeline completed successfully!")
         
     except Exception as e:
-        logger.error(f"Error in main pipeline: {e}")
+        logger.error(f"Pipeline error: {e}")
         raise
 
 
