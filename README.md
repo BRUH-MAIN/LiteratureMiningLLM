@@ -51,6 +51,19 @@ uv run python test_system.py
 uv run python main.py
 ```
 
+### Run Property Relevance Evaluation
+After running the main pipeline, you can evaluate the quality of extracted properties:
+```bash
+# Run evaluation
+uv run python main.py --evaluate
+
+# Or run the standalone evaluator
+uv run python run_evaluator.py
+
+# Or run the demo version
+uv run python demo_evaluator.py
+```
+
 ### Test Gemini API Integration
 ```bash
 uv run python test_gemini.py
@@ -125,6 +138,36 @@ By default, the system runs in demo mode processing only 5 papers to avoid API r
 - Sensor application statistics
 - Property type distributions
 - Publication trend analysis
+- **Property Relevance Evaluation**: Assess quality of extracted properties against paper abstracts/conclusions
+
+### Property Relevance Evaluator
+
+The evaluator uses LLM to compare extracted properties with the original paper abstracts and conclusions, producing a binary relevance score (0 or 1) for each property. This helps assess the quality of the extraction pipeline.
+
+**Features:**
+- Iterates through all papers and their extracted properties
+- Uses LLM to evaluate relevance between text content and extracted data
+- Produces binary scores: 1 (relevant) or 0 (not relevant)
+- Generates detailed evaluation reports with statistics
+- Identifies potential extraction errors or irrelevant properties
+
+**Output:**
+- CSV file with evaluation results for each property
+- Comprehensive evaluation report with statistics by property type
+- Identification of papers with consistently low relevance scores
+- Recommendations for improving extraction quality
+
+**Usage Examples:**
+```bash
+# Run full evaluation
+python main.py --evaluate
+
+# Run demo evaluation (smaller batch)
+python demo_evaluator.py
+
+# Standalone evaluator script
+python run_evaluator.py
+```
 
 ## Error Handling
 

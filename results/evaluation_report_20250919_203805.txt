@@ -1,0 +1,29 @@
+============================================================
+PROPERTY RELEVANCE EVALUATION REPORT
+============================================================
+
+OVERALL STATISTICS:
+Total Evaluations: 32
+Relevant Properties: 31
+Not Relevant Properties: 1
+Relevance Rate: 96.9%
+
+RELEVANCE BY PROPERTY TYPE:
+  Capacitance: 14/15 (93.0%)
+  Conductivity: 1/1 (100.0%)
+  Energy_Density: 8/8 (100.0%)
+  Fracture_Stress: 1/1 (100.0%)
+  Interfacial_Shear_Strength: 2/2 (100.0%)
+  Power_Density: 4/4 (100.0%)
+  Young_Modulus: 1/1 (100.0%)
+
+PAPERS WITH LOW RELEVANCE SCORES:
+  No papers with consistently low relevance scores found.
+
+SAMPLE OF IRRELEVANT EXTRACTIONS:
+  Paper 6: Capacitance
+    Reason: The extracted property information mentions 'cycling stability' with a value of '10000.0 cycles', but the text actually discusses cycling stability in terms of the number of cycles (e.g., less than 25000 cycles for SSCs and less than 10000 cycles for ASSCs), not as a capacitance value. The property type 'Capacitance' does not match the context in which '10000.0 cycles' is relevant, indicating a misinterpretation.
+
+RECOMMENDATIONS:
+  - Evaluation criteria might be too lenient
+  - Consider making evaluation more stringent

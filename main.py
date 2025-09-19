@@ -4,6 +4,7 @@ Main runner for the Literature Mining LLM application
 
 import logging
 import sys
+import argparse
 from pathlib import Path
 from datetime import datetime
 
@@ -38,6 +39,59 @@ def setup_logging():
     logger = logging.getLogger(__name__)
     logger.info(f"Logging setup complete. Log file: {log_file}")
     return logger
+
+
+def run_evaluator():
+    """Run property relevance evaluation"""
+    logger = setup_logging()
+    logger.info("Starting Property Relevance Evaluation")
+    
+    try:
+        from app.config import Config
+        logger.info(f"Using LLM Provider: {Config.LLM_PROVIDER}")
+        
+        # Create analytics instance
+        analytics = Analytics()
+        
+        # Run evaluation
+        logger.info("Running property relevance evaluation...")
+        evaluation_df = analytics.evaluate_property_relevance(batch_size=3)
+        
+        if evaluation_df.empty:
+            logger.warning("No evaluation results generated")
+            return
+        
+        # Create results directory
+        output_dir = project_root / "results"
+        output_dir.mkdir(exist_ok=True)
+        
+        # Save evaluation results to CSV
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        csv_path = output_dir / f"property_relevance_evaluation_{timestamp}.csv"
+        evaluation_df.to_csv(csv_path, index=False)
+        logger.info(f"Evaluation results saved to {csv_path}")
+        
+        # Generate and save evaluation report
+        report_path = output_dir / f"evaluation_report_{timestamp}.txt"
+        report = analytics.generate_evaluation_report(evaluation_df, str(report_path))
+        
+        # Print summary
+        total = len(evaluation_df)
+        relevant = evaluation_df['relevance_score'].sum()
+        relevance_rate = (relevant / total) * 100 if total > 0 else 0
+        
+        logger.info("\n" + "="*50)
+        logger.info("EVALUATION SUMMARY")
+        logger.info("="*50)
+        logger.info(f"Total Evaluations: {total}")
+        logger.info(f"Relevant Properties: {relevant}")
+        logger.info(f"Relevance Rate: {relevance_rate:.1f}%")
+        logger.info(f"Detailed report saved to: {report_path}")
+        logger.info("Evaluation completed successfully!")
+        
+    except Exception as e:
+        logger.error(f"Evaluation failed: {e}")
+        raise
 
 
 def main():
@@ -138,4 +192,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Literature Mining LLM Pipeline")
+    parser.add_argument("--evaluate", action="store_true", 
+                       help="Run property relevance evaluation instead of full pipeline")
+    
+    args = parser.parse_args()
+    
+    if args.evaluate:
+        run_evaluator()
+    else:
+        main()
