@@ -117,3 +117,4 @@ dataset1/
 output/
 uv.lock
 .venv/
+.vscode/
