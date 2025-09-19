@@ -13,6 +13,7 @@ from abc import ABC, abstractmethod
 
 import google.generativeai as genai
 from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from app.config import Config
 
 
@@ -100,6 +101,48 @@ class LlamaCppProvider(LLMProvider):
             return None
 
 
+class GroqProvider(LLMProvider):
+    """Groq LLM provider using OpenAI-compatible API through langchain_openai"""
+    
+    def __init__(self):
+        self.logger = logging.getLogger(__name__)
+        self.setup_groq()
+    
+    def setup_groq(self):
+        """Setup Groq client through OpenAI-compatible API"""
+        if not Config.GROQ_API_KEY:
+            raise ValueError("GROQ_API_KEY environment variable not set")
+        
+        # Initialize ChatOpenAI client with Groq's base URL
+        self.client = ChatGroq(
+            api_key=Config.GROQ_API_KEY,
+            model=Config.GROQ_MODEL,
+            temperature=Config.GROQ_TEMPERATURE,
+            max_tokens=Config.GROQ_MAX_TOKENS,
+        )
+        
+        self.logger.info(f"Groq model initialized - Model: {Config.GROQ_MODEL}")
+    
+    def generate_response(self, prompt: str) -> Optional[str]:
+        """Generate response using Groq through OpenAI-compatible API"""
+        try:
+            # ChatOpenAI expects messages format
+            from langchain_core.messages import HumanMessage
+            
+            messages = [HumanMessage(content=prompt)]
+            response = self.client.invoke(messages)
+            
+            if not response or not response.content:
+                self.logger.error("Empty response from Groq")
+                return None
+                
+            return response.content
+            
+        except Exception as e:
+            self.logger.error(f"Error generating Groq response: {e}")
+            return None
+
+
 class LLMInterface:
     """Unified interface for different LLM providers"""
     
@@ -112,6 +155,8 @@ class LLMInterface:
         """Initialize the appropriate LLM provider"""
         if self.provider_name.lower() == 'gemini':
             return GeminiProvider()
+        elif self.provider_name.lower() == 'groq':
+            return GroqProvider()
         elif self.provider_name.lower() == 'llamacpp':
             return LlamaCppProvider()
         else:
@@ -203,6 +248,12 @@ class LLMInterface:
                 'provider': 'Gemini',
                 'model': Config.GEMINI_MODEL,
                 'type': 'Google Generative AI'
+            }
+        elif self.provider_name.lower() == 'groq':
+            return {
+                'provider': 'Groq',
+                'model': Config.GROQ_MODEL,
+                'type': 'Groq API'
             }
         elif self.provider_name.lower() == 'llamacpp':
             return {

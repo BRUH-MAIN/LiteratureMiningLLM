@@ -82,6 +82,7 @@ class DBLoader:
                 sciencedirect_url=paper_data.get('sciencedirect_url', ''),
                 issn=paper_data.get('issn', ''),
                 abstract=paper_data.get('abstract', ''),
+                conclusion=paper_data.get('conclusion', ''),
                 keywords=paper_data.get('keywords', [])
             )
             

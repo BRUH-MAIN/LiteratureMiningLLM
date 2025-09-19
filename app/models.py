@@ -26,6 +26,7 @@ class Paper(Base):
     sciencedirect_url = Column(Text)
     issn = Column(String)
     abstract = Column(Text)
+    conclusion = Column(Text)
     keywords = Column(ARRAY(String))
     
     # Relationships

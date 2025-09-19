@@ -74,14 +74,13 @@ def main():
         processed_papers = preprocessor.preprocess_papers(papers)
         logger.info(f"Preprocessed {len(processed_papers)} papers")
         
-        # Check if demo mode is enabled
-        if Config.DEMO_MODE:
-            demo_papers = processed_papers[:Config.DEMO_PAPER_COUNT]
-            logger.info(f"Demo mode: Processing only first {len(demo_papers)} papers")
-            papers_to_process = demo_papers
+        # Check if paper count is configured
+        if Config.PAPER_COUNT > 0:
+            papers_to_process = processed_papers[:Config.PAPER_COUNT]
+            logger.info(f"Processing {len(papers_to_process)} papers (configured limit: {Config.PAPER_COUNT})")
         else:
-            logger.info(f"Full processing mode: Processing all {len(processed_papers)} papers")
             papers_to_process = processed_papers
+            logger.info(f"Processing all {len(processed_papers)} papers (no limit configured)")
         
         # 3. Run extraction with configured LLM
         logger.info(f"Step 3: Running extraction with {Config.LLM_PROVIDER.upper()} LLM...")

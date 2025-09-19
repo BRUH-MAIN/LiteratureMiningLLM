@@ -1,0 +1,30 @@
+
+Literature Mining Database Summary Report
+========================================
+
+Database Overview:
+- Total Papers: 10
+- Total Materials: 10
+- Total Properties: 31
+- Total Applications: 25
+
+Property Types Distribution:
+- Young_Modulus: 1
+- Power_Density: 4
+- Interfacial_Shear_Strength: 2
+- Fracture_Stress: 1
+- Energy_Density: 8
+- Conductivity: 2
+- Capacitance: 13
+
+Application Types Distribution:
+- sensors: 7
+- energy_storage: 17
+- AI_applications: 1
+
+Conductivity Statistics:
+- Count: 2
+- Mean: 176.88 S/m
+- Min: 0.00 S/m
+- Max: 353.77 S/m
+- Median: 353.77 S/m

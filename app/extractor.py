@@ -84,7 +84,7 @@ EXTRACTION RULES:
 6. If no relevant data found for a category, return empty array []
 7. Remove any duplicate entries within the same category
 
-Return only the JSON object, no additional text. /no_think
+Return only the JSON object, no additional text.
 """
         return prompt
     

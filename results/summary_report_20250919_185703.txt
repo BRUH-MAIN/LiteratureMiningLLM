@@ -1,0 +1,13 @@
+
+Literature Mining Database Summary Report
+========================================
+
+Database Overview:
+- Total Papers: 10
+- Total Materials: 10
+- Total Properties: 0
+- Total Applications: 0
+
+Property Types Distribution:
+
+Application Types Distribution:
