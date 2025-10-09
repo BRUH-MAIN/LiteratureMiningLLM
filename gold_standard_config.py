@@ -1,18 +1,18 @@
 # Gold Standard Extraction Configuration
 # This file documents the configuration for the gold standard extraction script
 
-# Rate Limiting Configuration for Gemini 2.5 Pro API
+# Rate Limiting Configuration for Gemini 1.5 Flash API
 RATE_LIMITS = {
-    'requests_per_minute': 5,        # 5 RPM
-    'tokens_per_minute': 250000,     # 250K TPM  
-    'requests_per_day': 100          # 100 RPD
+    'requests_per_minute': 9,        # 9 RPM
+    'tokens_per_minute': 250000,     # 250K TPM
+    'requests_per_day': 250          # 250 RPD
 }
 
 # Processing Configuration
 PROCESSING = {
-    'paper_limit': 50,               # Process only 50 papers initially
+    'paper_limit': 50,               # Process only 100 papers initially
     'llm_provider': 'gemini',        # Use Gemini for extraction
-    'model': 'gemini-1.5-flash',    # Gemini model to use
+    'model': 'gemini-2.5-flash',    # Gemini model to use
     'temperature': 0.1,              # Low temperature for consistent extraction
     'max_retries': 3,                # Max retries for failed requests
     'retry_delay': 1                 # Delay between retries (seconds)

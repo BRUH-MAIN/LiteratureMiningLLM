@@ -32,7 +32,7 @@ class Config:
     LLM_PROVIDER = os.getenv('LLM_PROVIDER', 'gemini')
     
     # Gemini settings
-    GEMINI_MODEL = "gemini-2.5-pro"
+    GEMINI_MODEL = "gemini-2.5-flash"
     
     # Groq settings
     GROQ_MODEL = os.getenv('GROQ_MODEL', 'llama-3.1-70b-versatile')

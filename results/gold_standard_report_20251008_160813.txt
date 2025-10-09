@@ -1,0 +1,12 @@
+Gold Standard Literature Mining Extraction Report
+==================================================
+
+Date: 2025-10-08 16:08:13
+Papers processed: 48
+Failed extractions: 2
+Success rate: 96.0%
+Total time: 21.4 minutes
+Average time per paper: 25.7 seconds
+Daily requests used: 48/100
+Daily tokens used: 89277/250000
+Database: Supabase with gold standard tables (gold_ prefix)
