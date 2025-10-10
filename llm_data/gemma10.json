@@ -1,0 +1,597 @@
+[
+  {
+    "result": {
+      "materials": [
+        {
+          "material_id": 1,
+          "synthesis_method": "vacuum self-assembly technique",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "MXene-BC composite",
+          "fabrication_method": "3D printing technology"
+        },
+        {
+          "material_id": 2,
+          "synthesis_method": "",
+          "mxene_composition": "MXene",
+          "composite_material": "polyaniline nanowires anchored on MXene quantum dots graphene composite",
+          "fabrication_method": "microfluidic technique assisted wet spinning"
+        },
+        {
+          "material_id": 3,
+          "synthesis_method": "hydrothermal method",
+          "mxene_composition": "CuCoTiO2",
+          "composite_material": "CuCoTiO2 MXene composite",
+          "fabrication_method": "Electrode material"
+        },
+        {
+          "material_id": 4,
+          "synthesis_method": "",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "ppy MXene 4-O-TEMPO (pMT)",
+          "fabrication_method": "vacuum filtration"
+        },
+        {
+          "material_id": 5,
+          "synthesis_method": "",
+          "mxene_composition": "",
+          "composite_material": "",
+          "fabrication_method": ""
+        },
+        {
+          "material_id": 6,
+          "synthesis_method": "Not specified",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "titanium based MXene-templated zeolites (MTZ), hexagonal boron nitride (h-BN MTZ), graphene quantum dots (GQDs MTZ)",
+          "fabrication_method": "MXene-templated zeolite synthesis, device fabrication in three-electrode and asymmetric supercapacitor configurations"
+        },
+        {
+          "material_id": 7,
+          "synthesis_method": "room co-precipitation method of bimetallic AlCoPBA on the MXene surface, further phosphorated in a tube furnace using NaH2PO2 as a phosphorus source",
+          "mxene_composition": "MXene",
+          "composite_material": "Hierarchy hollow Al-doped CoP nanocubes interconnected MXene composite",
+          "fabrication_method": "tube furnace phosphoration"
+        },
+        {
+          "material_id": 8,
+          "synthesis_method": "ex-situ, in-situ",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "carbonyl functionalized carbon fiber",
+          "fabrication_method": "coating"
+        },
+        {
+          "material_id": 9,
+          "synthesis_method": "hydrothermal",
+          "mxene_composition": "W18O49",
+          "composite_material": "MXene reduced graphene oxide",
+          "fabrication_method": "film fabrication"
+        },
+        {
+          "material_id": 10,
+          "synthesis_method": "ion liquid etching",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "",
+          "fabrication_method": ""
+        }
+      ],
+      "properties": [
+        {
+          "unit": "S/m",
+          "value": 353.77,
+          "material_id": 1,
+          "property_type": "Conductivity",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "GPa",
+          "value": 7.34,
+          "material_id": 1,
+          "property_type": "Young_Modulus",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "MPa",
+          "value": 41.09,
+          "material_id": 1,
+          "property_type": "Fracture_Stress",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "ms",
+          "value": 10,
+          "material_id": 1,
+          "property_type": "Response_Time",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "Pa",
+          "value": 1,
+          "material_id": 1,
+          "property_type": "Detection_Threshold",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "kPa/1",
+          "value": 5.11,
+          "material_id": 1,
+          "property_type": "Sensitivity",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "",
+          "value": 98.33,
+          "material_id": 1,
+          "property_type": "Accuracy",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "",
+          "value": 99.85,
+          "material_id": 1,
+          "property_type": "Material_Recognition_Accuracy",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "mF/cm^2",
+          "value": 1691,
+          "material_id": 2,
+          "property_type": "Capacitance",
+          "test_conditions": "specific areal capacitance"
+        },
+        {
+          "unit": "μWh/cm^2",
+          "value": 214.4,
+          "material_id": 2,
+          "property_type": "Energy_Density",
+          "test_conditions": "excellent energy density"
+        },
+        {
+          "unit": "F/cm^3",
+          "value": 450,
+          "material_id": 2,
+          "property_type": "Conductivity",
+          "test_conditions": "specific volumetric capacitance"
+        },
+        {
+          "unit": "F/g",
+          "value": 500,
+          "material_id": 3,
+          "property_type": "Capacitance",
+          "test_conditions": "1 A/g"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 19.6,
+          "material_id": 3,
+          "property_type": "Energy_Density",
+          "test_conditions": "742.7 W/kg"
+        },
+        {
+          "unit": "μA/μM/cm²",
+          "value": 2.66,
+          "material_id": 3,
+          "property_type": "Sensitivity",
+          "test_conditions": "furazolidone detection"
+        },
+        {
+          "unit": "nM",
+          "value": 16.1,
+          "material_id": 3,
+          "property_type": "Detection_Limit",
+          "test_conditions": "furazolidone detection"
+        },
+        {
+          "unit": "F/g",
+          "value": 472,
+          "material_id": 3,
+          "property_type": "Capacitance",
+          "test_conditions": "5 mV/s in aqueous 2 M KOH"
+        },
+        {
+          "unit": "F/g",
+          "value": 400,
+          "material_id": 3,
+          "property_type": "Capacitance",
+          "test_conditions": "5 mV/s in aqueous 2 M KOH"
+        },
+        {
+          "unit": "F/g",
+          "value": 530,
+          "material_id": 4,
+          "property_type": "Capacitance",
+          "test_conditions": "1 A/g"
+        },
+        {
+          "unit": "F/g",
+          "value": 300,
+          "material_id": 4,
+          "property_type": "Capacitance",
+          "test_conditions": "50 A/g"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 23.8,
+          "material_id": 4,
+          "property_type": "Energy_Density",
+          "test_conditions": "300.2 W/kg"
+        },
+        {
+          "unit": "W/kg",
+          "value": 300.2,
+          "material_id": 4,
+          "property_type": "Power_Density",
+          "test_conditions": "300.2 W/kg"
+        },
+        {
+          "unit": "Wh kg 1",
+          "value": 70,
+          "material_id": 5,
+          "property_type": "Energy_Density",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "W kg 1",
+          "value": 5000,
+          "material_id": 5,
+          "property_type": "Power_Density",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "cycles",
+          "value": 25000,
+          "material_id": 5,
+          "property_type": "Cycling_Stability",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "Wh kg 1",
+          "value": 100,
+          "material_id": 5,
+          "property_type": "Energy_Density",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "cycles",
+          "value": 10000,
+          "material_id": 5,
+          "property_type": "Cycling_Stability",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "C/g",
+          "value": 948,
+          "material_id": 6,
+          "property_type": "Capacitance",
+          "test_conditions": "MTZ"
+        },
+        {
+          "unit": "C/g",
+          "value": 1425,
+          "material_id": 6,
+          "property_type": "Capacitance",
+          "test_conditions": "h-BN MTZ"
+        },
+        {
+          "unit": "C/g",
+          "value": 1873,
+          "material_id": 6,
+          "property_type": "Capacitance",
+          "test_conditions": "GQDs MTZ"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 93.17,
+          "material_id": 6,
+          "property_type": "Energy_Density",
+          "test_conditions": "GQDs MTZ AC asymmetric supercapacitor"
+        },
+        {
+          "unit": "W/kg",
+          "value": 1240,
+          "material_id": 6,
+          "property_type": "Power_Density",
+          "test_conditions": "GQDs MTZ AC asymmetric supercapacitor"
+        },
+        {
+          "unit": "Not specified",
+          "value": 0,
+          "material_id": 6,
+          "property_type": "Resistivity",
+          "test_conditions": "Not specified"
+        },
+        {
+          "unit": "F/g",
+          "value": 2577,
+          "material_id": 7,
+          "property_type": "Capacitance",
+          "test_conditions": "1 A/g adjusted current density"
+        },
+        {
+          "unit": "cycles",
+          "value": 90.1,
+          "material_id": 7,
+          "property_type": "Cycle_Life",
+          "test_conditions": "after 7000 cycles"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 85.6,
+          "material_id": 7,
+          "property_type": "Energy_Density",
+          "test_conditions": "678.5 W/kg power density"
+        },
+        {
+          "unit": "cycles",
+          "value": 88,
+          "material_id": 7,
+          "property_type": "Cycle_Life",
+          "test_conditions": "after 10,000 GCD cycles"
+        },
+        {
+          "unit": "F/g",
+          "value": 31.7,
+          "material_id": 8,
+          "property_type": "Capacitance",
+          "test_conditions": "aqueous electrolyte"
+        },
+        {
+          "unit": "MPa",
+          "value": 45.4,
+          "material_id": 8,
+          "property_type": "Fracture_Stress",
+          "test_conditions": "interfacial shear strength"
+        },
+        {
+          "unit": "MPa",
+          "value": 51.7,
+          "material_id": 8,
+          "property_type": "Fracture_Stress",
+          "test_conditions": "interfacial shear strength"
+        },
+        {
+          "unit": "F/g",
+          "value": 29.4,
+          "material_id": 8,
+          "property_type": "Capacitance",
+          "test_conditions": "aqueous electrolyte"
+        },
+        {
+          "unit": "F/g",
+          "value": 11.2,
+          "material_id": 8,
+          "property_type": "Capacitance",
+          "test_conditions": "aqueous electrolyte"
+        },
+        {
+          "unit": "x",
+          "value": 29.2,
+          "material_id": 8,
+          "property_type": "Capacitance",
+          "test_conditions": "aqueous electrolyte"
+        },
+        {
+          "unit": "F/g",
+          "value": 581.2,
+          "material_id": 9,
+          "property_type": "Capacitance",
+          "test_conditions": "1 A/g"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 43.2,
+          "material_id": 9,
+          "property_type": "Energy_Density",
+          "test_conditions": "799.8 W/kg"
+        },
+        {
+          "unit": "F/g",
+          "value": 417.4,
+          "material_id": 10,
+          "property_type": "Capacitance",
+          "test_conditions": "1 mV s in 1 M H2SO4"
+        }
+      ],
+      "applications": [
+        {
+          "unit": "ms",
+          "notes": "Not specified",
+          "value": 10,
+          "metric": "Response_time",
+          "material_id": 1,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "Pa",
+          "notes": "Not specified",
+          "value": 1,
+          "metric": "Detection_threshold",
+          "material_id": 1,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "mm/1",
+          "notes": "Not specified",
+          "value": 0.63,
+          "metric": "Sensitivity",
+          "material_id": 1,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "",
+          "notes": "Using MLP neural network model",
+          "value": 98.33,
+          "metric": "Speech_Recognition_Accuracy",
+          "material_id": 1,
+          "application_type": "AI_applications"
+        },
+        {
+          "unit": "",
+          "notes": "Using MLP neural network model",
+          "value": 99.85,
+          "metric": "Material_Recognition_Accuracy",
+          "material_id": 1,
+          "application_type": "material_recognition"
+        },
+        {
+          "unit": "%",
+          "notes": "after 9500 cycles",
+          "value": 100,
+          "metric": "capacitance retention",
+          "material_id": 2,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "mF/cm^2",
+          "notes": "of composite fibers assembled by PANI MQDs GF",
+          "value": 1691,
+          "metric": "specific areal capacitance",
+          "material_id": 2,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "at a specific power of 742.7 W/kg",
+          "value": 19.6,
+          "metric": "Energy Density",
+          "material_id": 3,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "μA/μM/cm²",
+          "notes": "for furazolidone detection",
+          "value": 2.66,
+          "metric": "Sensitivity",
+          "material_id": 3,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "nM",
+          "notes": "for furazolidone detection",
+          "value": 16.1,
+          "metric": "Detection Limit",
+          "material_id": 3,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "",
+          "notes": "Csp after 4000 GCD cycles",
+          "value": 91,
+          "metric": "Cycle Stability",
+          "material_id": 3,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "Asymmetric supercapacitor",
+          "value": 23.8,
+          "metric": "energy density",
+          "material_id": 4,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "W/kg",
+          "notes": "Asymmetric supercapacitor",
+          "value": 300.2,
+          "metric": "power density",
+          "material_id": 4,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "F/cm2",
+          "notes": "Not specified",
+          "value": null,
+          "metric": "Specific Capacitance",
+          "material_id": 5,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "W kg 1",
+          "notes": "Not specified",
+          "value": null,
+          "metric": "Power_Density",
+          "material_id": 5,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "%",
+          "notes": "after 10,000 cycles",
+          "value": 97,
+          "metric": "capacity retention",
+          "material_id": 6,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "%",
+          "notes": "after 10,000 cycles",
+          "value": 95,
+          "metric": "coulombic efficiency",
+          "material_id": 6,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "device assembled using the anode from the ZnFeS NG core-shell hybrid",
+          "value": 85.6,
+          "metric": "Energy_Density",
+          "material_id": 7,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "cycles",
+          "notes": "device assembled using the anode from the ZnFeS NG core-shell hybrid",
+          "value": 88,
+          "metric": "Cycle_Life",
+          "material_id": 7,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "F/g",
+          "notes": "AQ-2-MX",
+          "value": 31.7,
+          "metric": "specific capacitance",
+          "material_id": 8,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "F/g",
+          "notes": "AQ-2 3 min-MX",
+          "value": 11.2,
+          "metric": "specific capacitance",
+          "material_id": 8,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "F/g",
+          "notes": "MA-NTCDA-MX",
+          "value": 29.4,
+          "metric": "specific capacitance",
+          "material_id": 8,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "x",
+          "notes": "COF-MX",
+          "value": 29.2,
+          "metric": "specific capacitance",
+          "material_id": 8,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "",
+          "notes": "after 10,000 cycles at 3 A/g",
+          "value": 87.1,
+          "metric": "capacitance retention",
+          "material_id": 9,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "F/g",
+          "notes": "at 1 mV s in 1 M H2SO4",
+          "value": 417.4,
+          "metric": "specific capacitance",
+          "material_id": 10,
+          "application_type": "energy_storage"
+        }
+      ]
+    }
+  }
+]

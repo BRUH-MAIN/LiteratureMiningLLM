@@ -109,4 +109,4 @@ def transform_data_more_accurately(input_file, output_file):
 
 if __name__ == "__main__":
     # Transform data
-    transform_data_more_accurately('data.json', 'transformed_data_fixed.json')
+    transform_data_more_accurately('llm_data/data10.json', 'qwen-transformed.json')
