@@ -1,0 +1,1049 @@
+[
+    {
+    "materials": [
+        {
+            "mxene_composition": "Ti3C2Tx",
+            "composite_material": "bacterial cellulose (BC)",
+            "synthesis_method": "vacuum self-assembly technique",
+            "fabrication_method": "3D printing technology"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Conductivity",
+            "value": 353.77,
+            "unit": "S/m",
+            "test_conditions": ""
+        },
+        {
+            "property_type": "Fracture_Stress",
+            "value": 41.09,
+            "unit": "MPa",
+            "test_conditions": ""
+        },
+        {
+            "property_type": "Young_Modulus",
+            "value": 7.34,
+            "unit": "GPa",
+            "test_conditions": ""
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "pressure_sensor",
+            "metric": "Sensitivity",
+            "value": 5.11,
+            "unit": "kPa^-1",
+            "notes": "High sensitivity in pressure mode"
+        },
+        {
+            "application_type": "pressure_sensor",
+            "metric": "Response_Time",
+            "value": 10,
+            "unit": "ms",
+            "notes": "Response and recovery time"
+        },
+        {
+            "application_type": "pressure_sensor",
+            "metric": "Detection_Threshold",
+            "value": 1,
+            "unit": "Pa",
+            "notes": "Ultra-low detection threshold"
+        },
+        {
+            "application_type": "proximity_sensor",
+            "metric": "Sensitivity",
+            "value": 0.63,
+            "unit": "mm^-1",
+            "notes": "High sensitivity in proximity mode"
+        },
+        {
+            "application_type": "speech_recognition",
+            "metric": "Accuracy",
+            "value": 98.33,
+            "unit": "%",
+            "notes": "Using MLP neural network model for speech recognition"
+        },
+        {
+            "application_type": "material_recognition",
+            "metric": "Accuracy",
+            "value": 99.85,
+            "unit": "%",
+            "notes": "MLP neural network model trained on capacitive response signals"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "",
+            "composite_material": "polyaniline nanowires / MXene quantum dots / graphene composite fibers (PANI@MQDs/GF)",
+            "synthesis_method": "microfluidic technique",
+            "fabrication_method": "wet spinning strategy"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Capacitance",
+            "value": 1691,
+            "unit": "mF/cm^2",
+            "test_conditions": "specific areal capacitance"
+        },
+        {
+            "property_type": "Capacitance",
+            "value": 450,
+            "unit": "F/cm^3",
+            "test_conditions": "specific volumetric capacitance"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 214.4,
+            "unit": "μWh/cm^2",
+            "test_conditions": ""
+        },
+        {
+            "property_type": "Capacitance_Retention",
+            "value": 100,
+            "unit": "%",
+            "test_conditions": "after 9500 cycles"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "energy_storage",
+            "metric": "Energy_Density",
+            "value": 214.4,
+            "unit": "μWh/cm^2",
+            "notes": "Wearable supercapacitor"
+        },
+        {
+            "application_type": "energy_storage",
+            "metric": "Capacitance",
+            "value": 1691,
+            "unit": "mF/cm^2",
+            "notes": "Superior specific areal capacitance for fiber-based flexible supercapacitors"
+        },
+        {
+            "application_type": "wearable_electronics",
+            "metric": "Capacitance_Retention",
+            "value": 100,
+            "unit": "%",
+            "notes": "Maintained after 9500 charge/discharge cycles"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "",
+            "composite_material": "CuCoTiO2/MXene",
+            "synthesis_method": "hydrothermal method",
+            "fabrication_method": ""
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Capacitance",
+            "value": 500,
+            "unit": "F/g",
+            "test_conditions": "CuCoTiO2/MXene-6h at 5 mV/s in 2 M KOH"
+        },
+        {
+            "property_type": "Capacitance",
+            "value": 472,
+            "unit": "F/g",
+            "test_conditions": "CuCoTiO2/MXene-4h at 5 mV/s in 2 M KOH"
+        },
+        {
+            "property_type": "Capacitance",
+            "value": 400,
+            "unit": "F/g",
+            "test_conditions": "CuCoTiO2/MXene-2h at 5 mV/s in 2 M KOH"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 19.6,
+            "unit": "Wh/kg",
+            "test_conditions": "at specific power of 742.7 W/kg"
+        },
+        {
+            "property_type": "Power_Density",
+            "value": 742.7,
+            "unit": "W/kg",
+            "test_conditions": "corresponding to energy density of 19.6 Wh/kg"
+        },
+        {
+            "property_type": "Capacitance_Retention",
+            "value": 91,
+            "unit": "%",
+            "test_conditions": "after 4000 GCD cycles"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "supercapacitor",
+            "metric": "Capacitance",
+            "value": 500,
+            "unit": "F/g",
+            "notes": "CuCoTiO2/MXene-6h electrode material"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Energy_Density",
+            "value": 19.6,
+            "unit": "Wh/kg",
+            "notes": "CuCoTiO2/MXene-6h//AC ASC composite"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Capacitance_Retention",
+            "value": 91,
+            "unit": "%",
+            "notes": "Retained after 4000 GCD cycles"
+        },
+        {
+            "application_type": "electrochemical_sensor",
+            "metric": "Sensitivity",
+            "value": 2.66,
+            "unit": "μA·μM⁻¹·cm⁻²",
+            "notes": "Detection of furazolidone (FZD)"
+        },
+        {
+            "application_type": "electrochemical_sensor",
+            "metric": "Detection_Limit",
+            "value": 16.1,
+            "unit": "nM",
+            "notes": "Low detection limit for FZD sensing"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "Ti3C2Tx",
+            "composite_material": "polypyrrole (ppy) and 4-O-TEMPO modified MXene films (pMT)",
+            "synthesis_method": "",
+            "fabrication_method": "vacuum filtration"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Capacitance",
+            "value": 530,
+            "unit": "F/g",
+            "test_conditions": "at 1 A/g"
+        },
+        {
+            "property_type": "Capacitance",
+            "value": 300,
+            "unit": "F/g",
+            "test_conditions": "at 50 A/g"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 23.8,
+            "unit": "Wh/kg",
+            "test_conditions": "at power density of 300.2 W/kg"
+        },
+        {
+            "property_type": "Power_Density",
+            "value": 300.2,
+            "unit": "W/kg",
+            "test_conditions": "corresponding to energy density of 23.8 Wh/kg"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "supercapacitor",
+            "metric": "Capacitance",
+            "value": 530,
+            "unit": "F/g",
+            "notes": "High specific capacitance achieved by dual-molecule modification strategy"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Energy_Density",
+            "value": 23.8,
+            "unit": "Wh/kg",
+            "notes": "Asymmetric supercapacitor (pMT//TPC ASC) performance"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Power_Density",
+            "value": 300.2,
+            "unit": "W/kg",
+            "notes": "Associated with maximum energy density of 23.8 Wh/kg"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "General MXene-based materials",
+            "composite_material": [
+                "doped MXenes",
+                "polymer-decorated MXenes",
+                "nickel-anchored MXenes",
+                "carbon nanomaterial-coupled MXenes"
+            ],
+            "synthesis_method": "various surface modification methods",
+            "fabrication_method": "electrode preparation for symmetric and asymmetric supercapacitors"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Power_Density",
+            "value": 5000,
+            "unit": "W/kg",
+            "test_conditions": "typical upper limit for symmetric MXene-based supercapacitors"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 70,
+            "unit": "Wh/kg",
+            "test_conditions": "typical upper limit for symmetric MXene-based supercapacitors"
+        },
+        {
+            "property_type": "Power_Density",
+            "value": 8000,
+            "unit": "W/kg",
+            "test_conditions": "typical upper limit for asymmetric MXene-based supercapacitors"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 100,
+            "unit": "Wh/kg",
+            "test_conditions": "typical upper limit for asymmetric MXene-based supercapacitors"
+        },
+        {
+            "property_type": "Cycling_Stability",
+            "value": 25000,
+            "unit": "cycles",
+            "test_conditions": "typical upper limit for symmetric MXene-based supercapacitors"
+        },
+        {
+            "property_type": "Cycling_Stability",
+            "value": 10000,
+            "unit": "cycles",
+            "test_conditions": "typical upper limit for asymmetric MXene-based supercapacitors"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "supercapacitor",
+            "metric": "Energy_Density",
+            "value": 70,
+            "unit": "Wh/kg",
+            "notes": "MXene-based symmetric configuration"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Energy_Density",
+            "value": 100,
+            "unit": "Wh/kg",
+            "notes": "MXene-based asymmetric configuration"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Power_Density",
+            "value": 8000,
+            "unit": "W/kg",
+            "notes": "MXene-based asymmetric configuration"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Cycling_Stability",
+            "value": 25000,
+            "unit": "cycles",
+            "notes": "MXene symmetric electrodes"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Cycling_Stability",
+            "value": 10000,
+            "unit": "cycles",
+            "notes": "MXene asymmetric electrodes"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "Titanium-based MXene-templated zeolite (MTZ)",
+            "composite_material": [
+                "h-BN@MTZ (5% hexagonal boron nitride doped)",
+                "GQDs@MTZ (5% graphene quantum dots doped)"
+            ],
+            "synthesis_method": "MXene-templated zeolite synthesis with h-BN or GQD doping",
+            "fabrication_method": "binder-free electrode fabrication for asymmetric supercapacitors"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Specific_Capacity",
+            "value": 1873,
+            "unit": "C/g",
+            "test_conditions": "three-electrode setup, GQDs@MTZ electrode"
+        },
+        {
+            "property_type": "Specific_Capacity",
+            "value": 1425,
+            "unit": "C/g",
+            "test_conditions": "three-electrode setup, h-BN@MTZ electrode"
+        },
+        {
+            "property_type": "Specific_Capacity",
+            "value": 948,
+            "unit": "C/g",
+            "test_conditions": "three-electrode setup, MTZ electrode"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 93.17,
+            "unit": "Wh/kg",
+            "test_conditions": "asymmetric supercapacitor GQDs@MTZ//AC configuration"
+        },
+        {
+            "property_type": "Power_Density",
+            "value": 1240,
+            "unit": "W/kg",
+            "test_conditions": "asymmetric supercapacitor GQDs@MTZ//AC configuration"
+        },
+        {
+            "property_type": "Cycling_Stability",
+            "value": 10000,
+            "unit": "cycles",
+            "test_conditions": "97% capacity retention; 95% coulombic efficiency"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "supercapacitor",
+            "metric": "Specific_Capacity",
+            "value": 1873,
+            "unit": "C/g",
+            "notes": "Highest performance among tested electrodes (GQDs@MTZ)"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Energy_Density",
+            "value": 93.17,
+            "unit": "Wh/kg",
+            "notes": "Asymmetric device configuration GQDs@MTZ//AC"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Power_Density",
+            "value": 1240,
+            "unit": "W/kg",
+            "notes": "Asymmetric device configuration GQDs@MTZ//AC"
+        },
+        {
+            "application_type": "supercapacitor",
+            "metric": "Cycling_Stability",
+            "value": 97,
+            "unit": "%",
+            "notes": "Capacity retention after 10,000 cycles for GQDs@MTZ//AC"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "MXene (unspecified Ti3C2Tx type, used as conductive substrate)",
+            "composite_material": "Al-doped CoP nanocubes@MXene heterostructure",
+            "dopant": "Aluminum (Al)",
+            "secondary_material": "ZnFeS@NG (core–shell hybrid used as anode in ASC)",
+            "synthesis_method": "Room-temperature co-precipitation of AlCoPBA followed by phosphorization in tube furnace using NaH2PO2",
+            "morphology": "Hollow hierarchical nanocubes (∼5 nm) interconnected by MXene sheets",
+            "fabrication_method": "Heterostructured electrode synthesis for solid-state asymmetric supercapacitors"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Specific_Capacitance",
+            "value": 2577,
+            "unit": "F/g",
+            "test_conditions": "at 1 A/g current density; AlCoP@MXene electrode"
+        },
+        {
+            "property_type": "Capacitance_Improvement",
+            "value": 1.5,
+            "unit": "×",
+            "test_conditions": "relative to pristine AlCoP electrode"
+        },
+        {
+            "property_type": "Capacitance_Improvement",
+            "value": 3.61,
+            "unit": "×",
+            "test_conditions": "relative to pristine CoP electrode"
+        },
+        {
+            "property_type": "Cycling_Stability",
+            "value": 90.1,
+            "unit": "%",
+            "test_conditions": "after 7000 cycles for AlCoP@MXene electrode"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 85.6,
+            "unit": "Wh/kg",
+            "test_conditions": "for ASC device with ZnFeS@NG anode, at 678.5 W/kg"
+        },
+        {
+            "property_type": "Power_Density",
+            "value": 678.5,
+            "unit": "W/kg",
+            "test_conditions": "for ASC device with ZnFeS@NG anode"
+        },
+        {
+            "property_type": "Cycling_Stability",
+            "value": 88,
+            "unit": "%",
+            "test_conditions": "after 10,000 GCD cycles for ASC device"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "solid-state asymmetric supercapacitor",
+            "metric": "Specific_Capacitance",
+            "value": 2577,
+            "unit": "F/g",
+            "notes": "AlCoP@MXene electrode showed 1.5× and 3.61× improvement over AlCoP and CoP respectively"
+        },
+        {
+            "application_type": "solid-state asymmetric supercapacitor",
+            "metric": "Energy_Density",
+            "value": 85.6,
+            "unit": "Wh/kg",
+            "notes": "Device with ZnFeS@NG anode; 88% retention after 10,000 cycles"
+        },
+        {
+            "application_type": "solid-state asymmetric supercapacitor",
+            "metric": "Power_Density",
+            "value": 678.5,
+            "unit": "W/kg",
+            "notes": "Measured for ASC configuration at high stability"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "Ti3C2Tx MXene",
+            "substrate": "Carbon fiber (CF)",
+            "surface_modification": [
+                "Anthraquinone (AQ-1, AQ-2) functionalization introducing carbonyl groups",
+                "Covalent Organic Frameworks (COFs: MA-PMDA, MA-NTCDA, MA-PTCDA)"
+            ],
+            "binding_mechanism": [
+                "Coordination through carbonyl–MXene interaction",
+                "Hydrogen bonding and π–π interactions with AQ moieties",
+                "Graft-from COF approach for high-affinity MXene anchoring"
+            ],
+            "synthesis_method": [
+                "Ex-situ AQ modification (laboratory scale)",
+                "In-situ AQ modification (scalable, 3-minute treatment)",
+                "Graft-from COF synthesis followed by MXene coating"
+            ],
+            "morphology": "MXene-coated carbon fiber with functionalized surface enabling uniform MXene loading",
+            "fabrication_method": "Surface functionalization + MXene coating for binder-free fiber electrodes"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Specific_Capacitance",
+            "value": 31.7,
+            "unit": "F/g",
+            "test_conditions": "AQ-2-MX (ex-situ method)"
+        },
+        {
+            "property_type": "Specific_Capacitance",
+            "value": 11.2,
+            "unit": "F/g",
+            "test_conditions": "AQ-2–3min-MX (in-situ method)"
+        },
+        {
+            "property_type": "Capacitance_Improvement",
+            "value": 15.1,
+            "unit": "×",
+            "test_conditions": "AQ-2-MX vs control-MX"
+        },
+        {
+            "property_type": "Capacitance_Improvement",
+            "value": 5.3,
+            "unit": "×",
+            "test_conditions": "AQ-2–3min-MX vs control-MX"
+        },
+        {
+            "property_type": "Specific_Capacitance",
+            "value": 29.4,
+            "unit": "F/g",
+            "test_conditions": "MA-NTCDA-MX (COF-modified CF)"
+        },
+        {
+            "property_type": "Capacitance_Improvement",
+            "value": 17.3,
+            "unit": "×",
+            "test_conditions": "MA-NTCDA-MX vs control-MX"
+        },
+        {
+            "property_type": "Capacitance_Improvement",
+            "value": 29.2,
+            "unit": "×",
+            "test_conditions": "MA-PMDA-MX vs non-MXene modified CF"
+        },
+        {
+            "property_type": "Cycling_Stability",
+            "value": 99.5,
+            "unit": "%",
+            "test_conditions": "MA-PTCDA-MX in aqueous electrolyte"
+        },
+        {
+            "property_type": "Interfacial_Shear_Strength",
+            "value": 45.4,
+            "unit": "MPa",
+            "test_conditions": "AQ-1-MX, representing 39% increase"
+        },
+        {
+            "property_type": "Interfacial_Shear_Strength",
+            "value": 51.7,
+            "unit": "MPa",
+            "test_conditions": "MA-PTCDA-MX, representing 58% increase"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "carbon fiber-based electrode for supercapacitors",
+            "metric": "Specific_Capacitance",
+            "value": 31.7,
+            "unit": "F/g",
+            "notes": "AQ-2-MX ex-situ sample achieved highest capacitance; scalable modification"
+        },
+        {
+            "application_type": "carbon fiber-based electrode for supercapacitors",
+            "metric": "Cycling_Stability",
+            "value": 99.5,
+            "unit": "%",
+            "notes": "MA-PTCDA-MX exhibited excellent long-term stability in aqueous electrolyte"
+        },
+        {
+            "application_type": "structural energy storage fiber",
+            "metric": "Interfacial_Shear_Strength",
+            "value": 51.7,
+            "unit": "MPa",
+            "notes": "MXene coating maintained and improved mechanical integrity of CF tows"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "",
+            "composite_material": "MXene/reduced graphene oxide/W18O49 (MXene/rGO/W18O49)",
+            "synthesis_method": "Hydrothermal synthesis (for W18O49) and reduction method (for rGO)",
+            "fabrication_method": "Film fabrication (binder-free MXene/rGO/W18O49 film electrode)"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Capacitance",
+            "value": 581.2,
+            "unit": "F/g",
+            "test_conditions": "at 1 A/g"
+        },
+        {
+            "property_type": "Capacitance_Retention",
+            "value": 87.1,
+            "unit": "%",
+            "test_conditions": "after 10,000 cycles at 3 A/g"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 43.2,
+            "unit": "Wh/kg",
+            "test_conditions": "at 799.8 W/kg power density"
+        },
+        {
+            "property_type": "Voltage_Window",
+            "value": 1.6,
+            "unit": "V",
+            "test_conditions": "MXene/rGO/W18O49//AC ASC device"
+        },
+        {
+            "property_type": "Power_Density",
+            "value": 799.8,
+            "unit": "W/kg",
+            "test_conditions": "corresponding to 43.2 Wh/kg energy density"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "energy_storage",
+            "metric": "specific_capacitance",
+            "value": 581.2,
+            "unit": "F/g",
+            "notes": "MXene/rGO/W18O49 film electrode for supercapacitors"
+        },
+        {
+            "application_type": "energy_storage",
+            "metric": "energy_density",
+            "value": 43.2,
+            "unit": "Wh/kg",
+            "notes": "Asymmetric supercapacitor (MXene/rGO/W18O49//AC) device"
+        },
+        {
+            "application_type": "energy_storage",
+            "metric": "capacitance_retention",
+            "value": 87.1,
+            "unit": "%",
+            "notes": "After 10,000 cycles at 3 A/g"
+        },
+        {
+            "application_type": "energy_storage",
+            "metric": "voltage_window",
+            "value": 1.6,
+            "unit": "V",
+            "notes": "Flexible asymmetric supercapacitor device"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "Ti3C2Tx",
+            "composite_material": "",
+            "synthesis_method": "Ionic liquid etching using tetramethylammonium tetrafluoroborate (TMATFB) on Ti3AlC2 MAX phase",
+            "fabrication_method": ""
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Capacitance",
+            "value": 417.4,
+            "unit": "F/g",
+            "test_conditions": "at 1 mV/s in 1 M H2SO4"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "energy_storage",
+            "metric": "specific_capacitance",
+            "value": 417.4,
+            "unit": "F/g",
+            "notes": "Ti3C2Tx MXene electrode tested at 1 mV/s in 1 M H2SO4"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "",
+            "composite_material": "MXene/Metal LDHs, MXene/Metal sulfides, MXene/Metal oxides, MXene/Conductive polymers, MXene/Carbon nanomaterials",
+            "synthesis_method": "Top-down and bottom-up synthesis strategies via selective etching of layered MAX precursors",
+            "fabrication_method": "Composite electrode fabrication for supercapacitors"
+        }
+    ],
+    "properties": [],
+    "applications": [
+        {
+            "application_type": "energy_storage",
+            "metric": "supercapacitor_performance",
+            "value": 0,
+            "unit": "",
+            "notes": "Review of MXene and MXene-based composite electrodes for supercapacitor applications"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "Ti3C2Tx",
+            "composite_material": "Quinone-functionalized viologen/reduced graphene oxide (rGO) hybrid paired with Ti3C2Tx MXene",
+            "synthesis_method": "Simple mixing at room temperature to synthesize quinone-functionalized viologen molecules",
+            "fabrication_method": "Coating quinone-viologen hybrids on rGO sheets and assembling asymmetric supercapacitor with Ti3C2Tx MXene as negative electrode"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "Capacitance",
+            "value": 64,
+            "unit": "F/g",
+            "test_conditions": "at 10 mV/s in 3 M H2SO4"
+        },
+        {
+            "property_type": "Capacitance",
+            "value": 16,
+            "unit": "F/g",
+            "test_conditions": "at 5000 mV/s in 3 M H2SO4"
+        },
+        {
+            "property_type": "Energy_Density",
+            "value": 20,
+            "unit": "Wh/kg",
+            "test_conditions": "asymmetric device with 1.5 V voltage window"
+        },
+        {
+            "property_type": "Voltage_Window",
+            "value": 1.5,
+            "unit": "V",
+            "test_conditions": "3 M H2SO4 electrolyte"
+        },
+        {
+            "property_type": "Capacitance_Retention",
+            "value": 80,
+            "unit": "%",
+            "test_conditions": "after 10,000 charge/discharge cycles"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "energy_storage",
+            "metric": "specific_capacitance",
+            "value": 64,
+            "unit": "F/g",
+            "notes": "Measured at 10 mV/s in 3 M H2SO4 for asymmetric supercapacitor"
+        },
+        {
+            "application_type": "energy_storage",
+            "metric": "energy_density",
+            "value": 20,
+            "unit": "Wh/kg",
+            "notes": "Quinone-viologen/rGO hybrid with Ti3C2Tx MXene asymmetric device"
+        },
+        {
+            "application_type": "energy_storage",
+            "metric": "voltage_window",
+            "value": 1.5,
+            "unit": "V",
+            "notes": "Expanded voltage window in 3 M H2SO4 electrolyte"
+        },
+        {
+            "application_type": "energy_storage",
+            "metric": "capacitance_retention",
+            "value": 80,
+            "unit": "%",
+            "notes": "After 10,000 charge/discharge cycles"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "",
+            "composite_material": "Multiscale porous structured MXene (micropores, mesopores, macropores)",
+            "synthesis_method": "Fluoride-based etching (e.g., HF, LiF/HCl); proposed fluoride-free alternatives such as molten salt etching and electrochemical exfoliation",
+            "fabrication_method": "Design and control of hierarchical pore structures for electrode fabrication"
+        }
+    ],
+    "properties": [],
+    "applications": [
+        {
+            "application_type": "energy_storage",
+            "metric": "electrochemical_performance",
+            "value": 0,
+            "unit": "",
+            "notes": "Application of multiscale porous MXene in lithium-ion batteries, zinc-ion batteries, and supercapacitors"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "Ti3C2Tx",
+            "composite_material": "Self-standing porous MXene film with 3D MXene microgel induced by 2-methylimidazole (2-MeIM)",
+            "synthesis_method": "In-situ formation of MXene microgel via deprotonation of 2-MeIM and hydrogen bonding interactions with MXene nanosheets",
+            "fabrication_method": "Vacuum-assisted filtration of MXene microgel suspension to obtain porous M-MXene film"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "specific_capacitance",
+            "value": 223.4,
+            "unit": "F g-1",
+            "conditions": "At scan rate of 1000 mV s-1"
+        },
+        {
+            "property_type": "energy_density",
+            "value": 16.88,
+            "unit": "Wh kg-1",
+            "conditions": "At power density of 799 W kg-1"
+        },
+        {
+            "property_type": "energy_density",
+            "value": 13.11,
+            "unit": "Wh kg-1",
+            "conditions": "At power density of 8 kW kg-1"
+        },
+        {
+            "property_type": "capacitance_retention",
+            "value": 90.4,
+            "unit": "%",
+            "conditions": "After 10,000 charge/discharge cycles"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "supercapacitor",
+            "metric": "high-rate_performance",
+            "value": 223.4,
+            "unit": "F g-1",
+            "notes": "Demonstrates superior ion transport and rate capability due to porous 3D MXene microgel structure"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "m-Ti3C2",
+            "composite_material": "Oxygen-rich surface modified Ti3C2 MXene nanofibers (m-Ti3C2) anode",
+            "synthesis_method": "Deep alkali treatment replacing –F functional groups with O-rich terminal groups",
+            "fabrication_method": "Formation of 3D interconnected MXene nanofiber networks to alleviate stacking and improve Zn2+ adsorption"
+        },
+        {
+            "composite_material": "AlxV2O5 intercalated with polar organic molecule NMP",
+            "synthesis_method": "Intercalation of NMP into AlxV2O5 with pre-embedded Al3+ ions",
+            "fabrication_method": "Stabilization of layered cathode structure via electrostatic interaction between NMP and Al3+"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "specific_capacitance",
+            "value": 1231.8,
+            "unit": "mF cm-2",
+            "conditions": "For m-Ti3C2 MXene anode at 1.0 mA cm-2"
+        },
+        {
+            "property_type": "specific_capacity",
+            "value": 327.78,
+            "unit": "μAh cm-2",
+            "conditions": "For AlxV2O5-NMP cathode at 0.5 mA cm-2"
+        },
+        {
+            "property_type": "energy_density",
+            "value": 105.15,
+            "unit": "μWh cm-2",
+            "conditions": "At power density of 0.475 mW cm-2"
+        },
+        {
+            "property_type": "power_density",
+            "value": 9.5,
+            "unit": "mW cm-2",
+            "conditions": "At 39.53 μWh cm-2"
+        },
+        {
+            "property_type": "capacity_retention",
+            "value": 89.29,
+            "unit": "%",
+            "conditions": "After 3000 charge/discharge cycles for full AZHMSC device"
+        },
+        {
+            "property_type": "capacity_retention",
+            "value": 96.05,
+            "unit": "%",
+            "conditions": "After 5000 cycles for AlxV2O5-NMP cathode"
+        },
+        {
+            "property_type": "mechanical_stability",
+            "value": 93.27,
+            "unit": "%",
+            "conditions": "Capacity retained under 90° bending"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "aqueous_zinc-ion_hybrid_micro-supercapacitor",
+            "metric": "energy_density",
+            "value": 105.15,
+            "unit": "μWh cm-2",
+            "notes": "Demonstrates high energy and power density with enhanced Zn2+ storage kinetics, suitable for flexible and wearable micro-energy storage devices"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "Ti3C2Tx",
+            "composite_material": "MXene-based hybrid composites (MXene/carbon, MXene/polymers, MXene/transition metal oxides, MXene/MOFs)",
+            "synthesis_method": "Various etching techniques including fluoride-based, HF acid, and fluoride-free etching routes for MAX phase precursors",
+            "fabrication_method": "Hybridization of MXenes with conductive carbons, polymers, and metal oxides to enhance electrochemical and mechanical properties"
+        }
+    ],
+    "properties": [],
+    "applications": [
+        {
+            "application_type": "supercapacitor",
+            "metric": "electrode_performance",
+            "value": 0,
+            "unit": "",
+            "notes": "MXene-based hybrid composites enhance both electrochemical and mechanical performance for next-generation energy storage systems"
+        }
+        ]
+    },
+    {
+    "materials": [
+        {
+            "mxene_composition": "V4C3Tx",
+            "composite_material": "NiGa-LDH/V4C3Tx MXene (NGV-11)",
+            "synthesis_method": "In-situ hydrothermal growth of NiGa-layered double hydroxide (LDH) on delaminated V4C3Tx MXene nanosheets",
+            "fabrication_method": "Electrostatic self-assembly via hydrothermal synthesis optimizing Ni:Ga ratio (1:1) for best performance"
+        }
+    ],
+    "properties": [
+        {
+            "property_type": "specific_capacity",
+            "value": 268.85,
+            "unit": "mAh g−1",
+            "conditions": "at 1 A g−1"
+        },
+        {
+            "property_type": "energy_density",
+            "value": 56.41,
+            "unit": "Wh kg−1",
+            "conditions": "at 800 W kg−1"
+        },
+        {
+            "property_type": "capacitance_retention",
+            "value": 93.24,
+            "unit": "%",
+            "conditions": "after 5000 cycles"
+        },
+        {
+            "property_type": "coulombic_efficiency",
+            "value": 96.96,
+            "unit": "%",
+            "conditions": "after 5000 cycles"
+        }
+    ],
+    "applications": [
+        {
+            "application_type": "supercapacitor",
+            "metric": "energy_density",
+            "value": 56.41,
+            "unit": "Wh kg−1",
+            "notes": "High-performance asymmetric NGV-11//AC supercapacitor with excellent stability and conductivity"
+        }
+        ]
+    }
+
+
+
+
+
+
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+

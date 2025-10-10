@@ -1,0 +1,564 @@
+[
+  {
+    "result": {
+      "materials": [
+        {
+          "material_id": 759,
+          "synthesis_method": "vacuum self-assembly technique",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "MXene-BC composites",
+          "fabrication_method": "vacuum self-assembly technique"
+        },
+        {
+          "material_id": 760,
+          "synthesis_method": "microfluidic technique assisted wet spinning method",
+          "mxene_composition": "",
+          "composite_material": "polyaniline nanowires modified MXene quantum dots graphene composite fibers (PANI MQDs GF)",
+          "fabrication_method": "microfluidic technique combined with wet spinning strategy"
+        },
+        {
+          "material_id": 761,
+          "synthesis_method": "hydrothermal method",
+          "mxene_composition": "CuCoTiO2",
+          "composite_material": "CuCoTiO2 MXene",
+          "fabrication_method": "cost-effective hydrothermal method"
+        },
+        {
+          "material_id": 762,
+          "synthesis_method": "Not explicitly mentioned",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "ppy MXene 4-O-TEMPO (pMT)",
+          "fabrication_method": "Vacuum filtration"
+        },
+        {
+          "material_id": 763,
+          "synthesis_method": "",
+          "mxene_composition": "",
+          "composite_material": "",
+          "fabrication_method": ""
+        },
+        {
+          "material_id": 764,
+          "synthesis_method": "Not explicitly mentioned",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "MXene-templated zeolites (MTZ), h-BN MTZ, GQDs MTZ",
+          "fabrication_method": "Not explicitly mentioned"
+        },
+        {
+          "material_id": 765,
+          "synthesis_method": "room co-precipitation method of bimetallic AlCoPBA on the MXene surface",
+          "mxene_composition": "",
+          "composite_material": "hollow hierarchical Al-doped CoP nanocubes bridged by MXene sheets",
+          "fabrication_method": "phosphorated in a tube furnace using NaH2PO2 as a phosphorus source"
+        },
+        {
+          "material_id": 766,
+          "synthesis_method": "Ex-situ and in-situ methods",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "AQ-2-MX, AQ-2 3 min-MX, AQ-1-MX, MA-NTCDA-MX, MA-PTCDA-MX, MA-PMDA-MX",
+          "fabrication_method": "Grafting anthraquinone moieties and polyimide covalent organic frameworks (PI-COFs) onto carbon fiber (CF) surfaces"
+        },
+        {
+          "material_id": 767,
+          "synthesis_method": "hydrothermal and reduction methods",
+          "mxene_composition": "",
+          "composite_material": "MXene rGO W18O49",
+          "fabrication_method": "fabricated as supercapacitor electrode"
+        },
+        {
+          "material_id": 768,
+          "synthesis_method": "etching of Ti3AlC2 MAX phase using tetramethylammonium tetrafluoroborate (TMATFB)",
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "",
+          "fabrication_method": ""
+        }
+      ],
+      "properties": [
+        {
+          "unit": "S/m",
+          "value": 353.77,
+          "material_id": 759,
+          "property_type": "Conductivity",
+          "test_conditions": ""
+        },
+        {
+          "unit": "MPa",
+          "value": 41.09,
+          "material_id": 759,
+          "property_type": "Fracture_Stress",
+          "test_conditions": ""
+        },
+        {
+          "unit": "GPa",
+          "value": 7.34,
+          "material_id": 759,
+          "property_type": "Young_Modulus",
+          "test_conditions": ""
+        },
+        {
+          "unit": "mF/cm²",
+          "value": 1691,
+          "material_id": 760,
+          "property_type": "Capacitance",
+          "test_conditions": ""
+        },
+        {
+          "unit": "μWh/cm²",
+          "value": 214.4,
+          "material_id": 760,
+          "property_type": "Energy_Density",
+          "test_conditions": ""
+        },
+        {
+          "unit": "F/g",
+          "value": 500,
+          "material_id": 761,
+          "property_type": "Capacitance",
+          "test_conditions": "at 1 A/g"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 19.6,
+          "material_id": 761,
+          "property_type": "Energy_Density",
+          "test_conditions": "at a specific power of 742.7 W/kg"
+        },
+        {
+          "unit": "F/g",
+          "value": 472,
+          "material_id": 761,
+          "property_type": "Capacitance",
+          "test_conditions": "at 5 mV/s in aqueous 2 M KOH by CV analysis"
+        },
+        {
+          "unit": "F/g",
+          "value": 400,
+          "material_id": 761,
+          "property_type": "Capacitance",
+          "test_conditions": "at 5 mV/s in aqueous 2 M KOH by CV analysis"
+        },
+        {
+          "unit": "%",
+          "value": 91,
+          "material_id": 761,
+          "property_type": "Capacitance",
+          "test_conditions": "after 4000 GCD cycles"
+        },
+        {
+          "unit": "F/g",
+          "value": 530,
+          "material_id": 762,
+          "property_type": "Capacitance",
+          "test_conditions": "at 1 A/g"
+        },
+        {
+          "unit": "F/g",
+          "value": 300,
+          "material_id": 762,
+          "property_type": "Capacitance",
+          "test_conditions": "at 50 A/g"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 23.8,
+          "material_id": 762,
+          "property_type": "Energy_Density",
+          "test_conditions": "at 300.2 W/kg"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 70,
+          "material_id": 763,
+          "property_type": "Energy_Density",
+          "test_conditions": "for symmetric MXene-based supercapacitors"
+        },
+        {
+          "unit": "W/kg",
+          "value": 5000,
+          "material_id": 763,
+          "property_type": "Power_Density",
+          "test_conditions": "for symmetric MXene-based supercapacitors"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 100,
+          "material_id": 763,
+          "property_type": "Energy_Density",
+          "test_conditions": "for asymmetric MXene-based supercapacitors"
+        },
+        {
+          "unit": "W/kg",
+          "value": 8000,
+          "material_id": 763,
+          "property_type": "Power_Density",
+          "test_conditions": "for asymmetric MXene-based supercapacitors"
+        },
+        {
+          "unit": "cycles",
+          "value": 25000,
+          "material_id": 763,
+          "property_type": "Cycling_Stability",
+          "test_conditions": "for symmetric MXene-based supercapacitors"
+        },
+        {
+          "unit": "cycles",
+          "value": 10000,
+          "material_id": 763,
+          "property_type": "Cycling_Stability",
+          "test_conditions": "for asymmetric MXene-based supercapacitors"
+        },
+        {
+          "unit": "C/g",
+          "value": 1873,
+          "material_id": 764,
+          "property_type": "Capacitance",
+          "test_conditions": "In a three-electrode setup"
+        },
+        {
+          "unit": "C/g",
+          "value": 948,
+          "material_id": 764,
+          "property_type": "Capacitance",
+          "test_conditions": "In a three-electrode setup"
+        },
+        {
+          "unit": "C/g",
+          "value": 1425,
+          "material_id": 764,
+          "property_type": "Capacitance",
+          "test_conditions": "In a three-electrode setup"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 93.17,
+          "material_id": 764,
+          "property_type": "Energy_Density",
+          "test_conditions": "GQDs MTZ AC asymmetric supercapacitor"
+        },
+        {
+          "unit": "W/kg",
+          "value": 1240,
+          "material_id": 764,
+          "property_type": "Power_Density",
+          "test_conditions": "GQDs MTZ AC asymmetric supercapacitor"
+        },
+        {
+          "unit": "%",
+          "value": 97,
+          "material_id": 764,
+          "property_type": "Capacity_Retention",
+          "test_conditions": "After 10,000 cycles"
+        },
+        {
+          "unit": "%",
+          "value": 95,
+          "material_id": 764,
+          "property_type": "Coulombic_Efficiency",
+          "test_conditions": "After 10,000 cycles"
+        },
+        {
+          "unit": "F/g",
+          "value": 2577,
+          "material_id": 765,
+          "property_type": "Capacitance",
+          "test_conditions": "at 1 A/g as an adjusted current density"
+        },
+        {
+          "unit": "cycles",
+          "value": 7000,
+          "material_id": 765,
+          "property_type": "Cycle_Life",
+          "test_conditions": "90.1% retention after 7000 cycles"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 85.6,
+          "material_id": 765,
+          "property_type": "Energy_Density",
+          "test_conditions": "when power density is altered at 678.5 W/kg"
+        },
+        {
+          "unit": "cycles",
+          "value": 10000,
+          "material_id": 765,
+          "property_type": "Cycle_Life",
+          "test_conditions": "88% retention after 10,000 GCD cycles"
+        },
+        {
+          "unit": "F/g",
+          "value": 31.7,
+          "material_id": 766,
+          "property_type": "Capacitance",
+          "test_conditions": "AQ-2-MX"
+        },
+        {
+          "unit": "F/g",
+          "value": 29.4,
+          "material_id": 766,
+          "property_type": "Capacitance",
+          "test_conditions": "MA-NTCDA-MX"
+        },
+        {
+          "unit": "MPa",
+          "value": 45.4,
+          "material_id": 766,
+          "property_type": "Interfacial_Shear_Strength",
+          "test_conditions": "AQ-1-MX"
+        },
+        {
+          "unit": "MPa",
+          "value": 51.7,
+          "material_id": 766,
+          "property_type": "Interfacial_Shear_Strength",
+          "test_conditions": "MA-PTCDA-MX"
+        },
+        {
+          "unit": "F/g",
+          "value": 581.2,
+          "material_id": 767,
+          "property_type": "Capacitance",
+          "test_conditions": "at 1 A/g"
+        },
+        {
+          "unit": "Wh/kg",
+          "value": 43.2,
+          "material_id": 767,
+          "property_type": "Energy_Density",
+          "test_conditions": "at 799.8 W/kg"
+        },
+        {
+          "unit": "%",
+          "value": 87.1,
+          "material_id": 767,
+          "property_type": "Capacitance",
+          "test_conditions": "after 10,000 cycles at 3 A/g"
+        },
+        {
+          "unit": "F/g",
+          "value": 417.4,
+          "material_id": 768,
+          "property_type": "Capacitance",
+          "test_conditions": "1 mV s in 1 M H2SO4"
+        }
+      ],
+      "applications": [
+        {
+          "unit": "ms",
+          "notes": "pressure sensors have fast response recovery times",
+          "value": 10,
+          "metric": "response_time",
+          "material_id": 759,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "Pa",
+          "notes": "pressure sensors have low detection thresholds",
+          "value": 1,
+          "metric": "detection_threshold",
+          "material_id": 759,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "kPa-1",
+          "notes": "pressure mode has high sensitivity",
+          "value": 5.11,
+          "metric": "sensitivity",
+          "material_id": 759,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "%",
+          "notes": "speech recognition accuracy with MLP neural network",
+          "value": 98.33,
+          "metric": "accuracy",
+          "material_id": 759,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "mm-1",
+          "notes": "proximity sensor has sensitivity",
+          "value": 0.63,
+          "metric": "sensitivity",
+          "material_id": 759,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "%",
+          "notes": "material recognition accuracy with MLP neural network",
+          "value": 99.85,
+          "metric": "accuracy",
+          "material_id": 759,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "%",
+          "notes": "speech recognition accuracy with MLP neural network",
+          "value": 98.33,
+          "metric": "accuracy",
+          "material_id": 759,
+          "application_type": "AI_applications"
+        },
+        {
+          "unit": "%",
+          "notes": "material recognition accuracy with MLP neural network",
+          "value": 99.85,
+          "metric": "accuracy",
+          "material_id": 759,
+          "application_type": "AI_applications"
+        },
+        {
+          "unit": "%",
+          "notes": "after 9500 cycles",
+          "value": 100,
+          "metric": "capacitance_retention",
+          "material_id": 760,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "Achieved at a specific power of 742.7 W/kg",
+          "value": 19.6,
+          "metric": "Energy_Density",
+          "material_id": 761,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "μA/μM/cm²",
+          "notes": "For furazolidone detection",
+          "value": 2.66,
+          "metric": "Sensitivity",
+          "material_id": 761,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "nM",
+          "notes": "For furazolidone detection",
+          "value": 16.1,
+          "metric": "Detection_Limit",
+          "material_id": 761,
+          "application_type": "sensors"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "Achieved by the asymmetric supercapacitor",
+          "value": 23.8,
+          "metric": "Energy_Density",
+          "material_id": 762,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "for symmetric MXene-based supercapacitors",
+          "value": 70,
+          "metric": "Energy_Density",
+          "material_id": 763,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "W/kg",
+          "notes": "for symmetric MXene-based supercapacitors",
+          "value": 5000,
+          "metric": "Power_Density",
+          "material_id": 763,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "for asymmetric MXene-based supercapacitors",
+          "value": 100,
+          "metric": "Energy_Density",
+          "material_id": 763,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "W/kg",
+          "notes": "for asymmetric MXene-based supercapacitors",
+          "value": 8000,
+          "metric": "Power_Density",
+          "material_id": 763,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "GQDs MTZ AC asymmetric supercapacitor",
+          "value": 93.17,
+          "metric": "Energy_Density",
+          "material_id": 764,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "W/kg",
+          "notes": "GQDs MTZ AC asymmetric supercapacitor",
+          "value": 1240,
+          "metric": "Power_Density",
+          "material_id": 764,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "cycles",
+          "notes": "97% capacity retention after 10,000 cycles",
+          "value": 10000,
+          "metric": "Cycling_Stability",
+          "material_id": 764,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "for solid-state asymmetrical supercapacitors",
+          "value": 85.6,
+          "metric": "Energy_Density",
+          "material_id": 765,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "F/g",
+          "notes": "AQ-2-MX showed a 14.8 fold increase over the control",
+          "value": 31.7,
+          "metric": "Capacitance",
+          "material_id": 766,
+          "application_type": "Energy_storage"
+        },
+        {
+          "unit": "F/g",
+          "notes": "MA-NTCDA-MX showed a 17.3 fold increase over the control",
+          "value": 29.4,
+          "metric": "Capacitance",
+          "material_id": 766,
+          "application_type": "Energy_storage"
+        },
+        {
+          "unit": "%",
+          "notes": "MA-PTCDA-MX showed 99.5% cycling stability in aqueous electrolyte",
+          "value": 99.5,
+          "metric": "Cycling_stability",
+          "material_id": 766,
+          "application_type": "Energy_storage"
+        },
+        {
+          "unit": "Wh/kg",
+          "notes": "asymmetric supercapacitor (ASC) with MXene rGO W18O49 and activated carbon",
+          "value": 43.2,
+          "metric": "energy_density",
+          "material_id": 767,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "V",
+          "notes": "asymmetric supercapacitor (ASC) with MXene rGO W18O49 and activated carbon",
+          "value": 1.6,
+          "metric": "voltage_window",
+          "material_id": 767,
+          "application_type": "energy_storage"
+        },
+        {
+          "unit": "F/g",
+          "notes": "Achieved in 1 M H2SO4 at 1 mV s",
+          "value": 417.4,
+          "metric": "specific_capacitance",
+          "material_id": 768,
+          "application_type": "energy_storage"
+        }
+      ]
+    }
+  }
+]
