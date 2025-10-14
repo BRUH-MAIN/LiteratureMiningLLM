@@ -1,17 +1,18 @@
 [project]
 name = "literatureminingllm"
 version = "0.1.0"
-description = "Add your description here"
+description = "Agentic flow for extracting structured research data about MXenes from JSON metadata files"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "langchain>=0.3.27",
-    "langchain-cohere>=0.4.5",
-    "langchain-community>=0.3.27",
-    "langchain-groq>=0.3.7",
-    "langchain-pinecone>=0.2.11",
-    "langgraph>=0.6.6",
+    "python-dotenv>=1.0.0",
+    "langchain-openai>=0.3.32",
+    "matplotlib>=3.10.6",
+    "numpy>=2.3.3",
     "pandas>=2.3.2",
-    "pinecone-text>=0.11.0",
-    "pypdf>=6.0.0",
+    "pydantic>=2.11.7",
+    "seaborn>=0.13.2",
+    "google-generativeai>=0.8.3",
+    "psycopg2-binary>=2.9.9",
+    "sqlalchemy>=2.0.23",
 ]
