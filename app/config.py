@@ -37,7 +37,22 @@ class Config:
     LLAMACPP_MODEL = os.getenv('LLAMACPP_MODEL', 'llama-model')
     LLAMACPP_TEMPERATURE = float(os.getenv('LLAMACPP_TEMPERATURE', '0.1'))
     LLAMACPP_MAX_TOKENS = int(os.getenv('LLAMACPP_MAX_TOKENS', '2048'))
-    
+
+    # DeepSeek settings (through OpenAI-compatible API) - used as the gold-standard extractor
+    DEEPSEEK_API_KEY = os.getenv('DEEPSEEK_API_KEY')
+    DEEPSEEK_BASE_URL = os.getenv('DEEPSEEK_BASE_URL', 'https://api.deepseek.com')
+    DEEPSEEK_MODEL = os.getenv('DEEPSEEK_MODEL', 'deepseek-v4-flash')
+    DEEPSEEK_TEMPERATURE = float(os.getenv('DEEPSEEK_TEMPERATURE', '0.1'))
+    DEEPSEEK_MAX_TOKENS = int(os.getenv('DEEPSEEK_MAX_TOKENS', '4096'))
+
+    # DeepSeek V4 Flash pricing (USD per 1M tokens), for benchmark cost tracking
+    DEEPSEEK_PRICE_PER_1M_INPUT = float(os.getenv('DEEPSEEK_PRICE_PER_1M_INPUT', '0.14'))
+    DEEPSEEK_PRICE_PER_1M_OUTPUT = float(os.getenv('DEEPSEEK_PRICE_PER_1M_OUTPUT', '0.28'))
+
+    # Kaggle settings - used by benchmark/kaggle/*.py to push/pull candidate model runs
+    KAGGLE_USERNAME = os.getenv('KAGGLE_USERNAME')
+    KAGGLE_KEY = os.getenv('KAGGLE_KEY')
+
     # Common LLM settings
     MAX_RETRIES = 3
     RETRY_DELAY = 1  # seconds
@@ -55,8 +70,11 @@ class Config:
         elif cls.LLM_PROVIDER == 'llamacpp':
             if not cls.LLAMACPP_BASE_URL:
                 raise ValueError("LLAMACPP_BASE_URL environment variable not set")
+        elif cls.LLM_PROVIDER == 'deepseek':
+            if not cls.DEEPSEEK_API_KEY:
+                raise ValueError("DEEPSEEK_API_KEY environment variable not set")
         else:
-            raise ValueError(f"Invalid LLM_PROVIDER: {cls.LLM_PROVIDER}. Must be 'gemini' or 'llamacpp'")
+            raise ValueError(f"Invalid LLM_PROVIDER: {cls.LLM_PROVIDER}. Must be 'gemini', 'llamacpp', or 'deepseek'")
         
         if not cls.POSTGRES_URL:
             raise ValueError("POSTGRES_URL environment variable not set")

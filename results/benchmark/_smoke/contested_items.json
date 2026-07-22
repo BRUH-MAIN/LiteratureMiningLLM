@@ -1,0 +1,308 @@
+[
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 202.5,
+      "unit": "mF/cm2",
+      "test_conditions": "Electrode, area specific capacitance"
+    },
+    "only_in": "deepseek-v4-pro"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 52.02,
+      "unit": "mF/cm2",
+      "test_conditions": "Device at 0 C, current density 5 mA/cm2"
+    },
+    "only_in": "deepseek-v4-pro"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 2.36,
+      "unit": "mF/cm2",
+      "test_conditions": "Device at 25 C"
+    },
+    "only_in": "deepseek-v4-pro"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 202.5,
+      "unit": "mF/cm^2",
+      "test_conditions": ""
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 52.02,
+      "unit": "mF/cm^2",
+      "test_conditions": "Device at 0°C, current density 5 mA/cm^2"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 2.36,
+      "unit": "mF/cm^2",
+      "test_conditions": "Device at 25°C"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "applications",
+    "item": {
+      "application_type": "energy_storage",
+      "metric": "Area specific capacitance at 0°C",
+      "notes": "Flexible asymmetric supercapacitor with CC Co(OH)2:Mn2+ T3 positive electrode, CC T3 negative electrode, PVA-sodium alginate hydrogel electrolyte with Ti3C2Tx",
+      "value": 52.02,
+      "unit": "mF/cm^2"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "applications",
+    "item": {
+      "application_type": "energy_storage",
+      "metric": "Capacitance retention after 1000 cycles at 0°C",
+      "notes": "Same device",
+      "value": 82.5,
+      "unit": "%"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "applications",
+    "item": {
+      "application_type": "energy_storage",
+      "metric": "Area specific capacitance at 25°C",
+      "notes": "Comparison",
+      "value": 2.36,
+      "unit": "mF/cm^2"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "materials",
+    "item": {
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "",
+      "synthesis_method": "HF etching and DMSO delamination",
+      "fabrication_method": ""
+    },
+    "only_in": "deepseek-v4-pro"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "materials",
+    "item": {
+      "mxene_composition": "",
+      "composite_material": "Vanadium nitride Porous carbon",
+      "synthesis_method": "simple and safe method using literature data with modifications",
+      "fabrication_method": ""
+    },
+    "only_in": "deepseek-v4-pro"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "materials",
+    "item": {
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "Vanadium nitride porous carbon (VN PC)",
+      "synthesis_method": "MXene: etching Al layers by immersion in aqueous HF solutions and delamination with DMSO; VN PC: synthesized via simple safe method using literature with modifications",
+      "fabrication_method": "Asymmetric cell with Ti3C2Tx as negative electrode and VN PC as positive electrode"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 105.0,
+      "unit": "F/g",
+      "test_conditions": "asymmetric cell, 1 A/g, 6 M KOH"
+    },
+    "other_item": {
+      "property_type": "Capacitance",
+      "value": 283.0,
+      "unit": "F/g",
+      "test_conditions": "3-electrode system, 0.5 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "deepseek-v4-pro",
+    "source_b": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 283.0,
+      "unit": "F/g",
+      "test_conditions": "Ti3C2Tx electrode, 3-electrode system, 0.5 A/g"
+    },
+    "other_item": {
+      "property_type": "Capacitance",
+      "value": 52.0,
+      "unit": "F/g",
+      "test_conditions": "3-electrode system, 0.5 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "deepseek-v4-pro",
+    "source_b": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 52.0,
+      "unit": "F/g",
+      "test_conditions": "VN PC electrode, 3-electrode system, 0.5 A/g"
+    },
+    "other_item": {
+      "property_type": "Capacitance",
+      "value": 105.0,
+      "unit": "F/g",
+      "test_conditions": "1 A/g in 6 M KOH"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "deepseek-v4-pro",
+    "source_b": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "properties",
+    "item": {
+      "property_type": "Voltage",
+      "value": 1.8,
+      "unit": "V",
+      "test_conditions": "asymmetric cell"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "applications",
+    "item": {
+      "application_type": "energy_storage",
+      "metric": "capacitance_retention",
+      "notes": "after 10,000 cycles",
+      "value": 73.0,
+      "unit": "%"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "materials",
+    "item": {
+      "mxene_composition": "",
+      "composite_material": "LaMnO3/MXene",
+      "synthesis_method": "hydrothermal",
+      "fabrication_method": ""
+    },
+    "only_in": "deepseek-v4-pro"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "materials",
+    "item": {
+      "mxene_composition": "",
+      "composite_material": "LaMnO3",
+      "synthesis_method": "hydrothermal",
+      "fabrication_method": "asymmetric supercapacitor device with MXene and LaMnO3 MXene electrodes"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 782.7,
+      "unit": "F/g",
+      "test_conditions": "at 5 mV/s for LaMnO3 NPs"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 136.13,
+      "unit": "F/g",
+      "test_conditions": "at 5 mV/s for ASC device"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "properties",
+    "item": {
+      "property_type": "Capacitance",
+      "value": 77.6,
+      "unit": "%",
+      "test_conditions": "after 5000 cycles at 10 A/g for ASC device"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "applications",
+    "item": {
+      "application_type": "energy_storage",
+      "metric": "cycling_retention",
+      "notes": "after 5000 cycles at 10 A/g for ASC device",
+      "value": 77.6,
+      "unit": "%"
+    },
+    "only_in": "deepseek-v4-pro"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "applications",
+    "item": {
+      "application_type": "energy_storage",
+      "metric": "cycling_stability",
+      "notes": "ASC device after 5000 cycles at 10 A/g",
+      "value": 77.6,
+      "unit": "%"
+    },
+    "only_in": "deepseek-v4-flash"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.142935",
+    "category": "applications",
+    "item": {
+      "application_type": "energy_storage",
+      "metric": "power_density",
+      "notes": "power density at which energy density of 51.1 Wh/kg was achieved",
+      "value": 2000.0,
+      "unit": "W/kg"
+    },
+    "only_in": "deepseek-v4-pro"
+  }
+]

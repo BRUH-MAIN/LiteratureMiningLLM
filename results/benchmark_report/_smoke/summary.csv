@@ -1,0 +1,4 @@
+model,mean_f1,materials_precision,materials_recall,materials_f1,materials_value_mismatches,properties_precision,properties_recall,properties_f1,properties_value_mismatches,applications_precision,applications_recall,applications_f1,applications_value_mismatches,total_papers,avg_latency_s,est_cost_usd,family,thinking_level
+consensus-gold,1.0,1.0,1.0,1.0,0,1.0,1.0,1.0,0,1.0,1.0,1.0,0,,,,consensus-gold,
+gemini-3.5-flash__high,0.5229134664618535,0.4,1.0,0.5714285714285715,0,0.5625,0.6,0.5806451612903225,1,0.35714285714285715,0.5,0.41666666666666663,1,5.0,10.599,0.0328,gemini-3.5-flash,high
+gemini-3.5-flash__low,0.4260112647209422,0.4,1.0,0.5714285714285715,0,0.5,0.5333333333333333,0.5161290322580646,0,0.18181818181818182,0.2,0.1904761904761905,0,5.0,2.575,0.0313,gemini-3.5-flash,low

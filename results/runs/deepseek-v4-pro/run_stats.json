@@ -1,0 +1,20 @@
+{
+  "run_key": "deepseek-v4-pro",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "thinking_level": null,
+  "thinking_enabled": true,
+  "total_papers": 60,
+  "successful_extractions": 60,
+  "failed_extractions": 0,
+  "total_time_s": 1757.11,
+  "avg_latency_s": 29.285,
+  "total_input_tokens": 73134,
+  "total_output_tokens": 142157,
+  "est_cost_usd": 0.1555,
+  "pricing": {
+    "input_per_1m": 0.435,
+    "output_per_1m": 0.87
+  },
+  "generated_at": "2026-07-18T23:54:54.708935"
+}

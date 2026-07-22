@@ -90,6 +90,9 @@ celerybeat.pid
 # Environments
 .env
 .venv
+
+# Kaggle API credentials
+kaggle.json
 env/
 venv/
 ENV/
@@ -117,3 +120,8 @@ dataset1/
 output/
 uv.lock
 .venv/
+
+# Generated Kaggle dataset upload bundle (rebuilt by benchmark/kaggle/prepare_kaggle_dataset.py)
+benchmark/kaggle/dataset_bundle/
+# Raw staging area for pulled Kaggle kernel output (fanned out into results/runs/ by pull_results.py)
+benchmark/kaggle/_pulled/

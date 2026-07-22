@@ -13,79 +13,37 @@ from typing import List, Dict, Any, Optional
 import time
 
 from app.llm_interface import LLMInterface
+from app.prompt_loader import PromptLoader
 from app.config import Config
 
 
 class Extractor:
     """Extraction agent using configurable LLM providers for structured data extraction"""
-    
-    def __init__(self, llm_provider: str = None):
+
+    def __init__(self, llm_provider: str = None, llm_interface: Optional[LLMInterface] = None):
         self.logger = logging.getLogger(__name__)
-        self.llm = LLMInterface(llm_provider)
-        
+        # llm_interface lets callers inject a pre-built LLMInterface wrapping a specific
+        # provider variant (e.g. LLMInterface.from_provider(GeminiProvider(model='gemini-3.1-pro',
+        # thinking_level='high'), 'gemini')) instead of the single Config-driven default per provider type.
+        self.llm = llm_interface or LLMInterface(llm_provider)
+        self.prompt_loader = PromptLoader()
+
         # Log which provider is being used
         provider_info = self.llm.get_provider_info()
         self.logger.info(f"Initialized extractor with {provider_info['provider']} - {provider_info.get('model', 'N/A')}")
-        
+
     def setup_gemini(self):
         """Deprecated method - keeping for backward compatibility"""
         self.logger.warning("setup_gemini() is deprecated. LLM initialization is now handled by LLMInterface")
         pass
-    
+
     def create_extraction_prompt(self, title: str, abstract: str, conclusion: str) -> str:
-        """Create a schema-guided prompt for data extraction"""
-        
-        prompt = f"""
-You are an expert materials science researcher specializing in MXenes. 
-Extract structured data from the following research paper about MXenes.
-
-PAPER TITLE: {title}
-
-ABSTRACT: {abstract}
-
-CONCLUSION: {conclusion}
-
-Please extract the following information and return it as a valid JSON object with this exact structure:
-
-{{
-    "materials": [
-        {{
-            "mxene_composition": "string (e.g., Ti3C2Tx, Ti2CTx, etc.)",
-            "composite_material": "string (any composite materials mentioned)",
-            "synthesis_method": "string (method used to synthesize the MXene)",
-            "fabrication_method": "string (method used to fabricate the final material/device)"
-        }}
-    ],
-    "properties": [
-        {{
-            "property_type": "string (standardized: Conductivity, Modulus, Stress, Seebeck_Coefficient, Resistivity, etc.)",
-            "value": "number (numeric value only)",
-            "unit": "string (standardized unit)",
-            "test_conditions": "string (any testing conditions mentioned)"
-        }}
-    ],
-    "applications": [
-        {{
-            "application_type": "string (sensors, energy_storage, shielding, AI_applications, etc.)",
-            "metric": "string (sensitivity, response_time, accuracy, threshold, etc.)",
-            "value": "number (numeric value only)",
-            "unit": "string (unit of the metric)",
-            "notes": "string (additional context)"
-        }}
-    ]
-}}
-
-EXTRACTION RULES:
-1. Only extract information explicitly mentioned in the text
-2. For property_type, use standardized names: "Conductivity", "Young_Modulus", "Fracture_Stress", "Seebeck_Coefficient", "Resistivity", "Capacitance", "Energy_Density", etc.
-3. For values, extract only numeric values (e.g., from "353.77 S m−1", extract 353.77)
-4. For units, use standardized forms (e.g., "S/m" for conductivity, "MPa" for stress, "GPa" for modulus)
-5. If MXene composition is not explicitly mentioned, leave as empty string
-6. If no relevant data found for a category, return empty array []
-7. Remove any duplicate entries within the same category
-
-Return only the JSON object, no additional text. /no_think
-"""
+        """Create a schema-guided prompt for data extraction from the shared prompts/extraction_prompt.txt template"""
+        prompt = self.prompt_loader.format_prompt(
+            'extraction_prompt', title=title, abstract=abstract, conclusion=conclusion
+        )
+        if not prompt:
+            raise RuntimeError("Failed to load/format prompts/extraction_prompt.txt")
         return prompt
     
     def extract_data_from_text(self, title: str, abstract: str, conclusion: str) -> Optional[Dict[str, Any]]:

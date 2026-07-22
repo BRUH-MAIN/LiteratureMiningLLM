@@ -12,7 +12,19 @@ dependencies = [
     "pandas>=2.3.2",
     "pydantic>=2.11.7",
     "seaborn>=0.13.2",
-    "google-generativeai>=0.8.3",
     "psycopg2-binary>=2.9.9",
     "sqlalchemy>=2.0.23",
+    "rapidfuzz>=3.14.5",
+    "kaggle>=2.2.3",
+    "google-genai>=2.12.1",
+]
+
+[project.optional-dependencies]
+semantic = [
+    "sentence-transformers>=3.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
 ]

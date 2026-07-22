@@ -1,0 +1,11 @@
+{
+  "run_key": "gemma-4-12b-it__medium",
+  "gguf_repo": "unsloth/gemma-4-12b-it-GGUF",
+  "gguf_filename": "gemma-4-12b-it-Q4_K_M.gguf",
+  "thinking_variant": "medium",
+  "total_papers": 60,
+  "successful_extractions": 60,
+  "failed_extractions": 0,
+  "total_time_s": 2982.24,
+  "avg_time_per_paper_s": 49.704
+}

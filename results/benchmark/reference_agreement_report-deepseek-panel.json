@@ -1,0 +1,37 @@
+{
+  "reference_panel": [
+    "deepseek-v4-pro",
+    "deepseek-v4-flash"
+  ],
+  "agreement_micro": {
+    "materials": {
+      "precision": 0.8142857142857143,
+      "recall": 0.6705882352941176,
+      "f1": 0.7354838709677418,
+      "value_mismatches": 0
+    },
+    "properties": {
+      "precision": 0.6909090909090909,
+      "recall": 0.6495726495726496,
+      "f1": 0.669603524229075,
+      "value_mismatches": 16
+    },
+    "applications": {
+      "precision": 0.62,
+      "recall": 0.49206349206349204,
+      "f1": 0.5486725663716814,
+      "value_mismatches": 5
+    }
+  },
+  "agreement_macro_f1": {
+    "materials": 0.725,
+    "properties": 0.6519012159283653,
+    "applications": 0.5775613275613276
+  },
+  "contested_item_counts": {
+    "applications": 148,
+    "materials": 41,
+    "properties": 134
+  },
+  "generated_at": "2026-07-18T23:55:58.842372"
+}

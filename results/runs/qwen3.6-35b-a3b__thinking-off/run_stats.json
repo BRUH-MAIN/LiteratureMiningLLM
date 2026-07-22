@@ -1,0 +1,11 @@
+{
+  "run_key": "qwen3.6-35b-a3b__thinking-off",
+  "gguf_repo": "unsloth/Qwen3.6-35B-A3B-GGUF",
+  "gguf_filename": "Qwen3.6-35B-A3B-UD-IQ4_XS.gguf",
+  "thinking_variant": "thinking-off",
+  "total_papers": 60,
+  "successful_extractions": 59,
+  "failed_extractions": 1,
+  "total_time_s": 7875.54,
+  "avg_time_per_paper_s": 131.259
+}

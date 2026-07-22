@@ -1,0 +1,19 @@
+[
+  {
+    "title": "A Ti3C2Tx-encapsulated Mn2+-doped Co(OH)2 nanosheets electrode grown on carbon cloth for low-temperature flexible supercapacitors",
+    "authors": "Wenfeng Zhang, Yan Shan, Xuegang Yu, Kezheng Chen",
+    "journal": "Electrochimica Acta",
+    "year": 2025,
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "sciencedirect_url": "https://www.sciencedirect.com/science/article/pii/S0013468624018425",
+    "issn": "0013-4686",
+    "abstract": "In general, most flexible supercapacitors with excellent performance at room temperature cannot work properly at relatively low temperatures (such as 0 C), mainly due to the poor cold resistance of the electrodes and electrolytes. In this paper, the carbon cloth was coated with positively charged Mn2+-doped Co(OH)2 coating by electrodeposition and then impregnated with negatively charged Ti3C2Tx nanosheets suspension (This electrode is named CC Co(OH)2:Mn2+ Tx, Where x is the number of impregnation Ti3C2Tx.). The results show that the obtained electrode has a good supercapacitor performance with the specific capacitance of 22.13 F g 1 (the area specific capacitance of the sample is 202.5 mF cm 2), which is attributed to the synergistic effect of Ti3C2Tx and the flower microstructure of Mn2+-doped Co(OH)2 coating. Ti3C2Tx was introduced to polyvinyl alcohol sodium alginate hydrogel electrolyte to obtain a new antifreezing organohydrogel and then a flexible asymmetric supercapacitor was assembled with CC Co(OH)2:Mn2+ T3 as the positive electrode, CC T3 as negative electrode, and the performance of the supercapacitor at 25 C and at 0 C were investigated. It was found the supercapacitor exhibited better performance at 0 C instead of 25 C. When the current density is 5 mA cm 2, the area specific capacitance of the supercapacitor at 0 C reaches 52.02 mF cm 2. After 1000 cycles, the supercapacitor has a capacitance retention rate of 82.5 at 0 C, which is much higher than that of 55.15 at 25 C. The reason may be related to the Ti3C2Tx and the crosslinked networks structures of composite hydrogel. The results show that the supercapacitor has excellent working ability at 0 C, which provides the possibility for the device to work normally in low temperature.",
+    "conclusion": "In summary, we have successfully prepared an unbonded CC Co(OH)2 :Mn2+ T3 flexible electrode, which is assembled by the electrostatic interaction between the positive charge coating deposited on the surface of carbon cloth and the electronegative Ti3 C2 Tx nanosheets. The electrodeposited Mn2+ -doped Co(OH)2 coating has a larger specific surface area and more active sites, which helps to improve the specific capacitance of the electrode. The mass specific capacitance of the best electrode reached 22.13 F g 1 . The electrode still has a Coulomb efficiency of 92.8 after 1000 charge and discharge cycles, demonstrating good cycle stability. Moreover, the flexible electrode is used as a positive electrode to assemble a supercapacitor with LiCl as electrolyte. The area specific capacitance of the device reaches 52.02 mF cm 2 at 0 C, much higher than that at 25 C (2.36 mF cm 2 ). Meanwhile, the supercapacitor still has a capacitance retention rate of 82.5 after 1000 cycles at 0 C, indicating the supercapacitor is suitable for operation at 0 C. The flexible electrodes and FSCs prepared in this study are expected to be applied in the fields of wearable devices, flexible sensor power supply and portable electronic devices. CRediT authorship contribution statement Wenfeng Zhang: Writing original draft, Validation, Methodology, Investigation, Formal analysis, Conceptualization. Yan Shan: Writing review editing, Supervision, Resources, Project administration,",
+    "keywords": [
+      "Flexible supercapacitors",
+      "Hypothermia",
+      "MXene",
+      "Neutral electrolyte"
+    ]
+  }
+]

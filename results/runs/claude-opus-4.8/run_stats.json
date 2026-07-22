@@ -1,0 +1,18 @@
+{
+  "run_key": "claude-opus-4.8",
+  "provider": "anthropic",
+  "model": "claude-opus-4-8-default",
+  "thinking_level": null,
+  "thinking_enabled": null,
+  "total_papers": 60,
+  "successful_extractions": 59,
+  "failed_extractions": 1,
+  "total_time_s": 425.53,
+  "avg_latency_s": 7.092,
+  "total_input_tokens": 121018,
+  "total_output_tokens": 44422,
+  "est_cost_usd": 1.7156,
+  "pricing": "real metered cost via Kaggle Model Proxy (kaggle_benchmarks Usage), not an estimate table",
+  "generated_at": "2026-07-22T15:39:00.176954",
+  "source": "kaggle_benchmarks (kbench) reference-panel run, see commands.md in this directory"
+}

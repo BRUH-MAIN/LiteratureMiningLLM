@@ -1,0 +1,71 @@
+[
+  {
+    "doi_url": "10.1000/fake1",
+    "title": "Fixture paper 1 - exact match case",
+    "extracted_data": {
+      "materials": [
+        {
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "bacterial cellulose",
+          "synthesis_method": "vacuum self-assembly",
+          "fabrication_method": "vacuum filtration"
+        }
+      ],
+      "properties": [
+        {
+          "property_type": "Conductivity",
+          "value": 353.77,
+          "unit": "S/m",
+          "test_conditions": "room temperature"
+        }
+      ],
+      "applications": [
+        {
+          "application_type": "sensors",
+          "metric": "sensitivity",
+          "value": 5.11,
+          "unit": "kPa⁻¹",
+          "notes": "pressure sensor"
+        }
+      ]
+    }
+  },
+  {
+    "doi_url": "10.1000/fake2",
+    "title": "Fixture paper 2 - tolerance/missing/hallucinated case",
+    "extracted_data": {
+      "materials": [
+        {
+          "mxene_composition": "Ti2CTx",
+          "composite_material": "",
+          "synthesis_method": "HF etching ",
+          "fabrication_method": "spray-coating"
+        }
+      ],
+      "properties": [
+        {
+          "property_type": "Conductivity",
+          "value": 1050.0,
+          "unit": "S/m",
+          "test_conditions": ""
+        }
+      ],
+      "applications": [
+        {
+          "application_type": "energy_storage",
+          "metric": "capacitance",
+          "value": 600.0,
+          "unit": "F/g",
+          "notes": ""
+        },
+        {
+          "application_type": "shielding",
+          "metric": "EMI_SE",
+          "value": 40.0,
+          "unit": "dB",
+          "notes": "hallucinated, not in gold"
+        }
+      ]
+    }
+  }
+]

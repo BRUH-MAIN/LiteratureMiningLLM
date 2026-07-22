@@ -1,0 +1,13 @@
+{
+  "id": "chiefkeef999/mxene-candidate-run",
+  "title": "MXene Candidate Run",
+  "code_file": "candidate_extraction.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["chiefkeef999/mxene-benchmark-subset"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

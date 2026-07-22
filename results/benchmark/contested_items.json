@@ -1,0 +1,4582 @@
+[
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+    "category": "properties",
+    "item": {
+      "value": 23.8,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "300.2 W/kg power density"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+    "category": "properties",
+    "item": {
+      "value": 300.2,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "23.8 Wh/kg energy density"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 530.0,
+      "notes": "pMT electrode at 1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 300.0,
+      "notes": "pMT electrode at 50 A/g, excellent rate performance",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 300.2,
+      "notes": "pMT-TPC asymmetric supercapacitor at an energy density of 23.8 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "",
+      "synthesis_method": "molten salt etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "",
+      "synthesis_method": "Molten salt etching"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "Lithium-ion batteries using multiscale porous MXene",
+      "unit": "",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "In situ formation of 3D MXene microgels induced by 2-methylimidazole, followed by vacuum filtration to form a self-standing porous film",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "2-methylimidazole-intercalated porous MXene film",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+    "category": "properties",
+    "item": {
+      "value": 799.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "energy density of 16.88 Wh/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+    "category": "properties",
+    "item": {
+      "value": 8.0,
+      "property_type": "Power_Density",
+      "unit": "kW/kg",
+      "test_conditions": "energy density of 13.11 Wh/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_stability",
+      "value": 90.4,
+      "notes": "capacitance retention after 10000 cycles for ASC device",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 13.11,
+      "notes": "M-MXene-5/activated carbon asymmetric supercapacitor at a power density of 8 kW/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 90.4,
+      "notes": "Cycling stability after 10000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "graphene",
+      "synthesis_method": "fluoride-based etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "carbon nanotubes (CNTs)",
+      "synthesis_method": "F-free etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "transition metal oxides",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "conducting polymers (CPs)",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "MOF",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti2CTx",
+      "composite_material": "",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "activated carbon",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "graphene",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "carbon nanotubes",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "transition metal oxides",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "conducting polymers",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "metal-organic frameworks",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "MXene-based hybrid composites for supercapacitor electrodes with high power density, extended cycle life, and quick charging/discharging times",
+      "unit": "",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+    "category": "properties",
+    "item": {
+      "value": 800.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "NGV-11//AC device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+    "category": "properties",
+    "item": {
+      "value": 93.24,
+      "property_type": "Cycling_Stability",
+      "unit": "%",
+      "test_conditions": "capacitance retention after 5000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+    "category": "properties",
+    "item": {
+      "value": 93.24,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "NGV-11 asymmetric supercapacitor device after 5000 cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_stability",
+      "value": 93.24,
+      "notes": "capacitance retention after 5000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 93.24,
+      "notes": "Measured after 5000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+    "category": "applications",
+    "item": {
+      "metric": "coulombic_efficiency",
+      "value": 96.96,
+      "notes": "Measured after 5000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "hydrothermal reaction and phosphorization process",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "NiCoP (Ni-Co phosphide)",
+      "synthesis_method": "hydrothermal reaction followed by phosphorization"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "asymmetric supercapacitor device fabrication",
+      "mxene_composition": "",
+      "composite_material": "ZIF derived porous nanocarbon (PNC)",
+      "synthesis_method": "ZIF derivation"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Hydrothermal reaction followed by phosphorization; asymmetric supercapacitor assembled using MX-3 NCP as the positive electrode and PNC as the negative electrode; planar device fabrication",
+      "mxene_composition": "",
+      "composite_material": "2D MXene-NiCoP hybrid; porous nanocarbon (PNC)",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "properties",
+    "item": {
+      "value": 93.8,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "After 10000 charge-discharge cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_stability",
+      "value": 93.8,
+      "notes": "capacitance retention after 10,000 cycles for ASC device",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 54.3,
+      "notes": "MX-3 NCP/PNC asymmetric supercapacitor at a power density of 565.6 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 32.6,
+      "notes": "MX-3 NCP/PNC asymmetric supercapacitor at a power density of 6270 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 93.8,
+      "notes": "Capacitance retained after 10000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+    "category": "properties",
+    "item": {
+      "value": 66.87,
+      "property_type": "Rate_Capability",
+      "unit": "%",
+      "test_conditions": "20 A/g"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+    "category": "properties",
+    "item": {
+      "value": 91.7,
+      "property_type": "Cycling_Stability",
+      "unit": "%",
+      "test_conditions": "after 5000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+    "category": "properties",
+    "item": {
+      "value": 99.0,
+      "property_type": "Coulombic_Efficiency",
+      "unit": "%",
+      "test_conditions": "after 5000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 1102.9,
+      "notes": "LDH/Ti3C2Tx composite electrode at 1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 47.3,
+      "notes": "LDH/Ti3C2Tx//AC hybrid supercapacitor (HSC) at 800 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+    "category": "applications",
+    "item": {
+      "metric": "rate_capability",
+      "value": 66.87,
+      "notes": "Measured at 20 A/g for the LDH/Ti3C2Tx nanohybrid",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+    "category": "applications",
+    "item": {
+      "metric": "coulombic_efficiency",
+      "value": 99.0,
+      "notes": "After 5000 cycles in the LDH/Ti3C2Tx-2/AC hybrid supercapacitor",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+    "category": "properties",
+    "item": {
+      "value": 110.0,
+      "property_type": "Specific_Capacity",
+      "unit": "C/g",
+      "test_conditions": "Asymmetric supercapacitor device (5-NGQD Ta4C3Tx//AC)"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+    "category": "properties",
+    "item": {
+      "value": 9000.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "Asymmetric supercapacitor device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+    "category": "properties",
+    "item": {
+      "value": 55.0,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "Asymmetric supercapacitor device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "SILAR deposition process",
+      "mxene_composition": "",
+      "composite_material": "CeO2 MXene",
+      "synthesis_method": "SILAR deposition process"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "SILAR deposition process",
+      "mxene_composition": "",
+      "composite_material": "MnO2 MXene",
+      "synthesis_method": "SILAR deposition process"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "SILAR deposition process",
+      "mxene_composition": "",
+      "composite_material": "CeO2 MnO2 MXene",
+      "synthesis_method": "SILAR deposition process"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "SILAR deposition process",
+      "mxene_composition": "",
+      "composite_material": "CeO2-MXene nanocomposite",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "SILAR deposition process",
+      "mxene_composition": "",
+      "composite_material": "MnO2-MXene nanocomposite",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "SILAR deposition process",
+      "mxene_composition": "",
+      "composite_material": "CeO2-MnO2-MXene nanocomposite",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 1370.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CV at scan rate of 1.0 mV/s, CeO2 MnO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 1123.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CeO2-MXene electrode; GCD at 0.5 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 1520.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "GCD at 0.5 A/g, CeO2 MnO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 873.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CeO2-MXene electrode; GCD at 1.0 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 1123.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "GCD at 0.5 A/g, CeO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 1270.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "MnO2-MXene electrode; GCD at 0.5 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 1270.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "GCD at 0.5 A/g, MnO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 1020.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "MnO2-MXene electrode; GCD at 1.0 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 873.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "GCD at 1.0 A/g, CeO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 1520.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CeO2-MnO2-MXene electrode; GCD at 0.5 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 1020.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "GCD at 1.0 A/g, MnO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 1265.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CeO2-MnO2-MXene electrode; GCD at 1.0 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 1265.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "GCD at 1.0 A/g, CeO2 MnO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 972.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CeO2-MXene electrode; CV at 1.0 mV/s"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 972.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CV at scan rate of 1.0 mV/s, CeO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 1125.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "MnO2-MXene electrode; CV at 1.0 mV/s"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 1125.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CV at scan rate of 1.0 mV/s, MnO2 MXene electrode"
+    },
+    "other_item": {
+      "value": 1370.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "CeO2-MnO2-MXene electrode; CV at 1.0 mV/s"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 32.68,
+      "property_type": "Crystallite_Size",
+      "unit": "nm",
+      "test_conditions": "Minimum of the reported nanocrystal size range for nanocrystals attached to MXene sheets"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "properties",
+    "item": {
+      "value": 38.55,
+      "property_type": "Crystallite_Size",
+      "unit": "nm",
+      "test_conditions": "Maximum of the reported nanocrystal size range for nanocrystals attached to MXene sheets"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "applications",
+    "item": {
+      "metric": "cyclic_stability",
+      "value": 73.5,
+      "notes": "CeO2 MnO2 MXene electrode maintained 73.5% of initial capacity after 10,000 cycles at 0.5 A/g (conclusion states 73.4%)",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 1520.0,
+      "notes": "CeO2 MnO2 MXene electrode for supercapacitor electrode application, GCD at 0.5 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "applications",
+    "item": {
+      "metric": "capacity_retention",
+      "value": 73.5,
+      "notes": "CeO2-MnO2-MXene supercapacitor electrode after 10000 full cycles at 0.5 A/g; value reported in the abstract",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+    "category": "applications",
+    "item": {
+      "metric": "capacity_retention",
+      "value": 73.4,
+      "notes": "CeO2-MnO2-MXene supercapacitor electrode after 10000 full cycles; value reported in the conclusion",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+    "category": "properties",
+    "item": {
+      "value": 4.5,
+      "property_type": "Breaking_Energy",
+      "unit": "MJ/m3",
+      "test_conditions": "tensile testing of free-standing fibers"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+    "category": "properties",
+    "item": {
+      "value": 4.5,
+      "property_type": "Energy_Density",
+      "unit": "MJ/m^3",
+      "test_conditions": "Breaking energy of densified free-standing MXene fibers"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Incorporation of MoSSe CNT into MXene films",
+      "mxene_composition": "",
+      "composite_material": "MoSSe CNT (MoSSe nanosheets wrapped around carbon nanotubes)",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Intercalation of MoSSe CNT (MoSSe nanosheets wrapped around carbon nanotubes) into MXene films",
+      "mxene_composition": "",
+      "composite_material": "MoSSe CNT/MXene",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+    "category": "properties",
+    "item": {
+      "value": 1819.0,
+      "property_type": "Capacitance",
+      "unit": "F/cm3",
+      "test_conditions": "Volumetric capacitance of MoSSe CNT MXene electrode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+    "category": "properties",
+    "item": {
+      "value": 1819.0,
+      "property_type": "Capacitance",
+      "unit": "F/cm^3",
+      "test_conditions": "Optimized MoSSe CNT/MXene electrode; volumetric capacitance"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+    "category": "applications",
+    "item": {
+      "metric": "gravimetric_capacitance",
+      "value": 585.0,
+      "notes": "Optimized MoSSe CNT/MXene supercapacitor electrode",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+    "category": "properties",
+    "item": {
+      "value": 48.9,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "Current density increased from 2 A/g to 20 A/g"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+    "category": "properties",
+    "item": {
+      "value": 97.7,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "After 2000 cycles at a scan rate of 100 mV/s"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 48.9,
+      "notes": "Remaining capacitance at 20 A/g compared to 2 A/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 197.62,
+      "notes": "Measured at 20 A/g in 5 M LiCl",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "cathode fabrication",
+      "mxene_composition": "",
+      "composite_material": "MWCNT-FeHCF (multi-walled carbon nanotubes-FeFe(CN)6)",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "properties",
+    "item": {
+      "value": 83.0,
+      "property_type": "Cycling_Stability",
+      "unit": "%",
+      "test_conditions": "capacitance retention after 2000 cycles, QSS AIHSC"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "properties",
+    "item": {
+      "value": 6000.0,
+      "property_type": "Cycling_Stability",
+      "unit": "cycles",
+      "test_conditions": "pre-intercalated MXene anode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "properties",
+    "item": {
+      "value": 6000.0,
+      "property_type": "Cycle_Life",
+      "unit": "cycles",
+      "test_conditions": "MXene-CTAB anode"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "properties",
+    "item": {
+      "value": 83.0,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "After 2000 cycles in the quasi-solid-state ammonium ion hybrid supercapacitor"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 252.0,
+      "notes": "MXene-CTAB anode for ammonium ion hybrid supercapacitor",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "applications",
+    "item": {
+      "metric": "pressure_monitoring_range",
+      "value": 11.0,
+      "notes": "pressure monitoring interval 1-11 N; can differentiate finger joint movements",
+      "unit": "N",
+      "application_type": "sensors"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "applications",
+    "item": {
+      "metric": "pressure_range_lower_limit",
+      "value": 1.0,
+      "notes": "Lower limit of the pressure-monitoring interval",
+      "unit": "N",
+      "application_type": "sensors"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+    "category": "applications",
+    "item": {
+      "metric": "pressure_range_upper_limit",
+      "value": 11.0,
+      "notes": "Upper limit of the pressure-monitoring interval",
+      "unit": "N",
+      "application_type": "sensors"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.materresbull.2023.112217",
+    "category": "properties",
+    "item": {
+      "value": 73.0,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "3 M KOH after 10,000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.materresbull.2023.112217",
+    "category": "properties",
+    "item": {
+      "value": 51.0,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "3 M Na2SO4 after 10,000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.materresbull.2023.112217",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 92.0,
+      "notes": "Supercapacitor application in 3 M KOH alkaline electrolyte at 2 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.materresbull.2023.112217",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 75.0,
+      "notes": "Supercapacitor application in 3 M Na2SO4 neutral electrolyte at 2 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.materresbull.2023.112217",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 73.0,
+      "notes": "Ti3C2Tx MXene in 3 M KOH after 10,000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.materresbull.2023.112217",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 51.0,
+      "notes": "Ti3C2Tx MXene in 3 M Na2SO4 after 10,000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+    "category": "properties",
+    "item": {
+      "value": 93.42,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "PANI/Ti3C2Tx/Ni3S4/AC asymmetric supercapacitor after 20000 cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+    "category": "properties",
+    "item": {
+      "value": 93.28,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "PPY/Ti3C2Tx/Ni3S4/AC asymmetric supercapacitor after 20000 cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+    "category": "properties",
+    "item": {
+      "value": 96.16,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "PEDOT/Ti3C2Tx/Ni3S4/AC asymmetric supercapacitor after 20000 cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 1500.0,
+      "notes": "Asymmetric supercapacitor operating power density",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "other_item": {
+      "metric": "energy_density",
+      "value": 60.2,
+      "notes": "PANI/Ti3C2Tx/Ni3S4/AC asymmetric supercapacitor at a power density of 1500 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 86.7,
+      "notes": "PPY/Ti3C2Tx/Ni3S4/AC asymmetric supercapacitor at a power density of 1500 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 53.4,
+      "notes": "PEDOT/Ti3C2Tx/Ni3S4/AC asymmetric supercapacitor at a power density of 1500 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Introduction of Ti3C2Tx into polyvinyl alcohol sodium alginate hydrogel electrolyte",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "polyvinyl alcohol sodium alginate hydrogel electrolyte (antifreezing organohydrogel)",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "value": 202.5,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "area specific capacitance of the electrode sample"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "value": 52.02,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "area specific capacitance of supercapacitor at 0 C, current density 5 mA/cm2"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "value": 2.36,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "area specific capacitance of supercapacitor at 25 C"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "value": 202.5,
+      "property_type": "Capacitance",
+      "unit": "mF/cm²",
+      "test_conditions": "CC-Co(OH)2:Mn2+-Tx electrode"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "value": 52.02,
+      "property_type": "Capacitance",
+      "unit": "mF/cm²",
+      "test_conditions": "Flexible asymmetric supercapacitor at 0 °C and 5 mA/cm²"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "properties",
+    "item": {
+      "value": 2.36,
+      "property_type": "Capacitance",
+      "unit": "mF/cm²",
+      "test_conditions": "Flexible asymmetric supercapacitor at 25 °C"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "applications",
+    "item": {
+      "metric": "area_specific_capacitance",
+      "value": 2.36,
+      "notes": "Flexible asymmetric supercapacitor tested at 25 °C",
+      "unit": "mF/cm²",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 55.15,
+      "notes": "After 1000 cycles at 25 °C",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_stability",
+      "value": 93.1,
+      "notes": "capacitance retention after 10,000 cycles at 500 mA g-1",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+    "category": "applications",
+    "item": {
+      "metric": "bending_flexibility",
+      "value": 90.0,
+      "notes": "asymmetric flexible device maintains performance under bending from 0 to 90 degrees; wearable applications",
+      "unit": "degrees",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 10.73,
+      "notes": "Asymmetric flexible solid-state hybrid supercapacitor",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 93.1,
+      "notes": "After 10000 cycles at 500 mA/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+    "category": "applications",
+    "item": {
+      "metric": "maximum_bending_angle",
+      "value": 90.0,
+      "notes": "Flexible device maintained stable electrochemical performance during bending from 0 to 90 degrees",
+      "unit": "degree",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "hydrothermal approach",
+      "mxene_composition": "W2C (tungsten carbide)",
+      "composite_material": "TC-3 FeNi-MnO2",
+      "synthesis_method": "hydrothermal method"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "hydrothermal approach",
+      "mxene_composition": "W2C (tungsten carbide)",
+      "composite_material": "TC-MnO2",
+      "synthesis_method": "hydrothermal method"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "hydrothermal approach",
+      "mxene_composition": "",
+      "composite_material": "TGO-3 FeNi-MnO2 (tungsten decorated reduced graphene oxide based FeNi codoped MnO2)",
+      "synthesis_method": "hydrothermal method"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "hydrothermal approach",
+      "mxene_composition": "",
+      "composite_material": "TGO-MnO2 (tungsten decorated reduced graphene oxide based MnO2)",
+      "synthesis_method": "hydrothermal method"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "hydrothermal approach",
+      "mxene_composition": "tungsten carbide",
+      "composite_material": "TC-MnO2; TC-3 FeNi-MnO2",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+    "category": "properties",
+    "item": {
+      "value": 317.42,
+      "property_type": "Surface_Area",
+      "unit": "m2/g",
+      "test_conditions": "TGO-3 FeNi-MnO2 sample, BET analysis"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+    "category": "properties",
+    "item": {
+      "value": 317.42,
+      "property_type": "Specific_Surface_Area",
+      "unit": "m2/g",
+      "test_conditions": "TGO-3 FeNi-MnO2 nanocomposite; BET analysis"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237046",
+    "category": "properties",
+    "item": {
+      "value": 98.81,
+      "property_type": "Cyclic_Stability",
+      "unit": "%",
+      "test_conditions": "capacity retention over 10,000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237046",
+    "category": "properties",
+    "item": {
+      "value": 88.0,
+      "property_type": "Pseudocapacitive_Contribution",
+      "unit": "%",
+      "test_conditions": "60 mV/s"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237046",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 1673.8,
+      "notes": "ZnSe-Ti3C2Tx composite electrode at 1 A/g for asymmetric pseudocapacitive supercapacitor (APSC)",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237046",
+    "category": "applications",
+    "item": {
+      "metric": "capacity_retention",
+      "value": 98.81,
+      "notes": "ZnSe-Ti3C2Tx composite electrode after 10000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237046",
+    "category": "applications",
+    "item": {
+      "metric": "pseudocapacitive_contribution",
+      "value": 88.0,
+      "notes": "Measured at a scan rate of 60 mV/s",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2025.165537",
+    "category": "properties",
+    "item": {
+      "value": 65.8,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1M Li2SO4 at 0.1 A/g"
+    },
+    "other_item": {
+      "value": 143.4,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 M Al2(SO4)3 electrolyte at 0.1 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2025.165537",
+    "category": "properties",
+    "item": {
+      "value": 134.4,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1M KOH at 0.1 A/g"
+    },
+    "other_item": {
+      "value": 65.8,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 M Li2SO4 electrolyte at 0.1 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2025.165537",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 143.4,
+      "notes": "Mo2VC2Tz film electrode in 1 M Al2(SO4)3 at 0.1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2025.165537",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 134.4,
+      "notes": "Mo2VC2Tz film electrode in 1 M KOH at 0.1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2025.165537",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 65.8,
+      "notes": "Mo2VC2Tz film electrode in 1 M Li2SO4 at 0.1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2025.165537",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_count",
+      "value": 20000.0,
+      "notes": "Cycling stability test in 1 M H2SO4 electrolyte",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "PMMA binder dispersion and mixing (same procedure as Ti3C2Tx-CNT)",
+      "mxene_composition": "",
+      "composite_material": "MnO2-CNT",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "properties",
+    "item": {
+      "value": 2.26,
+      "property_type": "Capacitance",
+      "unit": "F/cm2",
+      "test_conditions": "Ti3C2Tx-CNT anode in Na2SO4 electrolyte, 40 mg cm-2 active mass loading, negative potential window -1.1 to -0.3 V"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "properties",
+    "item": {
+      "value": 1.24,
+      "property_type": "Capacitance",
+      "unit": "F/cm2",
+      "test_conditions": "Asymmetric cell (Ti3C2Tx-CNT anode + MnO2-CNT cathode) at 3 mA cm-2, 1.6 V cell voltage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "properties",
+    "item": {
+      "value": 0.44,
+      "property_type": "Energy_Density",
+      "unit": "mWh/cm2",
+      "test_conditions": "Asymmetric device, maximum energy density, 1.6 V cell voltage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "properties",
+    "item": {
+      "value": 40.0,
+      "property_type": "Active_Mass_Loading",
+      "unit": "mg/cm^2",
+      "test_conditions": "Ti3C2Tx-CNT-PMMA composite electrode"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "properties",
+    "item": {
+      "value": 2.26,
+      "property_type": "Capacitance",
+      "unit": "F/cm^2",
+      "test_conditions": "Ti3C2Tx-CNT electrode in Na2SO4 electrolyte and a negative potential range"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "properties",
+    "item": {
+      "value": 1.24,
+      "property_type": "Capacitance",
+      "unit": "F/cm^2",
+      "test_conditions": "Ti3C2Tx-CNT anode/MnO2-CNT cathode asymmetric cell at 3 mA/cm^2 and 1.6 V"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "properties",
+    "item": {
+      "value": 0.44,
+      "property_type": "Energy_Density",
+      "unit": "mWh/cm^2",
+      "test_conditions": "Ti3C2Tx-CNT-20 anode/MnO2-CNT-20 cathode asymmetric device operating at 1.6 V"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_count",
+      "value": 1000.0,
+      "notes": "Asymmetric device exhibited good cyclic stability after 1000 cycles",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ceramint.2024.07.459",
+    "category": "properties",
+    "item": {
+      "value": -42.3,
+      "property_type": "Reflection_Loss",
+      "unit": "dB",
+      "test_conditions": "at 12.3 GHz"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ceramint.2024.07.459",
+    "category": "properties",
+    "item": {
+      "value": 5.6,
+      "property_type": "Effective_Absorption_Bandwidth",
+      "unit": "GHz",
+      "test_conditions": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ceramint.2024.07.459",
+    "category": "applications",
+    "item": {
+      "metric": "maximum_reflection_loss",
+      "value": -42.3,
+      "notes": "Achieved at 12.3 GHz; attributed to dielectric loss, magnetic loss of Ni nanoparticles, multiphase heterostructure reflections/scattering, and synergistic attenuation",
+      "unit": "dB",
+      "application_type": "microwave_absorption"
+    },
+    "other_item": {
+      "metric": "maximum_reflection_loss",
+      "value": 42.3,
+      "notes": "Measured at 12.3 GHz",
+      "unit": "dB",
+      "application_type": "microwave_absorption"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235894",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "MXene electrodes for supercapacitors",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "",
+      "synthesis_method": "Chemical vapor deposition (CVD)"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235894",
+    "category": "properties",
+    "item": {
+      "value": 39.5,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "scan rate of 2 mV/s, 48.6 nm thick electrode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235894",
+    "category": "properties",
+    "item": {
+      "value": 928.4,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "scan rate of 2 mV/s, 48.6 nm thick electrode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235894",
+    "category": "properties",
+    "item": {
+      "value": 442.6,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "current density of 0.5 A/g, GCD analysis"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235894",
+    "category": "properties",
+    "item": {
+      "value": 13.4,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "current density of 10 A/g, GCD analysis"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235894",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_stability",
+      "value": 85.0,
+      "notes": "Capacitance retention over 10,000 charge-discharge cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.178613",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "graphene fiber",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.178613",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "asymmetric fiber-shaped supercapacitor assembly",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "small-sized Ti3C2Tx-intercalated Ti3C2Tx fiber paired with graphene fiber",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.178613",
+    "category": "properties",
+    "item": {
+      "value": 80.7,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "after 10000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.178613",
+    "category": "properties",
+    "item": {
+      "value": 98.6,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "after 100 times bending"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.178613",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance",
+      "value": 271.35,
+      "notes": "s-M M fiber electrode at 1 A/g for fiber-shaped supercapacitor",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "other_item": {
+      "metric": "capacitance_retention",
+      "value": 80.7,
+      "notes": "s-M M fiber after 10000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.178613",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance",
+      "value": 62.98,
+      "notes": "asymmetrical FSC matching s-M M fiber with graphene fiber at 0.1 A/g; can drive LED electronics for wearable system",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "other_item": {
+      "metric": "capacitance_retention",
+      "value": 98.6,
+      "notes": "asymmetric fiber-shaped supercapacitor after 100 bending cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "properties",
+    "item": {
+      "value": 1.6,
+      "property_type": "Capacitance",
+      "unit": "F/cm2",
+      "test_conditions": "5 mA cm-2"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "properties",
+    "item": {
+      "value": 262.0,
+      "property_type": "Energy_Density",
+      "unit": "μWh/cm2",
+      "test_conditions": "5 mA cm-2"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "properties",
+    "item": {
+      "value": 2.7,
+      "property_type": "Power_Density",
+      "unit": "mW/cm2",
+      "test_conditions": "5 mA cm-2"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "properties",
+    "item": {
+      "value": 1.6,
+      "property_type": "Capacitance",
+      "unit": "F/cm²",
+      "test_conditions": "Current density of 5 mA/cm²"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "properties",
+    "item": {
+      "value": 262.0,
+      "property_type": "Energy_Density",
+      "unit": "μWh/cm²",
+      "test_conditions": "Assembled asymmetric supercapacitor"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "properties",
+    "item": {
+      "value": 2.7,
+      "property_type": "Power_Density",
+      "unit": "mW/cm²",
+      "test_conditions": "Assembled asymmetric supercapacitor"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "applications",
+    "item": {
+      "metric": "strain",
+      "value": 50.0,
+      "notes": "Favorable CV profile above 50% strain due to enhanced electrical conductivity from compression",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.131120",
+    "category": "applications",
+    "item": {
+      "metric": "compression_strain",
+      "value": 50.0,
+      "notes": "The supercapacitor showed a favorable cyclic voltammetry profile above this strain",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.nanoen.2021.106633",
+    "category": "properties",
+    "item": {
+      "value": 94.1,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "symmetric supercapacitor, at power density of 802.4 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.nanoen.2021.106633",
+    "category": "properties",
+    "item": {
+      "value": 7431.8,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "symmetric supercapacitor"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.nanoen.2021.106633",
+    "category": "properties",
+    "item": {
+      "value": 88.0,
+      "property_type": "Cycling_Stability",
+      "unit": "%",
+      "test_conditions": "after 10,000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.nanoen.2021.106633",
+    "category": "applications",
+    "item": {
+      "metric": "gravimetric_capacitance",
+      "value": 922.6,
+      "notes": "optimized battery-type electrode Fe1Ni3-LDH/Ti3C2Tx-MXene",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+    "category": "properties",
+    "item": {
+      "value": 94.0,
+      "property_type": "Capacity_Retention",
+      "unit": "%",
+      "test_conditions": "Ni-MOF MX 2/AC asymmetric supercapacitor after 10000 cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+    "category": "applications",
+    "item": {
+      "metric": "cyclic_stability",
+      "value": 94.0,
+      "notes": "capacity retention after 10,000 cycles for Ni-MOF/MX2//AC ASC device",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 736.0,
+      "notes": "Ni-MOF MX 2 supercapacitor electrode tested at 20 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 48.2,
+      "notes": "Ni-MOF MX 2/AC asymmetric supercapacitor at 750 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 23.3,
+      "notes": "Ni-MOF MX 2/AC asymmetric supercapacitor at 15000 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+    "category": "applications",
+    "item": {
+      "metric": "capacity_retention",
+      "value": 94.0,
+      "notes": "Ni-MOF MX 2/AC asymmetric supercapacitor after 10000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "properties",
+    "item": {
+      "value": 105.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 A/g in 6 M KOH, asymmetric cell"
+    },
+    "other_item": {
+      "value": 283.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Ti3C2Tx MXene electrode in a three-electrode system at 0.5 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "properties",
+    "item": {
+      "value": 283.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "0.5 A/g, 3-electrode system, Ti3C2Tx MXene"
+    },
+    "other_item": {
+      "value": 52.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "VN PC electrode in a three-electrode system at 0.5 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "properties",
+    "item": {
+      "value": 52.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "0.5 A/g, 3-electrode system, VN PC"
+    },
+    "other_item": {
+      "value": 105.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "VN PC/Ti3C2Tx asymmetric two-electrode cell at 1 A/g in 6 M KOH"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "category": "applications",
+    "item": {
+      "metric": "cell_voltage",
+      "value": 1.8,
+      "notes": "Operating voltage of the asymmetric supercapacitor",
+      "unit": "V",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "3D hierarchical composite synthesis with heterointerface engineering",
+      "mxene_composition": "",
+      "composite_material": "NiCo2O4 MXene LDH",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Heterointerface engineering of NiCo2O4 nanorods, MXene nanosheets, and NiCo-LDH nanoparticles; asymmetric supercapacitor assembled in a NiCo2O4/MXene/NiCo-LDH//AC configuration",
+      "mxene_composition": "",
+      "composite_material": "3D hierarchical NiCo2O4/MXene/NiCo-LDH composite",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "properties",
+    "item": {
+      "value": 2.58,
+      "property_type": "Bandgap",
+      "unit": "eV",
+      "test_conditions": "NiCo2O4 MXene LDH composite"
+    },
+    "other_item": {
+      "value": 4.0,
+      "property_type": "Bandgap",
+      "unit": "eV",
+      "test_conditions": "Pristine NiCo2O4"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "properties",
+    "item": {
+      "value": 4.0,
+      "property_type": "Bandgap",
+      "unit": "eV",
+      "test_conditions": "pristine NiCo2O4"
+    },
+    "other_item": {
+      "value": 2.58,
+      "property_type": "Bandgap",
+      "unit": "eV",
+      "test_conditions": "NiCo2O4/MXene/NiCo-LDH composite"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "properties",
+    "item": {
+      "value": 5066.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 A/g"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "properties",
+    "item": {
+      "value": 97.82,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "after 10,000 cycles at 10 A/g"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 5066.0,
+      "notes": "NiCo2O4/MXene/NiCo-LDH electrode measured at 1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 97.82,
+      "notes": "After 10000 charge cycles at 10 A/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "properties",
+    "item": {
+      "value": 1.4,
+      "property_type": "Potential_Window",
+      "unit": "V",
+      "test_conditions": "solid-state asymmetric supercapacitor"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "properties",
+    "item": {
+      "value": 1.4,
+      "property_type": "Operating_Potential_Window",
+      "unit": "V",
+      "test_conditions": "S-NaOH-025-AC solid-state asymmetric supercapacitor"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "properties",
+    "item": {
+      "value": 1.33,
+      "property_type": "Electrolysis_Potential",
+      "unit": "V",
+      "test_conditions": "S-NaOH-05 electrolyzer in KOH + CH3CH2OH electrolyte at 0.5 A/g"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "properties",
+    "item": {
+      "value": 0.5,
+      "property_type": "Current_Density",
+      "unit": "A/g",
+      "test_conditions": "S-NaOH-05 electrolyzer in KOH + CH3CH2OH electrolyte at 1.33 V"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 97.9,
+      "notes": "Solid-state asymmetric supercapacitor at 0.25 A/g, operating potential window of 1.4 V",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "other_item": {
+      "metric": "specific_capacitance",
+      "value": 240.1,
+      "notes": "Co3O4/Ti3C2Tx electrode tested in 6 M KOH at 0.1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "electrolyzer_potential",
+      "value": 1.33,
+      "notes": "H2 production in KOH + CH3CH2OH electrolyte to deliver current density of 0.5 A/g",
+      "unit": "V",
+      "application_type": "energy_conversion"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 97.9,
+      "notes": "S-NaOH-025-AC solid-state asymmetric supercapacitor tested at 0.25 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "operating_potential_window",
+      "value": 1.4,
+      "notes": "Solid-state asymmetric supercapacitor",
+      "unit": "V",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 95.9,
+      "notes": "Solid-state asymmetric supercapacitor at a power density of 630.4 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 630.4,
+      "notes": "Solid-state asymmetric supercapacitor at an energy density of 95.9 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "electrolyzer_potential",
+      "value": 1.33,
+      "notes": "S-NaOH-05 electrolyzer in KOH + CH3CH2OH electrolyte at 0.5 A/g for energy-saving H2 production",
+      "unit": "V",
+      "application_type": "hydrogen_production"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ijhydene.2022.05.101",
+    "category": "applications",
+    "item": {
+      "metric": "current_density",
+      "value": 0.5,
+      "notes": "Achieved at 1.33 V in KOH + CH3CH2OH electrolyte",
+      "unit": "A/g",
+      "application_type": "hydrogen_production"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Asymmetric supercapacitor device with LaMnO3 MXene as cathode and MXene as anode",
+      "mxene_composition": "",
+      "composite_material": "LaMnO3 (lanthanum manganite perovskite) / MXene nanocomposite",
+      "synthesis_method": "Hydrothermal technique"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Simple hydrothermal technique; asymmetric supercapacitor assembled using LaMnO3/MXene composite as the cathode and MXene as the anode",
+      "mxene_composition": "",
+      "composite_material": "LaMnO3 nanoparticles decorated on MXene nanosheets",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "applications",
+    "item": {
+      "metric": "overpotential",
+      "value": 446.1,
+      "notes": "Oxygen evolution reaction at 10 mA/cm2 in 1 M KOH",
+      "unit": "mV",
+      "application_type": "energy_conversion"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "applications",
+    "item": {
+      "metric": "tafel_slope",
+      "value": 88.31,
+      "notes": "OER in 1 M KOH",
+      "unit": "mV/dec",
+      "application_type": "energy_conversion"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_retention",
+      "value": 77.6,
+      "notes": "Asymmetric supercapacitor after 5000 cycles at 10 A/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "applications",
+    "item": {
+      "metric": "OER_overpotential",
+      "value": 446.1,
+      "notes": "At 10 mA/cm^2 in 1 M KOH",
+      "unit": "mV",
+      "application_type": "water_splitting"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "category": "applications",
+    "item": {
+      "metric": "Tafel_slope",
+      "value": 88.31,
+      "notes": "Oxygen evolution reaction in 1 M KOH",
+      "unit": "mV/dec",
+      "application_type": "water_splitting"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235044",
+    "category": "properties",
+    "item": {
+      "value": 5.72,
+      "property_type": "Interlayer_Spacing",
+      "unit": "Å",
+      "test_conditions": "(002) plane, initial state, ex-situ electrochemical XRD"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.235044",
+    "category": "properties",
+    "item": {
+      "value": 7.0,
+      "property_type": "Interlayer_Spacing",
+      "unit": "Å",
+      "test_conditions": "(002) plane, expanded state, ex-situ electrochemical XRD"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237935",
+    "category": "properties",
+    "item": {
+      "value": 155.0,
+      "property_type": "Capacitance",
+      "unit": "mAh/g",
+      "test_conditions": "aqueous sodium electrolyte"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237935",
+    "category": "properties",
+    "item": {
+      "value": 155.0,
+      "property_type": "Specific_Capacity",
+      "unit": "mAh/g",
+      "test_conditions": "aqueous sodium electrolyte"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237935",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_stability",
+      "value": 5000.0,
+      "notes": "excellent stability, rate performance, and Coulombic efficiency maintained over charge-discharge cycles",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "other_item": {
+      "metric": "coin_cell_cycle_stability",
+      "value": 1000.0,
+      "notes": "CR2032 coin cells showed operating stability and specific-property retention during 1000 cycles.",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237935",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_life",
+      "value": 5000.0,
+      "notes": "Performance metrics were maintained over 5000 charge-discharge cycles.",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.142935",
+    "category": "properties",
+    "item": {
+      "value": 2000.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "Ti3C2Tx-CA composite electrode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.142935",
+    "category": "properties",
+    "item": {
+      "value": 4.8,
+      "property_type": "Nitrogen_Doping",
+      "unit": "at.%",
+      "test_conditions": "Ti3C2Tx-CA composite electrode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.142935",
+    "category": "properties",
+    "item": {
+      "value": 4.8,
+      "property_type": "Nitrogen_Content",
+      "unit": "at.%",
+      "test_conditions": "Ti3C2Tx-cyanuric acid composite electrode"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 260.23,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "P1M2-P1M2 SSC, 0.5 A/g"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 176.46,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "P1M2-rGO ASC, 0.1 A/g"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 35.29,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "ASC device, at power density 240 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 26.22,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "ASC device, at power density 1200 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 13.01,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "SSC device, at power density 600 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 2.63,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "SSC device, at power density 12035 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 240.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "ASC device, at energy density 35.29 Wh/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "properties",
+    "item": {
+      "value": 1200.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "ASC device, at energy density 26.22 Wh/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "LED_operation_time",
+      "value": 2.0,
+      "notes": "Three ASC devices in series glowed a red LED for 2 min",
+      "unit": "min",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 260.23,
+      "notes": "P1M2-P1M2 symmetric solid-state supercapacitor at 0.5 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 176.46,
+      "notes": "P1M2-rGO asymmetric solid-state supercapacitor at 0.1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_energy",
+      "value": 13.01,
+      "notes": "P1M2-P1M2 symmetric device at 600 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_energy",
+      "value": 2.63,
+      "notes": "P1M2-P1M2 symmetric device at 12035 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_energy",
+      "value": 35.29,
+      "notes": "P1M2-rGO asymmetric device at 240 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_energy",
+      "value": 26.22,
+      "notes": "P1M2-rGO asymmetric device at 1200 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_power",
+      "value": 600.0,
+      "notes": "P1M2-P1M2 symmetric device at 13.01 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_power",
+      "value": 12035.0,
+      "notes": "P1M2-P1M2 symmetric device at 2.63 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_power",
+      "value": 240.0,
+      "notes": "P1M2-rGO asymmetric device at 35.29 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "specific_power",
+      "value": 1200.0,
+      "notes": "P1M2-rGO asymmetric device at 26.22 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.polymer.2025.128185",
+    "category": "applications",
+    "item": {
+      "metric": "LED_operation_time",
+      "value": 2.0,
+      "notes": "Red LED powered by three P1M2-rGO asymmetric devices connected in series",
+      "unit": "min",
+      "application_type": "portable_electronics"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163886",
+    "category": "applications",
+    "item": {
+      "metric": "overpotential",
+      "value": 131.0,
+      "notes": "Ti3C2Tx upright electrode for hydrogen evolution reaction (HER) at 10 mA cm-2 in 1 M KOH",
+      "unit": "mV",
+      "application_type": "energy_conversion"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163886",
+    "category": "applications",
+    "item": {
+      "metric": "stability",
+      "value": 24.0,
+      "notes": "Excellent stability in 1 M KOH for HER",
+      "unit": "h",
+      "application_type": "energy_conversion"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163886",
+    "category": "applications",
+    "item": {
+      "metric": "overpotential",
+      "value": 131.0,
+      "notes": "Ti3C2Tx upright Ni nanorod electrode at 10 mA/cm2 in 1 M KOH",
+      "unit": "mV",
+      "application_type": "hydrogen_evolution_reaction"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163886",
+    "category": "applications",
+    "item": {
+      "metric": "stability",
+      "value": 24.0,
+      "notes": "Ti3C2Tx upright Ni nanorod electrode in 1 M KOH",
+      "unit": "h",
+      "application_type": "hydrogen_evolution_reaction"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117669",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Vacuum-assisted filtration",
+      "mxene_composition": "",
+      "composite_material": "MXene/rGO/MoO3 (reduced graphene oxide and MoO3 nanofibers)",
+      "synthesis_method": "Hydrothermal (MoO3 nanowires) and ascorbic acid reduction (rGO)"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117669",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Vacuum-assisted filtration; MoO3 nanowires synthesized hydrothermally and rGO nanosheets prepared by ascorbic acid reduction",
+      "mxene_composition": "",
+      "composite_material": "MXene/rGO/MoO3 film",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117669",
+    "category": "properties",
+    "item": {
+      "value": 800.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "energy density of 54 Wh/kg (ASC)"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117669",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 800.0,
+      "notes": "At an energy density of 54 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtcomm.2025.111864",
+    "category": "properties",
+    "item": {
+      "value": 88.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "MoS2/MXene electrode annealed at 850 °C, concentration ratio 0.04:0.4 M"
+    },
+    "other_item": {
+      "value": 60.41,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Unannealed MoS2/MXene electrode"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtcomm.2025.111864",
+    "category": "properties",
+    "item": {
+      "value": 60.41,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Unannealed MoS2/MXene electrode"
+    },
+    "other_item": {
+      "value": 88.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Annealed at 850 °C; precursor concentration ratio (NH4)6Mo7O24·4H2O:C2H5NS of 0.04:0.4 M"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtcomm.2025.111864",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_improvement",
+      "value": 1.46,
+      "notes": "Improvement in electrochemical performance after annealing at 850 °C compared to unannealed electrode",
+      "unit": "fold",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtcomm.2025.111864",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 88.0,
+      "notes": "Supercapacitor electrode annealed at 850 °C; approximately 1.46 times the capacitance of the unannealed electrode",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtcomm.2025.111864",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_life",
+      "value": 15000.0,
+      "notes": "Maintained 100% capacitance retention at a current density of 20 A/g",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179588",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Self-assembly into hydrogel using graphene oxide as conductive binder with ascorbic acid as reducing agent",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "K+-Ti3C2TX-RGO hydrogel (K+-intercalated Ti3C2TX-reduced graphene oxide)",
+      "synthesis_method": "KOH solution treatment for K+ ion intercalation"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179588",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "KOH treatment for K+ intercalation and partial removal of terminal -F groups, followed by mixing with graphene oxide, ascorbic acid reduction, and self-assembly into a 3D hydrogel; used as the cathode with zinc foil as the anode",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "K+-Ti3C2Tx-RGO hydrogel",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179588",
+    "category": "properties",
+    "item": {
+      "value": 999.99,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "at energy density of 141.03 Wh/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179588",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 253.86,
+      "notes": "ZHSC at 1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179588",
+    "category": "applications",
+    "item": {
+      "metric": "energy_density",
+      "value": 141.03,
+      "notes": "ZHSC at 999.99 W/kg",
+      "unit": "Wh/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "pristine MXenes",
+      "synthesis_method": "HF etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "doped MXene",
+      "synthesis_method": "LiF/HCl etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "MXenes carbonaceous nanocomposites",
+      "synthesis_method": "H3PO4 etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "MXenes transition metal oxide composites",
+      "synthesis_method": "DES etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "MXenes transition metal-dichalcogenides composites",
+      "synthesis_method": "TBAOH etching"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "",
+      "synthesis_method": "HF-based etching"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "",
+      "synthesis_method": "LiF/HCl etching"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "",
+      "synthesis_method": "H3PO4 etching"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "",
+      "synthesis_method": "deep eutectic solvent (DES) etching"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "",
+      "synthesis_method": "TBAOH etching"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "ultrasonication-assisted delamination",
+      "mxene_composition": "",
+      "composite_material": "",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "carbonaceous material",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "transition metal oxide",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "transition metal dichalcogenide",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "",
+      "composite_material": "heteroatom-doped MXene",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "applications",
+    "item": {
+      "metric": "detection_target",
+      "value": null,
+      "notes": "Electrochemical detection of biomolecules such as glucose, ascorbic acid, uric acid, dopamine, microRNAs, l-methionine, melatonin, cortisol",
+      "unit": "",
+      "application_type": "sensors"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": null,
+      "notes": "MXene-based supercapacitor electrodes offered high specific capacitance, excellent cycling stability, and rate capability",
+      "unit": "",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117038",
+    "category": "properties",
+    "item": {
+      "value": 167.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 A/g current density, ASC device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117038",
+    "category": "properties",
+    "item": {
+      "value": 59.38,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "ASC device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117038",
+    "category": "properties",
+    "item": {
+      "value": 2055.46,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "ASC device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117038",
+    "category": "properties",
+    "item": {
+      "value": 98.0,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "MCuSe electrode after 1000 cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117038",
+    "category": "applications",
+    "item": {
+      "metric": "cyclic_stability",
+      "value": 93.0,
+      "notes": "Capacitance retention after 5000 cycles for ASC device",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117038",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 800.0,
+      "notes": "Asymmetric supercapacitor; value reported in the conclusion",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117588",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "MXene-conducting polymer composites",
+      "synthesis_method": "Etching with concentrated HCl and HF"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117588",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Polymerization",
+      "mxene_composition": "",
+      "composite_material": "MXene-conducting polymer composite",
+      "synthesis_method": "Etching with concentrated HCl and HF"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2025.117588",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "MXene-polymer composites used for high-performance supercapacitors (symmetrical SSC and asymmetrical ASC)",
+      "unit": "",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "template method",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "carbon-based materials",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "self-assembly method",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "metal oxides",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "3D printing method",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "spinel",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "sacrificial template",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "polymers",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "supercapacitors",
+      "unit": "",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "electromagnetic interference shielding and microwave absorption",
+      "unit": "",
+      "application_type": "shielding"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "piezoresistive/pressure sensors",
+      "unit": "",
+      "application_type": "sensors"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "seawater desalination",
+      "unit": "",
+      "application_type": "desalination"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2023.172219",
+    "category": "applications",
+    "item": {
+      "metric": "",
+      "value": null,
+      "notes": "catalysis via microstructure regulation",
+      "unit": "",
+      "application_type": "catalysis"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.ceramint.2023.11.131",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 800.0,
+      "notes": "Corresponding to energy density of 49.8 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2021.149710",
+    "category": "properties",
+    "item": {
+      "value": 38.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "scan rate of 300 mV/s (pure PAN-derived CNF)"
+    },
+    "other_item": {
+      "value": 120.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Ti3C2Tx MXene CNF electrode at a scan rate of 2 mV/s"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2021.149710",
+    "category": "properties",
+    "item": {
+      "value": 120.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "scan rate of 2 mV/s"
+    },
+    "other_item": {
+      "value": 38.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Pure PAN-derived CNF electrode at a scan rate of 300 mV/s"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "In-situ nucleation and growth of NiCo2S4 on Zn2+-predoped amino-functionalized multilayer MXene",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "Zn-N-MX@NiCo2S4 (Zn-N-MX NCS)",
+      "synthesis_method": "Amino functionalization followed by Zn2+ intercalation and in-situ growth of NiCo2S4"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Amino functional groups were adsorbed onto multilayer Ti-based MXene, followed by Zn2+ intercalation and in-situ growth and nucleation of NiCo2S4; the composite was integrated with activated carbon to fabricate an asymmetric supercapacitor.",
+      "mxene_composition": "",
+      "composite_material": "Zn-N-MX/NiCo2S4 (Zn-N-MX NCS)",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "properties",
+    "item": {
+      "value": 150.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 A/g, Zn1.0-N-MX NCS AC ASC"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "properties",
+    "item": {
+      "value": 53.3,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "800 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_stability",
+      "value": 87.5,
+      "notes": "Capacitance retention after 5000 cycles for Zn1.0-N-MX NCS AC ASC",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 800.0,
+      "notes": "Power density at which energy density of 53.3 Wh/kg achieved",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 150.0,
+      "notes": "Zn1.0-N-MX NCS/AC asymmetric supercapacitor at 1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 87.5,
+      "notes": "Retention of initial capacitance after 5000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtener.2024.101636",
+    "category": "properties",
+    "item": {
+      "value": 131.46,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "maximum areal capacitance"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtener.2024.101636",
+    "category": "properties",
+    "item": {
+      "value": 131.46,
+      "property_type": "Capacitance",
+      "unit": "mF/cm²",
+      "test_conditions": "Maximum areal capacitance of the hybrid microsupercapacitor"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtener.2024.101636",
+    "category": "properties",
+    "item": {
+      "value": 1.2,
+      "property_type": "Voltage_Window",
+      "unit": "V",
+      "test_conditions": "Hybrid microsupercapacitor operating voltage window"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.mtener.2024.101636",
+    "category": "applications",
+    "item": {
+      "metric": "areal_capacitance",
+      "value": 131.46,
+      "notes": "In-plane hybrid microsupercapacitor using a covalent organic framework positive electrode and Ti3C2Tx MXene negative electrode",
+      "unit": "mF/cm²",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matlet.2023.134965",
+    "category": "properties",
+    "item": {
+      "value": 380.0,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "all-solid-state supercapacitor device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matlet.2023.134965",
+    "category": "properties",
+    "item": {
+      "value": 68.4,
+      "property_type": "Energy_Density",
+      "unit": "μWh/cm2",
+      "test_conditions": "at 540 μW/cm2"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matlet.2023.134965",
+    "category": "properties",
+    "item": {
+      "value": 380.0,
+      "property_type": "Capacitance",
+      "unit": "mF/cm²",
+      "test_conditions": "Flexible all-solid-state supercapacitor device"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.matlet.2023.134965",
+    "category": "properties",
+    "item": {
+      "value": 68.4,
+      "property_type": "Energy_Density",
+      "unit": "μWh/cm²",
+      "test_conditions": "At a power density of 540 μW/cm² in a flexible all-solid-state supercapacitor device"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "properties",
+    "item": {
+      "value": 745.4,
+      "property_type": "Capacitance",
+      "unit": "F/cm3",
+      "test_conditions": "Ti3C2Tx-P electrode (volumetric capacitance)"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "properties",
+    "item": {
+      "value": 438.5,
+      "property_type": "Capacitance",
+      "unit": "F/cm3",
+      "test_conditions": "raw Ti3C2Tx electrode (volumetric capacitance)"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "properties",
+    "item": {
+      "value": 103.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "quasi-solid supercapacitor device at 5 mV/s"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "properties",
+    "item": {
+      "value": 15.8,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "power density of 250 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "properties",
+    "item": {
+      "value": 6.1,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "power density of 10000 W/kg"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "properties",
+    "item": {
+      "value": 745.4,
+      "property_type": "Capacitance",
+      "unit": "F/cm^3",
+      "test_conditions": "P-doped Ti3C2Tx flexible electrode"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "properties",
+    "item": {
+      "value": 438.5,
+      "property_type": "Capacitance",
+      "unit": "F/cm^3",
+      "test_conditions": "Raw Ti3C2Tx electrode"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.apsusc.2022.154817",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 476.9,
+      "notes": "Ti3C2Tx-P flexible electrode for supercapacitor",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "other_item": {
+      "metric": "specific_capacitance",
+      "value": 103.0,
+      "notes": "Flexible quasi-solid-state supercapacitor assembled using Ti3C2Tx-P film; measured at 5 mV/s",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.gee.2024.08.004",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Self-prepared organic molecule modification",
+      "mxene_composition": "",
+      "composite_material": "HQ-RGO (hydroquinone modified reduced graphene oxide)",
+      "synthesis_method": ""
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.gee.2024.08.004",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Asymmetric supercapacitor assembly using DAAQ-M G-40 as the negative electrode and hydroquinone-modified reduced graphene oxide (HQ-RGO-360) as the positive electrode with mass-balanced electrodes",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "HQ-RGO-360/DAAQ-M G-40 asymmetric supercapacitor",
+      "synthesis_method": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.gee.2024.08.004",
+    "category": "properties",
+    "item": {
+      "value": 306.0,
+      "property_type": "Capacity",
+      "unit": "C/g",
+      "test_conditions": "1 A/g in EmimBF4 electrolyte, DAAQ-M/G negative electrode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.gee.2024.08.004",
+    "category": "properties",
+    "item": {
+      "value": 306.0,
+      "property_type": "Specific_Capacity",
+      "unit": "C/g",
+      "test_conditions": "DAAQ-M G negative electrode at 1 A/g in EmimBF4 electrolyte"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.gee.2024.08.004",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_stability",
+      "value": 80.0,
+      "notes": "Retention of initial specific capacitance after 9000 cycles for HQ-RGO-360//DAAQ-M/G-40 ASC device",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.gee.2024.08.004",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 80.0,
+      "notes": "Retention of initial specific capacitance after 9000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.gee.2024.08.004",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_count",
+      "value": 9000.0,
+      "notes": "HQ-RGO-360/DAAQ-M G-40 asymmetric supercapacitor retained 80% of its initial specific capacitance",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2021.163275",
+    "category": "properties",
+    "item": {
+      "value": 1308.3,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "specific capacitance of MXene ribbons"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2021.163275",
+    "category": "properties",
+    "item": {
+      "value": 1308.3,
+      "property_type": "Capacitance",
+      "unit": "mF/cm^2",
+      "test_conditions": ""
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2021.163275",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 1308.3,
+      "notes": "MXene ribbon supercapacitor electrode",
+      "unit": "mF/cm^2",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jallcom.2021.163275",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_life",
+      "value": 30000.0,
+      "notes": "GCD cycling",
+      "unit": "cycles",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "properties",
+    "item": {
+      "value": 44.0,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "asymmetric supercapacitor"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "properties",
+    "item": {
+      "value": 2640.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "asymmetric supercapacitor"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "properties",
+    "item": {
+      "value": 1.7,
+      "property_type": "Operating_Voltage",
+      "unit": "V",
+      "test_conditions": "solid-state supercapacitor with PVA KOH EMP-TFSI gel electrolyte"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "properties",
+    "item": {
+      "value": 100.0,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "over 1000 charge-discharge cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "properties",
+    "item": {
+      "value": 75.0,
+      "property_type": "Coulombic_Efficiency",
+      "unit": "%",
+      "test_conditions": "over 1000 charge-discharge cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "applications",
+    "item": {
+      "metric": "operating_voltage",
+      "value": 1.7,
+      "notes": "Flexible solid-state supercapacitor using PVA/KOH/EMP-TFSI ionic-liquid-based gel electrolyte",
+      "unit": "V",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 100.0,
+      "notes": "After 1000 charge-discharge cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "applications",
+    "item": {
+      "metric": "coulombic_efficiency",
+      "value": 75.0,
+      "notes": "After 1000 charge-discharge cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.238029",
+    "category": "applications",
+    "item": {
+      "metric": "display_powering_duration",
+      "value": 2.0,
+      "notes": "Asymmetric supercapacitor powered a multifunctional display for approximately 2 min",
+      "unit": "min",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.colsurfa.2025.137907",
+    "category": "properties",
+    "item": {
+      "value": 92.0,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "after 10000 GCD cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.colsurfa.2025.137907",
+    "category": "properties",
+    "item": {
+      "value": 92.01,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "after 5000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.colsurfa.2025.137907",
+    "category": "applications",
+    "item": {
+      "metric": "capacitance_retention",
+      "value": 92.01,
+      "notes": "CeO2 MX5 after 5000 cycles, as reported in the conclusion",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237603",
+    "category": "applications",
+    "item": {
+      "metric": "current_density_range",
+      "value": null,
+      "notes": "GCD tests performed at current densities ranging from 1 to 5 A/g showing improved specific capacitance",
+      "unit": "A/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237603",
+    "category": "applications",
+    "item": {
+      "metric": "scan_rate_range",
+      "value": null,
+      "notes": "CV performed at scan rates of 10-200 mV/s demonstrating enhanced charge storage capability and superior rate performance",
+      "unit": "mV/s",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "properties",
+    "item": {
+      "value": 2089.0,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "2.5 mA cm2, CuMnHS MX electrode"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "properties",
+    "item": {
+      "value": 382.9,
+      "property_type": "Capacitance",
+      "unit": "mF/cm2",
+      "test_conditions": "symmetrical flexible all-solid-state supercapacitor"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "properties",
+    "item": {
+      "value": 53.18,
+      "property_type": "Energy_Density",
+      "unit": "μWh/cm2",
+      "test_conditions": "at power density of 277.8 μW cm2"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "properties",
+    "item": {
+      "value": 277.8,
+      "property_type": "Power_Density",
+      "unit": "μW/cm2",
+      "test_conditions": "symmetrical flexible all-solid-state supercapacitor"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "properties",
+    "item": {
+      "value": -53.42,
+      "property_type": "Reflection_Loss",
+      "unit": "dB",
+      "test_conditions": "thickness 4 mm, 6.08 GHz"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "properties",
+    "item": {
+      "value": 2089.0,
+      "property_type": "Capacitance",
+      "unit": "mF/cm²",
+      "test_conditions": "CuMnHS MX electrode at 2.5 mA/cm²"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 2089.0,
+      "notes": "CuMnHS MX electrode at 2.5 mA cm2",
+      "unit": "mF/cm2",
+      "application_type": "energy_storage"
+    },
+    "other_item": {
+      "metric": "Specific_Capacitance",
+      "value": 382.9,
+      "notes": "Symmetrical flexible all-solid-state supercapacitor assembled from CuMnHS MX hybrid film",
+      "unit": "mF/cm²",
+      "application_type": "energy_storage"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "applications",
+    "item": {
+      "metric": "minimum_reflection_loss",
+      "value": -53.42,
+      "notes": "thickness 4 mm at 6.08 GHz, covers X and most C, Ku bands",
+      "unit": "dB",
+      "application_type": "electromagnetic_wave_absorption"
+    },
+    "other_item": {
+      "metric": "Minimum_Reflection_Loss",
+      "value": 53.42,
+      "notes": "Measured at 6.08 GHz with a thickness of 4 mm; absorption covers the X band and most of the C and Ku bands",
+      "unit": "dB",
+      "application_type": "electromagnetic_wave_absorption"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 382.9,
+      "notes": "flexible all-solid-state supercapacitor device",
+      "unit": "mF/cm2",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.carbon.2023.118006",
+    "category": "applications",
+    "item": {
+      "metric": "Power_Density",
+      "value": 277.8,
+      "notes": "Corresponding energy density was 53.18 μWh/cm²",
+      "unit": "μW/cm²",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 932.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 A/g, pure NiCoMoO4"
+    },
+    "other_item": {
+      "value": 1290.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "NiCoMoO4/MXene-2 heterostructure at a current density of 20 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 230.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "1 A/g, MXene"
+    },
+    "other_item": {
+      "value": 932.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Pure NiCoMoO4 at a current density of 1 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 1290.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "20 A/g, rate performance"
+    },
+    "other_item": {
+      "value": 230.0,
+      "property_type": "Capacitance",
+      "unit": "F/g",
+      "test_conditions": "Pure Ti3C2Tx MXene at a current density of 1 A/g"
+    },
+    "only_in": "value_mismatch",
+    "source_a": "claude-opus-4.8",
+    "source_b": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 72.89,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "power density of 850 W/kg, FSSCs"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 37.28,
+      "property_type": "Energy_Density",
+      "unit": "Wh/kg",
+      "test_conditions": "power density of 16780 W/kg, FSSCs"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 850.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "energy density of 72.89 Wh/kg, FSSCs"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 16780.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "energy density of 37.28 Wh/kg, FSSCs"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "properties",
+    "item": {
+      "value": 94.73,
+      "property_type": "Capacitance",
+      "unit": "%",
+      "test_conditions": "After 10000 charge-discharge cycles at a current density of 5 A/g"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "applications",
+    "item": {
+      "metric": "capacity_retention",
+      "value": 94.73,
+      "notes": "after 10,000 charge and discharge cycles at 5 A/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "applications",
+    "item": {
+      "metric": "specific_capacitance",
+      "value": 1900.0,
+      "notes": "NiCoMoO4/MXene-2 heterostructure electrode at 1 A/g",
+      "unit": "F/g",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 16780.0,
+      "notes": "Flexible quasi-solid-state supercapacitor with an energy density of 37.28 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "properties",
+    "item": {
+      "value": 1.42,
+      "property_type": "Nitrogen_Doping_Level",
+      "unit": "at%",
+      "test_conditions": "N-Ti3C2Tx, heat treatment at 350 C for 3h"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "properties",
+    "item": {
+      "value": 250.0,
+      "property_type": "Power_Density",
+      "unit": "W/kg",
+      "test_conditions": "quasi-solid-state device"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "properties",
+    "item": {
+      "value": 80.4,
+      "property_type": "Cyclic_Stability",
+      "unit": "%",
+      "test_conditions": "retention after 8000 cycles"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "properties",
+    "item": {
+      "value": 1.42,
+      "property_type": "Nitrogen_Content",
+      "unit": "at.%",
+      "test_conditions": "Heat treatment with ammonium chloride at 350 °C for 3 h"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "properties",
+    "item": {
+      "value": 80.4,
+      "property_type": "Cycle_Retention",
+      "unit": "%",
+      "test_conditions": "After 8000 cycles"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "applications",
+    "item": {
+      "metric": "cyclic_stability",
+      "value": 80.4,
+      "notes": "Retention after 8000 cycles for flexible quasi-solid-state device",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "applications",
+    "item": {
+      "metric": "cycle_retention",
+      "value": 80.4,
+      "notes": "Retention after 8000 cycles",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.141338",
+    "category": "applications",
+    "item": {
+      "metric": "power_density",
+      "value": 250.0,
+      "notes": "Power density corresponding to an energy density of 9.57 Wh/kg",
+      "unit": "W/kg",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.158938",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Electrode fabrication for supercapacitor",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "",
+      "synthesis_method": "Mild etching of Ti3AlC2 MAX phase (synthesized from TiO2:Al:C precursors with 3TiO2:6.1Al:2C molar ratio, calcination at 1350°C for 2.5 hrs, HCl washing)"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.158938",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Electrode fabrication for supercapacitor",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "MXene NiO (MX NiO)",
+      "synthesis_method": "Bath sonication"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.158938",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "",
+      "synthesis_method": "Mild etching of ultra-high-purity Ti3AlC2 MAX phase prepared from TiO2, Al, and C at a molar ratio of 3:6.1:2, followed by calcination at 1350 °C for 2.5 h and HCl washing"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.cej.2024.158938",
+    "category": "materials",
+    "item": {
+      "fabrication_method": "Bath sonication of Ti3C2Tx MXene and NiO",
+      "mxene_composition": "Ti3C2Tx",
+      "composite_material": "Ti3C2Tx/NiO",
+      "synthesis_method": "Mild etching of ultra-high-purity Ti3AlC2 MAX phase"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2023.108414",
+    "category": "applications",
+    "item": {
+      "metric": "cycling_stability",
+      "value": 97.2,
+      "notes": "Capacity retention after 3500 cycles at 8 A/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "claude-opus-4.8"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2023.108414",
+    "category": "applications",
+    "item": {
+      "metric": "capacity_retention",
+      "value": 97.2,
+      "notes": "Retention after 3500 cycles at 8 A/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  },
+  {
+    "doi_url": "https://doi.org/10.1016/j.est.2023.108414",
+    "category": "applications",
+    "item": {
+      "metric": "capacity_retention",
+      "value": 88.1,
+      "notes": "Retention after 5000 cycles at 8 A/g",
+      "unit": "%",
+      "application_type": "energy_storage"
+    },
+    "only_in": "gpt-5.6-sol"
+  }
+]

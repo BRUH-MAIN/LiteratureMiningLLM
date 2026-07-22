@@ -1,0 +1,416 @@
+[
+  {
+    "title": "Multiscale porous structured MXene: Synthesis, design and applications in batteries and supercapacitors",
+    "authors": "Chen Chen, Xincao Tang, Mengjie Wang, Yanan Ma, Siliang Wang, Yang Yue",
+    "journal": "Materials Today",
+    "year": 2025,
+    "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+    "sciencedirect_url": "https://www.sciencedirect.com/science/article/pii/S1369702125002329",
+    "issn": "1369-7021",
+    "abstract": "The porous structure of 2D MXene play a critical role in addressing ion transport and kinetic limitations of traditional electrodes, enabling significant improvements of electrochemical performance for energy storage applications. In contrast to previous reviews those have focused only on a specific type of pore structure, this review systematically summarizes the construction strategies and structural properties of micropores, mesopores, and macropores of MXene electrodes, and outlines their evolution from single-scale regulation to multiscale synergistic coupling enhancement. On the basis of a brief review of the synthesis methods and physicochemical properties of MXene, we detail the introduced key structural parameters (e.g. pore size, pore geometry), and elucidate their synergistic effect on ion electron transport pathways, active site exposure, and electrolyte wettability. Furthermore, this review analyzes the unique roles and synergies of different pore scales in energy storage mechanisms, and discusses the application progress of multiscale porous MXene in lithium-ion batteries, zinc-ion batteries, supercapacitors, and so on. This review aims to provide practical insights into the rational design and application of multiscale porous MXene, thereby promoting advancements in energy storage technologies and related fields.",
+    "conclusion": "Summary and outlook Summary Research advances in multiscale pore structures of 2D MXene provide important opportunities to regulate the diffusion behavior and chemical kinetics of active materials, thereby significantly advancing the development of energy storage devices. By scientifically designing and controlling pore parameters (such as pore size, pore orientation, shape and porosity), can effectively enhance the efficiency of ion electron transport and promote the permeation of different electrolytes through various pores, thus optimizing the electrochemical performance of MXene. Particularly, the synergistic effects across multiple pore scales, the quantitative regulation of pore sizes from micropores, mesopores and macropores, and the precise control of pore geometries have been proven to be key strategies in achieving high-performance MXene electrode. Therefore, fully utilizing interdisciplinary knowledge in materials science, chemistry, and physics to precisely design and control pore parameters further advances the application of multiscale pore MXene, which will offer a more comprehensive solution to improving the electrochemical performance of energy storage devices. Outlook Multiscale porous MXene have demonstrated impressive performance in laboratory-scale energy storage applications, but still faces several unresolved issues. To bridge the gap between academic innovation and industrial translation, key scientific and engineering challenges must be addressed. 1. Fluoride-dependent synthesis methods: Currently, large-scale fabrication of MXene still relies heavily on fluorinated etchants (e.g., HF, LiF HCl), which raise environmental, safety, and cost issues, limiting industrial scalability. 2. Lack of electrolyte-pore matching principles: How different pore sizes (and their hierarchical combinations) interact with various electrolytes, including differing in ionic size, solvation shell, or charge has not been systematically established, leading to deteriorated electrochemical performance. 3. Unclear structure-performance relationship of multiscale pores: The optimal electrochemical performance and spatial distribution of micropores, mesopores, and macropores remain poorly understood, particularly regarding their integrated effect onion transport, mechanical integrity, and volumetric energy density. To address these challenges, we make several recommendations: 1. Green and scalable synthesis: Fluoride-free routes (e.g., molten salt etching [ 34 ] and electrochemical exfoliation) should be developed to enable safer, environmentally friendly, and industrially viable MXene production. 2. Systematic electrolyte pore compatibility studies: Future research should explore how pore size and hierarchy affect ion accessibility in electrolytes with different ionic radius, solvation shells, and charges. Understanding these interactions is crucial for tailoring MXene structures to diverse electrolyte systems and maximizing charge transport efficiency [ 339 ]. 3. Apply bio-inspired and data-driven design strategies ( Fig. 11 ): Principles derived from biological systems, such as Murray s Law and Fibonacci sequence-based distributions [ 340 342 ], can offer useful guidance for optimizing hierarchical pore design. In parallel, deep learning algorithms and data-driven models should be applied to predict ideal pore configurations and accelerate the design of high-performance MXene-based electrodes [ 343 347 ].",
+    "keywords": [
+      "MXene",
+      "Multiscale pores",
+      "Pore regulation",
+      "Macro/Meso/Micro-pores",
+      "Energy storage"
+    ],
+    "extracted_data": {
+      "materials": [],
+      "properties": [],
+      "applications": []
+    },
+    "extraction_failed": false,
+    "_latency_s": 4.721
+  },
+  {
+    "title": "A Ti3C2Tx-encapsulated Mn2+-doped Co(OH)2 nanosheets electrode grown on carbon cloth for low-temperature flexible supercapacitors",
+    "authors": "Wenfeng Zhang, Yan Shan, Xuegang Yu, Kezheng Chen",
+    "journal": "Electrochimica Acta",
+    "year": 2025,
+    "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+    "sciencedirect_url": "https://www.sciencedirect.com/science/article/pii/S0013468624018425",
+    "issn": "0013-4686",
+    "abstract": "In general, most flexible supercapacitors with excellent performance at room temperature cannot work properly at relatively low temperatures (such as 0 C), mainly due to the poor cold resistance of the electrodes and electrolytes. In this paper, the carbon cloth was coated with positively charged Mn2+-doped Co(OH)2 coating by electrodeposition and then impregnated with negatively charged Ti3C2Tx nanosheets suspension (This electrode is named CC Co(OH)2:Mn2+ Tx, Where x is the number of impregnation Ti3C2Tx.). The results show that the obtained electrode has a good supercapacitor performance with the specific capacitance of 22.13 F g 1 (the area specific capacitance of the sample is 202.5 mF cm 2), which is attributed to the synergistic effect of Ti3C2Tx and the flower microstructure of Mn2+-doped Co(OH)2 coating. Ti3C2Tx was introduced to polyvinyl alcohol sodium alginate hydrogel electrolyte to obtain a new antifreezing organohydrogel and then a flexible asymmetric supercapacitor was assembled with CC Co(OH)2:Mn2+ T3 as the positive electrode, CC T3 as negative electrode, and the performance of the supercapacitor at 25 C and at 0 C were investigated. It was found the supercapacitor exhibited better performance at 0 C instead of 25 C. When the current density is 5 mA cm 2, the area specific capacitance of the supercapacitor at 0 C reaches 52.02 mF cm 2. After 1000 cycles, the supercapacitor has a capacitance retention rate of 82.5 at 0 C, which is much higher than that of 55.15 at 25 C. The reason may be related to the Ti3C2Tx and the crosslinked networks structures of composite hydrogel. The results show that the supercapacitor has excellent working ability at 0 C, which provides the possibility for the device to work normally in low temperature.",
+    "conclusion": "In summary, we have successfully prepared an unbonded CC Co(OH)2 :Mn2+ T3 flexible electrode, which is assembled by the electrostatic interaction between the positive charge coating deposited on the surface of carbon cloth and the electronegative Ti3 C2 Tx nanosheets. The electrodeposited Mn2+ -doped Co(OH)2 coating has a larger specific surface area and more active sites, which helps to improve the specific capacitance of the electrode. The mass specific capacitance of the best electrode reached 22.13 F g 1 . The electrode still has a Coulomb efficiency of 92.8 after 1000 charge and discharge cycles, demonstrating good cycle stability. Moreover, the flexible electrode is used as a positive electrode to assemble a supercapacitor with LiCl as electrolyte. The area specific capacitance of the device reaches 52.02 mF cm 2 at 0 C, much higher than that at 25 C (2.36 mF cm 2 ). Meanwhile, the supercapacitor still has a capacitance retention rate of 82.5 after 1000 cycles at 0 C, indicating the supercapacitor is suitable for operation at 0 C. The flexible electrodes and FSCs prepared in this study are expected to be applied in the fields of wearable devices, flexible sensor power supply and portable electronic devices. CRediT authorship contribution statement Wenfeng Zhang: Writing original draft, Validation, Methodology, Investigation, Formal analysis, Conceptualization. Yan Shan: Writing review editing, Supervision, Resources, Project administration,",
+    "keywords": [
+      "Flexible supercapacitors",
+      "Hypothermia",
+      "MXene",
+      "Neutral electrolyte"
+    ],
+    "extracted_data": {
+      "materials": [
+        {
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "Mn2+-doped Co(OH)2",
+          "synthesis_method": "",
+          "fabrication_method": "Electrodeposition of Mn2+-doped Co(OH)2 on carbon cloth, followed by impregnation with Ti3C2Tx nanosheets suspension"
+        }
+      ],
+      "properties": [
+        {
+          "property_type": "Capacitance",
+          "value": 22.13,
+          "unit": "F/g",
+          "test_conditions": ""
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 202.5,
+          "unit": "mF/cm^2",
+          "test_conditions": ""
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 52.02,
+          "unit": "mF/cm^2",
+          "test_conditions": "Device at 0°C, current density 5 mA/cm^2"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 2.36,
+          "unit": "mF/cm^2",
+          "test_conditions": "Device at 25°C"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 82.5,
+          "unit": "%",
+          "test_conditions": "Device at 0°C after 1000 cycles"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 55.15,
+          "unit": "%",
+          "test_conditions": "Device at 25°C after 1000 cycles"
+        },
+        {
+          "property_type": "Coulombic_Efficiency",
+          "value": 92.8,
+          "unit": "%",
+          "test_conditions": "Electrode after 1000 cycles"
+        }
+      ],
+      "applications": [
+        {
+          "application_type": "energy_storage",
+          "metric": "Area specific capacitance at 0°C",
+          "notes": "Flexible asymmetric supercapacitor with CC Co(OH)2:Mn2+ T3 positive electrode, CC T3 negative electrode, PVA-sodium alginate hydrogel electrolyte with Ti3C2Tx",
+          "value": 52.02,
+          "unit": "mF/cm^2"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "Capacitance retention after 1000 cycles at 0°C",
+          "notes": "Same device",
+          "value": 82.5,
+          "unit": "%"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "Area specific capacitance at 25°C",
+          "notes": "Comparison",
+          "value": 2.36,
+          "unit": "mF/cm^2"
+        }
+      ]
+    },
+    "extraction_failed": false,
+    "_latency_s": 15.409
+  },
+  {
+    "title": "Ti3C2Tx MXene and Vanadium nitride Porous carbon as electrodes for asymmetric supercapacitors",
+    "authors": "Sandhya Venkateshalu, Andrews Nirmala Grace",
+    "journal": "Electrochimica Acta",
+    "year": 2020,
+    "doi_url": "https://doi.org/10.1016/j.electacta.2020.136035",
+    "sciencedirect_url": "https://www.sciencedirect.com/science/article/pii/S0013468620304278",
+    "issn": "0013-4686",
+    "abstract": "MXenes are the emerging class of 2D materials, widely explored as supercapacitor electrodes with their explicit properties. Using the pseudocapacitive nature of the widely reported MXene - Ti3C2Tx, an asymmetric cell is designed with Ti3C2Tx as the negative electrode and Vanadium nitride Porous carbon as the positive electrode. The asymmetric cell provides a high cell voltage of 1.8 V with a specific capacitance of 105 F g at 1 A g in 6 M KOH. It also presents a capacitance retention of 73 even after 10,000 charge-discharge cycles. The asymmetric cell exhibits a high potential window, which is about 3 times higher when compared to symmetric supercapacitors. The asymmetric electrode system exhibits an energy density of 12.81 Wh kg and a corresponding power density of 985.8 W kg at 1 A g. This value of energy density is greater when compared to various symmetric supercapacitors. Thus Ti3C2Tx MXene electrodes can effectively replace the conventional carbon electrodes used in asymmetric supercapacitors.",
+    "conclusion": "In summary, this work reports on the testing of Ti3 C2 Tx as the negative electrode and VN PC as the positive electrode in an asymmetric cell. Ti3 C2 Tx MXenes were synthesized by etching the Al layers by immersing them in aqueous HF solutions and further delaminating them with DMSO. It is well known that the synthesis of Vanadium nitride is very difficult without the use of the dangerous ammonia gas. Herein, we have synthesized Vanadium nitride porous carbon through a simple and safe method using the data available in literature with modifications. In a 3-electrode system, Ti3 C2 Tx MXene and VN PC electrode exhibits specific capacitances of 283 F g and 52 F g at 0.5 A g respectively. VN PC Ti3 C2 Tx asymmetric 2-electrode cell exhibits a superior capcitance of 105 F g at 1 A g with energy density and power density of 12.81 Wh kg and 985.8 W kg respectively. The results show that the carbon used convetionally in asymmetric supercapacitors as negative electrode can be repaced with MXene electrodes. CRediT authorship contribution statement Sandhya Venkateshalu: Conceptualization, Investigation, Writing - original draft. Andrews Nirmala Grace: Resources, Supervision, Writing - review editing.",
+    "keywords": [
+      "MXene",
+      "Ti3C2Tx",
+      "Asymmetric supercapacitors",
+      "Vanadium nitride",
+      "Aqueous electrolyte"
+    ],
+    "extracted_data": {
+      "materials": [
+        {
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "Vanadium nitride porous carbon (VN PC)",
+          "synthesis_method": "MXene: etching Al layers by immersion in aqueous HF solutions and delamination with DMSO; VN PC: synthesized via simple safe method using literature with modifications",
+          "fabrication_method": "Asymmetric cell with Ti3C2Tx as negative electrode and VN PC as positive electrode"
+        }
+      ],
+      "properties": [
+        {
+          "property_type": "Capacitance",
+          "value": 283.0,
+          "unit": "F/g",
+          "test_conditions": "3-electrode system, 0.5 A/g"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 52.0,
+          "unit": "F/g",
+          "test_conditions": "3-electrode system, 0.5 A/g"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 105.0,
+          "unit": "F/g",
+          "test_conditions": "1 A/g in 6 M KOH"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 73.0,
+          "unit": "%",
+          "test_conditions": "after 10,000 charge-discharge cycles"
+        },
+        {
+          "property_type": "Voltage",
+          "value": 1.8,
+          "unit": "V",
+          "test_conditions": "asymmetric cell"
+        },
+        {
+          "property_type": "Energy_Density",
+          "value": 12.81,
+          "unit": "Wh/kg",
+          "test_conditions": "1 A/g"
+        },
+        {
+          "property_type": "Power_Density",
+          "value": 985.8,
+          "unit": "W/kg",
+          "test_conditions": "1 A/g"
+        }
+      ],
+      "applications": [
+        {
+          "application_type": "energy_storage",
+          "metric": "specific_capacitance",
+          "notes": "asymmetric supercapacitor at 1 A/g",
+          "value": 105.0,
+          "unit": "F/g"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "energy_density",
+          "notes": "asymmetric supercapacitor at 1 A/g",
+          "value": 12.81,
+          "unit": "Wh/kg"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "power_density",
+          "notes": "asymmetric supercapacitor at 1 A/g",
+          "value": 985.8,
+          "unit": "W/kg"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "capacitance_retention",
+          "notes": "after 10,000 cycles",
+          "value": 73.0,
+          "unit": "%"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "voltage_window",
+          "notes": "asymmetric supercapacitor",
+          "value": 1.8,
+          "unit": "V"
+        }
+      ]
+    },
+    "extraction_failed": false,
+    "_latency_s": 23.167
+  },
+  {
+    "title": "Perovskite structured LaMnO3 nanoparticles adorned on the MXene 2D sheets: An innovative crossbreed electrode material for robust supercapacitor application and oxygen evolution reactions",
+    "authors": "M. Murugesan, K.R. Nagavenkatesh, P. Devendran, N. Nallamuthu, Y.C. Sunilkumar",
+    "journal": "Fuel",
+    "year": 2026,
+    "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+    "sciencedirect_url": "https://www.sciencedirect.com/science/article/pii/S0016236125023191",
+    "issn": "0016-2361",
+    "abstract": "This study aimed to address energy demand constraints by developing a novel hybrid electrode material for energy storage and conversion, perovskite structured lanthanum manganite (LaMnO3) with MXene composites. The LaMnO3 NPs decorated on the MXene nanosheets were synthesized by simple hydrothermal technique. The synthesized lanthanum-based MXene nanocomposite (NCs) was examined by Structural, morphological and spectroscopic analysis using XRD, HR-TEM, SEM with EDX, FTIR and XPS tools. Through the electrochemical analysis, the perovskite structured LaMnO3 NPs and LaMnO3 MXene NCs were achieved remarkable specific capacitance (Csp) of 782.70 and 1216.36F gat 5 mV s respectively. The prepared LaMnO3 MXene NCs proved outstanding capacitance retaining 90.1 after 5000 cycles. Besides, a Asymmetric supercapacitor (ACS) device was built with MXene and LaMnO3 MXene electrodes, which is shows a remarkable power density (PD) 1350 W kg with corresponding energy density (ED) 150.6 Wh kg and it displays the remarkable cycling stability up to 77.6 was retained after 5000 cycles at 10 A g. In addition from Oxygen evaluation reaction analysis the LaMnO3 MXene composite exhibits overpotential of 446.10 mV corresponding to the 10 mA cm2 current density, along with the lesser Tafel slope of 88.31 mV dec for OER in 1 M KOH. As a result, the prepared LaMnO3 MXene electrode having exceptional qualities might prove towards the trustable electrode for the advance supercapacitors and water splitting applications.",
+    "conclusion": "The rhombohedral structure of LaMnO3 MXene composite was successfully synthesized using a simple hydrothermal process and the resultant samples were analysed with numerous characterization. It confirmed by structural morphological, functional group and elemental composition via, XRD, HR-TEM, SEM, FTIR, XPS and EDX with mapping studies. From the electrochemical evaluation, the outstanding capacitive behaviour of LaMnO3 MXene was confirmed by using their pseudocapacitor nature of CV profile, that is attained Csp of 1216F g at 5 mV s. Finally, the ASC device is built with synthesized rhombohedral structure LaMnO3 MXene composite as cathode and MXene as the anode electrode. The greater efficiency Csp of 136.13F g at 5 mV s is demonstrated by this novel asymmetric supercapacitor technology. It also has excellent ED and PD of 150 Wh kg and 1350 W kg, respectively. The device exhibited excellent cycling stability, retaining up to 77.6 of its capacitance after 5000 cycles. The prepared LaMnO3 MXene structure electrode offering excellent OER performance with the low overpotential of 446.10 mV and Tafel slopes 88.31 mV dec in 1 M KOH. For effective energy storage and conversion applications, the suggested module to assemble the perovskite oxide nanoparticle-decorated MXene sheets would therefore be the appropriate materials. It is unequivocally demonstrates the trustable novel type electrode for energy storage and energy conversion applications. CRediT authorship contribution statement M. Murugesan: Investigation. K.R. Nagavenkatesh: Investigation. P. Devendran: Writing original draft, Supervision, Investigation. N. Nallamuthu: Investigation. Y.C. Sunilkumar: Investigation.",
+    "keywords": [
+      "Hydrothermal",
+      "Perovskite",
+      "LaMnO3/MXene",
+      "Supercapacitor",
+      "Dunn method and OER"
+    ],
+    "extracted_data": {
+      "materials": [
+        {
+          "mxene_composition": "",
+          "composite_material": "LaMnO3",
+          "synthesis_method": "hydrothermal",
+          "fabrication_method": "asymmetric supercapacitor device with MXene and LaMnO3 MXene electrodes"
+        }
+      ],
+      "properties": [
+        {
+          "property_type": "Capacitance",
+          "value": 1216.36,
+          "unit": "F/g",
+          "test_conditions": "at 5 mV/s"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 782.7,
+          "unit": "F/g",
+          "test_conditions": "at 5 mV/s for LaMnO3 NPs"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 136.13,
+          "unit": "F/g",
+          "test_conditions": "at 5 mV/s for ASC device"
+        },
+        {
+          "property_type": "Energy_Density",
+          "value": 150.6,
+          "unit": "Wh/kg",
+          "test_conditions": "ASC device"
+        },
+        {
+          "property_type": "Power_Density",
+          "value": 1350.0,
+          "unit": "W/kg",
+          "test_conditions": "ASC device"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 90.1,
+          "unit": "%",
+          "test_conditions": "after 5000 cycles for LaMnO3 MXene"
+        },
+        {
+          "property_type": "Capacitance",
+          "value": 77.6,
+          "unit": "%",
+          "test_conditions": "after 5000 cycles at 10 A/g for ASC device"
+        },
+        {
+          "property_type": "Overpotential",
+          "value": 446.1,
+          "unit": "mV",
+          "test_conditions": "at 10 mA/cm2 in 1 M KOH for OER"
+        },
+        {
+          "property_type": "Tafel_Slope",
+          "value": 88.31,
+          "unit": "mV/dec",
+          "test_conditions": "for OER in 1 M KOH"
+        }
+      ],
+      "applications": [
+        {
+          "application_type": "energy_storage",
+          "metric": "specific_capacitance",
+          "notes": "LaMnO3 MXene composite at 5 mV/s",
+          "value": 1216.36,
+          "unit": "F/g"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "energy_density",
+          "notes": "ASC device",
+          "value": 150.6,
+          "unit": "Wh/kg"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "power_density",
+          "notes": "ASC device",
+          "value": 1350.0,
+          "unit": "W/kg"
+        },
+        {
+          "application_type": "energy_storage",
+          "metric": "cycling_stability",
+          "notes": "ASC device after 5000 cycles at 10 A/g",
+          "value": 77.6,
+          "unit": "%"
+        },
+        {
+          "application_type": "oxygen_evolution_reaction",
+          "metric": "overpotential",
+          "notes": "at 10 mA/cm2 in 1 M KOH",
+          "value": 446.1,
+          "unit": "mV"
+        },
+        {
+          "application_type": "oxygen_evolution_reaction",
+          "metric": "tafel_slope",
+          "notes": "in 1 M KOH",
+          "value": 88.31,
+          "unit": "mV/dec"
+        }
+      ]
+    },
+    "extraction_failed": false,
+    "_latency_s": 12.614
+  },
+  {
+    "title": "A novel strategy for high energy density supercapacitors: Formation of cyanuric acid between Ti3C2Tx (MXene) interlayer hybrid electrodes",
+    "authors": "Chao Feng, Bingzhe Jia, Han Wang, Yan Wang, Xinming Wu",
+    "journal": "Chemical Engineering Journal",
+    "year": 2023,
+    "doi_url": "https://doi.org/10.1016/j.cej.2023.142935",
+    "sciencedirect_url": "https://www.sciencedirect.com/science/article/pii/S1385894723016662",
+    "issn": "1385-8947",
+    "abstract": "Ti3C2Tx (MXene) are attractive for electrode materials because of their high electrical conductivity, abundant interlayer ions and low density. However, the low energy density hinders its commercial application. Herein, a novel N-doped Ti3C2Tx MXene is synthesized by introducing a small organic molecule dicyandiamide (DCD) to tune the complex terminals. DCD can be inserted into the layers of Ti3C2Tx nanosheets while forming melamine by catalyst-free trimerization reaction. Then, melamine is converted into gt-C3N4 through high-temperature sintering. Finally, gt-C3N4 is oxidized to cyanuric acid (CA) through simple hydrothermal reaction. The prepared Ti3C2Tx CA composite electrode exhibits up to 4.8 at. nitrogen doping and has a stable triazine ring structure. It is also shown that the Ti3C2Tx CA composite electrode has high specific capacitance and excellent cycling stability. More notably, it achieves an energy density of 51.1 Wh kg 1 at a power density of 2000 W kg 1, which exceeds the energy density of MXene based electrodes reported in the current literature. This excellent performance is attributed to the unique hydroxyl structure of the CA terminal and the excellent symmetry of CA in the composite electrode. In aqueous electrolytes, CA can form short chains during charging and the formation of short chains enables the storage of electrons and further provides a large number of new pseudocapacitive reaction sites for MXene. At the same time, the high electronegativity of the N and O atoms in CA also increases the electric double layer capacitor of the composite electrode to a certain extent, thus resulting in a high energy density of the composite electrode.",
+    "conclusion": "during the formation of Ti3 C2 Tx CA composite electrode, CA replaced the -F group that does not participate in the pseudocapacitive reaction, but did not change the original OH and -O groups, and the pseudo capacitance of MXene was fully retained [13,21 23,45] . In addition, thanks to the unique hydroxyl structure of CA terminal and symmetry of CA, CA can form short chains during charging in aqueous electrolytes and the formation of short chains can realize the storage of electrons. At the same time, the formation of short chains further provides a large number of new pseudocapacitive reaction sites for MXene and the highly electronegative N and O atoms in CA also improve the electric double layer capacitor of the composite electrode to a certain extent. Therefore, the energy density of Ti3 C2 Tx CA composite electrode (51.1 Wh kg 1 ) is much higher than that of Ti3 C2 Tx electrode (29.7 Wh kg 1 ) (Fig. 5 (e), Table S3 and Table S4 ). 4 Conclusions In summary, we synthesized a novel highly N-doped Ti3 C2 Tx MXene through multi-step reaction by introducing small organic molecules, dicyandiamide, into the interlayer of Ti3 C2 Tx MXene. Benefiting from the unique hydroxyl structure and symmetry of CA terminal, CA enables charge storage by forming short chains, providing new pseudocapacitive reaction sites and higher bilayer capacitance. The prepared Ti3 C2 Tx CA composite electrode has a high specific capacitance and excellent cycling stability. More notably, it achieves an amazing energy density of 51.1 Wh kg 1 at a power density of 2000 W kg 1 , which exceeds the energy density of MXene based electrode reported in the current literature. This work provides a new idea for the design of commercial MXene based electrodes by the method of Ti3 C2 Tx doping with small organic molecules.",
+    "keywords": [
+      "MXene",
+      "Nitrogen doping",
+      "Triazine polymerization",
+      "High energy density"
+    ],
+    "extracted_data": {
+      "materials": [
+        {
+          "mxene_composition": "Ti3C2Tx",
+          "composite_material": "Ti3C2Tx CA",
+          "synthesis_method": "Multi-step reaction: intercalation of dicyandiamide (DCD), catalyst-free trimerization to melamine, high-temperature sintering to gt-C3N4, then hydrothermal oxidation to cyanuric acid (CA)",
+          "fabrication_method": ""
+        }
+      ],
+      "properties": [
+        {
+          "property_type": "Energy_Density",
+          "value": 51.1,
+          "unit": "Wh/kg",
+          "test_conditions": "at power density of 2000 W kg-1"
+        },
+        {
+          "property_type": "Energy_Density",
+          "value": 29.7,
+          "unit": "Wh/kg",
+          "test_conditions": "for Ti3C2Tx electrode (reference)"
+        }
+      ],
+      "applications": [
+        {
+          "application_type": "energy_storage",
+          "metric": "energy_density",
+          "notes": "exceeds MXene based electrodes reported in current literature for supercapacitors",
+          "value": 51.1,
+          "unit": "Wh/kg"
+        }
+      ]
+    },
+    "extraction_failed": false,
+    "_latency_s": 7.007
+  }
+]

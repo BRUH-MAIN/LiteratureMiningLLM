@@ -1,0 +1,18 @@
+{
+  "run_key": "gpt-5.6-sol",
+  "provider": "openai",
+  "model": "gpt-5.6-sol",
+  "thinking_level": null,
+  "thinking_enabled": null,
+  "total_papers": 60,
+  "successful_extractions": 58,
+  "failed_extractions": 2,
+  "total_time_s": 863.27,
+  "avg_latency_s": 14.388,
+  "total_input_tokens": 91490,
+  "total_output_tokens": 53115,
+  "est_cost_usd": 2.0367,
+  "pricing": "real metered cost via Kaggle Model Proxy (kaggle_benchmarks Usage), not an estimate table",
+  "generated_at": "2026-07-22T15:39:00.688347",
+  "source": "kaggle_benchmarks (kbench) reference-panel run, see commands.md in this directory"
+}

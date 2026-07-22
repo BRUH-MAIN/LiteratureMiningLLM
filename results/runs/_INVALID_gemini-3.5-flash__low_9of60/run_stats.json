@@ -1,0 +1,20 @@
+{
+  "run_key": "gemini-3.5-flash__low",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash",
+  "thinking_level": "low",
+  "thinking_enabled": null,
+  "total_papers": 60,
+  "successful_extractions": 9,
+  "failed_extractions": 51,
+  "total_time_s": 264.16,
+  "avg_latency_s": 4.403,
+  "total_input_tokens": 70925,
+  "total_output_tokens": 50317,
+  "est_cost_usd": 0.5592,
+  "pricing": {
+    "input_per_1m": 1.5,
+    "output_per_1m": 9.0
+  },
+  "generated_at": "2026-07-19T00:16:12.264443"
+}

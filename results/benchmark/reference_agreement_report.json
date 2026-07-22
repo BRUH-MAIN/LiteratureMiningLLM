@@ -1,0 +1,37 @@
+{
+  "reference_panel": [
+    "claude-opus-4.8",
+    "gpt-5.6-sol"
+  ],
+  "agreement_micro": {
+    "materials": {
+      "precision": 0.6263736263736264,
+      "recall": 0.5876288659793815,
+      "f1": 0.6063829787234042,
+      "value_mismatches": 0
+    },
+    "properties": {
+      "precision": 0.6615384615384615,
+      "recall": 0.5265306122448979,
+      "f1": 0.5863636363636363,
+      "value_mismatches": 23
+    },
+    "applications": {
+      "precision": 0.5,
+      "recall": 0.6064516129032258,
+      "f1": 0.5481049562682215,
+      "value_mismatches": 9
+    }
+  },
+  "agreement_macro_f1": {
+    "materials": 0.710048426150121,
+    "properties": 0.5364060085213932,
+    "applications": 0.5077486689555656
+  },
+  "contested_item_counts": {
+    "properties": 159,
+    "applications": 146,
+    "materials": 74
+  },
+  "generated_at": "2026-07-22T15:40:02.588815"
+}

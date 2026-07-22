@@ -1,0 +1,11 @@
+{
+  "run_key": "gpt-oss-20b__low",
+  "gguf_repo": "unsloth/gpt-oss-20b-GGUF",
+  "gguf_filename": "gpt-oss-20b-Q4_K_M.gguf",
+  "thinking_variant": "low",
+  "total_papers": 60,
+  "successful_extractions": 57,
+  "failed_extractions": 3,
+  "total_time_s": 2476.8,
+  "avg_time_per_paper_s": 41.28
+}
