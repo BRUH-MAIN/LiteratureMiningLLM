@@ -1,0 +1,18 @@
+{
+  "run_key": "gpt-5.6-terra",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "thinking_level": null,
+  "thinking_enabled": null,
+  "total_papers": 60,
+  "successful_extractions": 60,
+  "failed_extractions": 0,
+  "total_time_s": 290.73,
+  "avg_latency_s": 4.845,
+  "total_input_tokens": 94622,
+  "total_output_tokens": 39441,
+  "est_cost_usd": 0.8282,
+  "pricing": "real metered cost via Kaggle Model Proxy (kaggle_benchmarks Usage), not an estimate table",
+  "generated_at": "2026-07-22T19:31:38.101164",
+  "source": "kaggle_benchmarks (kbench) reference-panel run, see commands.md in this directory"
+}

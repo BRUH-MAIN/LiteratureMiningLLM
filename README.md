@@ -1,80 +1,211 @@
-# Literature Mining LLM - MXene Research Data Extraction
+# MXene Literature Mining — LLM Extraction Benchmark
 
-This project implements a modular Python application with an agentic flow for extracting structured research data about MXenes from JSON metadata files and storing it in PostgreSQL.
+Extracts structured materials-science data (compositions, properties, applications) from MXene
+research papers using LLMs — and, more importantly, **measures how well 13 different models
+actually do it** against a gold standard built without a single line of human annotation.
 
-## Features
+<p align="center">
+  <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11+-blue.svg">
+  <img alt="tests" src="https://img.shields.io/badge/tests-32%20passing-brightgreen.svg">
+  <img alt="papers" src="https://img.shields.io/badge/eval%20set-60%20papers-informational.svg">
+  <img alt="models" src="https://img.shields.io/badge/models%20benchmarked-13-orange.svg">
+</p>
 
-- **Preprocessing Agent**: Cleans and normalizes paper data, removes duplicates
-- **Extraction Agent**: Uses Gemini Flash LLM to extract structured materials, properties, and applications data
-- **Validation Agent**: Validates and standardizes extracted data (units, property types, etc.)
-- **Database Loader Agent**: Stores processed data in PostgreSQL with normalized schema
-- **Analytics Agent**: Provides queries, visualizations, and export functionality
+---
 
-## Requirements
+## Results
 
-- Python 3.11+
-- PostgreSQL database
-- Gemini API key
-- UV package manager (recommended)
+**60 papers · 13 candidate models · scored against a two-model consensus gold standard**
 
-## Setup
+| # | Model | Mean F1 ↑ | Groundedness ↑ | Latency/paper | Cost (60 papers) |
+|---|---|---|---|---|---|
+| 1 | **GPT-5.6 Terra** | **0.623** | 0.879 | 4.8 s | $0.83 |
+| 2 | **Gemini 3.6 Flash** | 0.577 | 0.937 | 6.4 s | $0.88 |
+| 3 | **Claude Sonnet 4.6** | 0.574 | 0.822 | 8.9 s | $0.95 |
+| 4 | gemma-4-12b-it `low` | 0.526 | 0.864 | 48.9 s | free (Kaggle GPU) |
+| 5 | **DeepSeek V3.1** | 0.520 | 0.931 | **2.7 s** | **$0.08** |
+| 6 | gemma-4-12b-it `high` | 0.511 | 0.862 | 49.8 s | free (Kaggle GPU) |
+| 7 | gemma-4-12b-it `medium` | 0.497 | 0.847 | 49.7 s | free (Kaggle GPU) |
+| 8 | **GLM-5** | 0.496 | **0.970** | 52.4 s | $0.85 |
+| 9 | Qwen3.6-35B-A3B `thinking-on` | 0.495 | 0.890 | 128.2 s | free (Kaggle GPU) |
+| 10 | Qwen3.6-35B-A3B `thinking-off` | 0.494 | 0.893 | 131.3 s | free (Kaggle GPU) |
+| 11 | gpt-oss-20b `medium` | 0.411 | 0.903 | 46.7 s | free (Kaggle GPU) |
+| 12 | gpt-oss-20b `high` | 0.379 | 0.914 | 44.1 s | free (Kaggle GPU) |
+| 13 | gpt-oss-20b `low` | 0.364 | 0.914 | 41.3 s | free (Kaggle GPU) |
 
-1. **Clone and navigate to the project:**
-   ```bash
-   cd /path/to/LiteratureMiningLLM
-   ```
+> **📊 [Interactive chart →](results/benchmark_report/chart.html)** — sorted leaderboard, groundedness,
+> and latency panels with per-model tooltips and a full data table.
 
-2. **Install dependencies using UV:**
-   ```bash
-   uv sync
-   ```
+### Three findings worth the whole project
 
-3. **Set up environment variables:**
-   Create a `.env` file with:
-   ```
-   GEMINI_API_KEY=your_gemini_api_key_here
-   POSTGRES_URL=postgresql://user:password@localhost:5432/database
-   ```
+**1. The scores look low because the task's ceiling is low.** The two frontier models that *build*
+the gold standard only agree with **each other** at mean F1 **0.580**. That's the noise floor — the
+measured ambiguity of the extraction task itself. GPT-5.6 Terra's 0.623 sits *above* it, meaning the
+top candidates have hit the resolution limit of this methodology, not that they're failing.
 
-4. **Prepare your data:**
-   Place your JSON data file in `data/processed/combined_papers_merged.json`
+**2. Accuracy and faithfulness are different axes.** GLM-5 ranks 8th on F1 but is the **most
+faithful extractor tested** (0.970 groundedness — 97% of what it outputs is literally traceable to
+the source text). Claude Sonnet 4.6 ranks 3rd on F1 with the *lowest* groundedness (0.822): it
+infers from domain knowledge. Hand-verified example — on a review paper, Claude filled in
+`Ti3C2Tx` as the composition for 7 composite variants, and that string appears **nowhere** in the
+text it was given. Good chemistry; not extraction.
 
-## Usage
+**3. Small open models are viable, and reasoning effort barely moved the needle.** gemma-4-12b-it
+running free on a Kaggle P100 lands within 0.1 F1 of frontier APIs. Across every model with a
+thinking-level sweep, higher reasoning effort produced **no consistent gain** — gpt-oss-20b `low`
+(0.364) was actually its *worst* setting, and Qwen's thinking-on/off differ by 0.001.
 
-### Run System Test
-```bash
-uv run python test_system.py
+---
+
+## How the gold standard works (no human annotation)
+
+The core problem: judging MXene extraction correctness needs materials-science expertise. So the
+gold standard is built from **cross-model consensus**, and its trustworthiness is *measured and
+reported* rather than assumed.
+
+```mermaid
+flowchart TB
+    subgraph panel["Reference panel — builds gold, never scored"]
+        A["Claude Opus 4.8<br/>60 papers"]
+        B["GPT-5.6 Sol<br/>60 papers"]
+    end
+
+    A --> R{"Item-by-item<br/>reconciliation"}
+    B --> R
+
+    R -->|"both models agree"| G["✅ consensus-gold<br/>280 confirmed items"]
+    R -->|"only one found it,<br/>or values disagree"| C["⚠️ contested<br/>379 items, logged"]
+
+    R -.->|"their mutual agreement<br/>= noise floor 0.580"| N["📉 Reported ceiling"]
+
+    G --> S{"Schema-aware scoring"}
+    D["13 candidate models"] --> S
+    S --> F["Precision / Recall / F1<br/>per category"]
+
+    D --> GR["Groundedness check<br/>vs. source text only"]
+    GR --> F2["Faithfulness rate<br/>(no gold involved)"]
 ```
 
-### Run Main Pipeline
+**Why this is defensible:**
+
+- **No single model is trusted.** An item enters gold only if two independent frontier models from
+  different labs both found it. Disagreements are logged as `contested`, never silently dropped.
+- **The noise floor is published.** The panel's own agreement (materials 0.606 / properties 0.586 /
+  applications 0.548) is reported as the ceiling no candidate should be expected to exceed.
+- **Circularity is blocked in code.** `run_benchmark.py` refuses to score any `REFERENCE_PANEL`
+  model as a candidate — their scores would be inflated by definition.
+- **Groundedness is an independent second axis.** It compares extractions to the *source paper*,
+  not to gold, so it catches hallucination that consensus agreement structurally cannot.
+
+📄 **[Full methodology defense, limitations, and interview Q&A → `DEFENSE.md`](DEFENSE.md)**
+📓 **[Engineering log: 18 bugs and what they taught → `LEARNINGS.md`](LEARNINGS.md)**
+
+---
+
+## Scoring: schema-aware, not string comparison
+
+Extractions are unordered lists with no stable IDs, so items are aligned before scoring via greedy
+bipartite matching (`benchmark/scoring/matching.py`):
+
+| Field type | Match rule | Threshold |
+|---|---|---|
+| Materials | Weighted `token_set_ratio` over composition / composite / synthesis / fabrication | 70 |
+| Properties | `property_type` similarity **+** unit equivalence, then value within tolerance | 85, ±10% |
+| Applications | `application_type` **+** metric similarity, then value within tolerance | 80, ±10% |
+
+A type-matched pair whose *number* is out of tolerance counts as both a false positive and a false
+negative, and is tracked separately as a `value_mismatch`.
+
+---
+
+## Quickstart
+
 ```bash
-uv run python main.py
+uv venv && uv sync
+cp .env.example .env          # add KAGGLE_USERNAME / KAGGLE_KEY
+
+# 1. Deterministic 60-paper eval subset (seed 42)
+uv run python -m benchmark.sample_subset
+
+# 2. Reference panel + candidates run on Kaggle Benchmarks
+#    → see benchmark/kaggle/reference_panel_kbench/commands.md
+
+# 3. Build the consensus gold standard
+uv run python -m benchmark.consensus
+
+# 4. Score every candidate
+uv run python -m benchmark.run_benchmark
+
+# 5. Groundedness (no gold needed — works on any run)
+uv run python -m benchmark.groundedness_report --runs gpt-5.6-terra glm-5 ...
+
+# 6. Render the interactive chart
+uv run python -m benchmark.chart
+
+uv run pytest benchmark/tests/    # 32 tests
 ```
 
-### Test Gemini API Integration
-```bash
-uv run python test_gemini.py
+**Command logs** for every real run are checked in, so results are reproducible:
+- [`benchmark/kaggle/reference_panel_kbench/commands.md`](benchmark/kaggle/reference_panel_kbench/commands.md) — gold standard + API candidates via Kaggle Benchmarks
+- [`benchmark/kaggle/candidate_run/commands.md`](benchmark/kaggle/candidate_run/commands.md) — open-weight GGUF models on a Kaggle P100
+- [`benchmark/COMMANDS_api_runs.md`](benchmark/COMMANDS_api_runs.md) — direct-API runs (DeepSeek panel, Gemini)
+
+---
+
+## Repo layout
+
 ```
+app/                      Extraction pipeline (preprocess → extract → validate → load)
+├─ extractor.py           LLM extraction, provider-agnostic
+├─ validator.py           Unit/property-type standardization
+├─ json_utils.py          Robust JSON recovery (Harmony tags, greedy brace matching)
+└─ llm_interface.py       Gemini / DeepSeek / llama.cpp providers
+
+benchmark/
+├─ config.py              ⭐ Single source of truth: panel, candidates, thresholds
+├─ consensus.py           Builds consensus-gold + agreement report
+├─ run_benchmark.py       Scores candidates (with circularity guard)
+├─ groundedness_report.py Gold-free faithfulness scoring
+├─ chart.py               Self-contained interactive HTML chart
+├─ scoring/               matching.py · metrics.py · groundedness.py · report.py
+└─ kaggle/                Kaggle Benchmarks + GGUF notebook pipelines
+
+results/
+├─ runs/<run_key>/        extractions.json + run_stats.json per model
+└─ benchmark_report/      report.md · summary.csv · chart.html · groundedness_report.md
+```
+
+---
 
 ## Dataset Provenance
 
-`data/processed/combined_papers_merged.json` (296 papers) is **not** downloaded from any external dataset — it was self-collected:
+`data/processed/combined_papers_merged.json` (296 papers) is **not** downloaded from any external
+dataset — it was self-collected:
 
-1. Three manual "Export citation" batches from ScienceDirect.com search results (`ScienceDirect_citations_<timestamp>.txt`, ~99 papers each, 296 total, years 2017–2026), dominated by *Journal of Energy Storage*, *Chemical Engineering Journal*, *Journal of Alloys and Compounds*, *Journal of Power Sources*, and *Electrochimica Acta* — i.e. an MXene + energy-storage/sensor search.
-2. Enrichment with full-text `conclusion` sections via `preprocessing/institutional_scraper.py` (Selenium, scraping ScienceDirect full text through institutional/university library access) and `preprocessing/enrich_papers.py` (Unpaywall API, for open-access papers).
+1. Three manual "Export citation" batches from ScienceDirect.com search results
+   (`ScienceDirect_citations_<timestamp>.txt`, ~99 papers each, 296 total, years 2017–2026),
+   dominated by *Journal of Energy Storage*, *Chemical Engineering Journal*, *Journal of Alloys and
+   Compounds*, *Journal of Power Sources*, and *Electrochimica Acta* — i.e. an MXene +
+   energy-storage/sensor search.
+2. Enrichment with full-text `conclusion` sections via `preprocessing/institutional_scraper.py`
+   (Selenium, scraping ScienceDirect full text through institutional/university library access) and
+   `preprocessing/enrich_papers.py` (Unpaywall API, for open-access papers).
 3. Merge and de-duplication by DOI into `combined_papers_merged.json`.
 
-This all happened in git commit `1594d86` ("dataset", 2025-09-10). The raw exports and most scraper scripts were later deleted from the working tree (commit `522b6ed`, "cleaned from dataset") but were recovered from git history and restored under `preprocessing/` (`institutional_scraper.py`, `enrich_papers.py`, `process_citations.py`, `extract_conclusions.py`, `analyze_data.py`, `generate_summary.py`, `requirements_scraper.txt`). These scripts are **archived/historical** — they depend on Selenium plus an institutional library login and the Unpaywall API, and are not part of the maintained `.venv` dependency set (see `preprocessing/requirements_scraper.txt` if you need to re-run them). To pull more papers, re-run a ScienceDirect "MXene" search under similar filters and repeat the same export → enrich → merge steps.
+This all happened in git commit `1594d86` ("dataset", 2025-09-10). The raw exports and most scraper
+scripts were later deleted from the working tree (commit `522b6ed`, "cleaned from dataset") but were
+recovered from git history and restored under `preprocessing/`. These scripts are
+**archived/historical** — they depend on Selenium plus an institutional library login and the
+Unpaywall API, and are not part of the maintained `.venv` dependency set (see
+`preprocessing/requirements_scraper.txt` if you need to re-run them).
 
 If any of these scripts are ever deleted again, they remain recoverable with:
 ```bash
 git show 1594d86:preprocessing/institutional_scraper.py > preprocessing/institutional_scraper.py
 ```
-(swap the path for any other file under that commit's `preprocessing/` tree).
 
-## Input Data Format
+### Input format
 
-The system expects a JSON file with papers in this format:
 ```json
 [
   {
@@ -84,135 +215,44 @@ The system expects a JSON file with papers in this format:
     "year": 2025,
     "doi_url": "https://doi.org/...",
     "abstract": "Paper abstract text",
-    "conclusion": "Paper conclusion text",
-    "keywords": ["keyword1", "keyword2"]
+    "conclusion": "Paper conclusion text"
   }
 ]
 ```
 
-## Database Schema
+---
 
-The system automatically creates four main tables if they don't exist and **truncates all data on each run** to ensure fresh results:
+## The original pipeline (`main.py`)
 
-- **papers**: Paper metadata (title, authors, journal, DOI, etc.)
-- **materials**: Material information (MXene composition, synthesis methods)
-- **properties**: Material properties (conductivity, modulus, etc.)
-- **applications**: Application data (sensors, energy storage, etc.)
+Predates the benchmark harness and still works: preprocess → extract → validate → load to
+PostgreSQL → analytics/plots. It requires `POSTGRES_URL`; **the benchmark harness does not** — it is
+entirely file-based and never touches the database.
 
-### Database Behavior
-- **Schema Creation**: Tables are automatically created if they don't exist
-- **Data Truncation**: All existing data is cleared on each run to prevent duplicates
-- **Fresh Start**: Each execution starts with a clean database state
+```bash
+uv run python main.py     # needs POSTGRES_URL + an LLM provider key
+```
 
-## Output
+| Module | Role |
+|---|---|
+| `app/preprocessor.py` | Cleaning, normalization, dedup |
+| `app/extractor.py` | LLM-based structured extraction |
+| `app/validator.py` | Unit + property-type standardization |
+| `app/db_loader.py` | PostgreSQL load (truncates on run) |
+| `app/analytics.py` | Queries, CSV export, plots |
 
-Results are saved to the `results/` directory:
+---
 
-- **CSV files**: Extracted data exports
-- **Visualizations**: Histograms and distribution plots
-- **Summary reports**: Database statistics and insights
-- **Logs**: Detailed processing logs
+## Known limitations
 
-## Configuration
+Stated up front rather than buried — see [`DEFENSE.md`](DEFENSE.md) for the full treatment.
 
-Edit `app/config.py` to modify:
-- Processing settings (demo mode, batch sizes)
-- Database behavior (`TRUNCATE_ON_RUN = True` by default)
-- File paths
-- API settings
-
-## Demo Mode
-
-By default, the system runs in demo mode processing only 5 papers to avoid API rate limits. To process all papers, set `DEMO_MODE = False` in `app/config.py`.
-
-## Modules
-
-- `app/preprocessor.py`: Data cleaning and normalization
-- `app/extractor.py`: LLM-based data extraction
-- `app/validator.py`: Data validation and standardization
-- `app/db_loader.py`: Database operations
-- `app/analytics.py`: Analytics and visualization
-- `app/models.py`: Database schema definitions
-
-## Benchmark / Gold-Standard Workflow
-
-Benchmarks Gemini 3.5 Flash, gpt-oss-20b, Qwen3.6-35B-A3B, and gemma-4-12B-it (each at multiple thinking/reasoning-effort levels) against a **consensus gold standard**, on a fixed, seeded paper subset. Shares `app/extractor.py`, `app/validator.py`, and `prompts/extraction_prompt.txt` across every model so the comparison is fair.
-
-### Why not just trust one model's output as "gold"?
-
-A single model's extractions aren't a defensible ground truth — they're just another model's opinion. Instead:
-
-1. **Reference panel**: two independent frontier models, **Claude Opus 4.8** and **GPT-5.6 Sol**, each extract the full subset independently via [Kaggle Benchmarks](https://www.kaggle.com/benchmarks) (`kaggle_benchmarks`/`kbench`) — see `benchmark/kaggle/reference_panel_kbench/`. This replaced an earlier DeepSeek V4 Pro + Flash panel (same-vendor tiers, correlated blind spots — a compromise made after Gemini 3.1 Pro hit a hard quota=0 wall on a free-tier personal API key). kbench's Model Proxy gives free-quota access ($10/day, $100/month) to real independent-vendor models instead; the old DeepSeek-panel gold is preserved at `results/runs/consensus-gold-deepseek-panel/` for comparison, and its commands are in `benchmark/COMMANDS_api_runs.md`.
-2. **Consensus construction** (`benchmark/consensus.py`): the two reference runs are aligned item-by-item using the same schema-aware matcher used for scoring (`benchmark/scoring/matching.py`) — an item both models agree on becomes **confirmed gold**; an item only one model found, or that both found but disagree on the numeric value beyond tolerance, becomes **contested** (excluded from gold, logged to `results/benchmark/contested_items.json` for transparency).
-3. **Reference-panel agreement is itself reported** (`results/benchmark/reference_agreement_report.md`) as a "noise floor" — no candidate model should be expected to exceed how much the two reference models agree with *each other*. This agreement rate is the sole defensibility argument for the gold standard (there's deliberately no manual human-review step: judging MXene extraction correctness requires materials-science domain expertise neither of us has, and a non-expert's yes/no would add false confidence rather than real validation). Notably, the Claude+GPT panel's raw agreement numbers are *lower* than the old DeepSeek panel's (materials F1 0.606 vs 0.735) — expected and more honest, not worse: two same-vendor models share correlated blind spots and so agree with each other more, while two genuinely independent architectures' agreement reflects real independent consensus rather than shared training artifacts.
-
-Reference-panel models are **never** scored as candidates (`run_benchmark.py` refuses to score any `REFERENCE_PANEL` key, since their own scores would be circularly inflated by definition).
-
-### Running it end to end
-
-1. **Environment**: `uv venv && uv sync`. Fill in `KAGGLE_USERNAME`/`KAGGLE_KEY` in `.env` for both the reference panel and the open-weight candidates; `DEEPSEEK_API_KEY`/`GEMINI_API_KEY` are only needed if reproducing the older DeepSeek-panel/Gemini-candidate runs (see `benchmark/COMMANDS_api_runs.md`).
-2. **Sample the fixed subset** (default: 60 papers, seed 42):
-   ```bash
-   uv run python -m benchmark.sample_subset
-   ```
-3. **Run the reference panel** via Kaggle Benchmarks (writes `results/runs/claude-opus-4.8/` and `results/runs/gpt-5.6-sol/`) — see `benchmark/kaggle/reference_panel_kbench/commands.md` for the full push/run/download/convert sequence:
-   ```bash
-   kaggle b t push mxene-reference-panel-run -f benchmark/kaggle/reference_panel_kbench/task.py -d <user>/mxene-benchmark-subset --wait
-   kaggle b t run mxene-reference-panel-run -m claude-opus-4-8-default -m gpt-5.6-sol --wait
-   kaggle b t download mxene-reference-panel-run -o <download-dir> -f
-   uv run python -m benchmark.kaggle.reference_panel_kbench.convert_results --task-dir <download-dir>/mxene-reference-panel-run/<version> --model-slug claude-opus-4-8-default --run-key claude-opus-4.8 --provider anthropic
-   uv run python -m benchmark.kaggle.reference_panel_kbench.convert_results --task-dir <download-dir>/mxene-reference-panel-run/<version> --model-slug gpt-5.6-sol --run-key gpt-5.6-sol --provider openai
-   ```
-4. **Build the consensus gold standard** (writes `results/runs/consensus-gold/`, the agreement report, and contested items; `--load-db` loads it into Postgres — this truncates the DB, same as `main.py` today):
-   ```bash
-   uv run python -m benchmark.consensus --load-db
-   ```
-5. **Run the API-based candidates** (Gemini 3.5 Flash, at 2 thinking levels):
-   ```bash
-   uv run python -m benchmark.run_api_model --run-key gemini-3.5-flash__low
-   uv run python -m benchmark.run_api_model --run-key gemini-3.5-flash__high
-   ```
-6. **Run the open-weight candidates on Kaggle** — gpt-oss-20b, Qwen3.6-35B-A3B, and gemma-4-12B-it run **sequentially in one notebook** (`benchmark/kaggle/candidate_run/`), each swept across its thinking-level variants while loaded, then explicitly freed (GPU memory + downloaded weights) before the next model loads — Kaggle's disk quota can't hold multiple large checkpoints at once. One-time: replace `<KAGGLE_USERNAME>` in `benchmark/kaggle/candidate_run/kernel-metadata.json`.
-   ```bash
-   uv run python -m benchmark.kaggle.prepare_kaggle_dataset --first-time
-   uv run python -m benchmark.kaggle.push_and_wait --run-dir benchmark/kaggle/candidate_run --kernel-slug <user>/mxene-candidate-run
-   uv run python -m benchmark.kaggle.pull_results --kernel-slug <user>/mxene-candidate-run
-   ```
-   This fans the kernel's multiple `<run_key>/` output subfolders out into `results/runs/<run_key>/` automatically. Uses **llama.cpp** (`llama-cpp-python`) with unsloth GGUF quantizations rather than vLLM — confirmed live that Kaggle's assigned GPU (a P100, compute capability 6.0) is incompatible with every native quantization format vLLM would otherwise need (MXFP4/FP8 need Ampere+, W4A16-marlin needs Volta+); GGUF's k-quants sidestep that hardware gate. Notes: (a) Kaggle kernel execution is asynchronous with no push-and-block API, so `push_and_wait` polls up to the 12h session cap; (b) diagnosing a failed/timed-out run may need a manual check in the Kaggle web UI; (c) each model's "thinking level" is a prompt/message-level convention, not an API parameter (documented in the notebook's intro cell) — verify against your installed `llama-cpp-python`/model versions before trusting the thinking-level sweep.
-7. **Score every candidate against the consensus gold standard**:
-   ```bash
-   uv run python -m benchmark.run_benchmark
-   ```
-   Defaults to every registered candidate. Produces `results/benchmark_report/report.md` (ranked precision/recall/F1 per category), `summary.csv`, and `per_paper_scores.csv`. Scoring is schema-aware (fuzzy field matching + 10% numeric value tolerance via `benchmark/scoring/`), not a naive whole-JSON text comparison.
-8. **Generate the comparison chart**:
-   ```bash
-   uv run python -m benchmark.chart
-   ```
-   Writes an interactive, theme-aware HTML chart to `results/benchmark_report/chart.html` — a sorted mean-F1 leaderboard (HuggingFace-leaderboard style, colored by model family) with a matching latency leaderboard in the same row order, plus a full data table.
-
-Before trusting real results, run `uv run pytest benchmark/tests/` — it includes a gold-vs-gold regression check that the scorer always reports a perfect 1.0 when a run is compared against itself.
-
-The full model/thinking-level registry lives in `benchmark/config.py` (`REFERENCE_PANEL`, `API_CANDIDATES`, `KAGGLE_CANDIDATES`) — that file is the single source of truth `run_api_model.py`, `run_benchmark.py`, and the Kaggle notebook (via a bundled `kaggle_candidates.json`) all read from.
-
-## Analytics Features
-
-- Conductivity value distributions
-- MXene composition analysis
-- Sensor application statistics
-- Property type distributions
-- Publication trend analysis
-
-## Error Handling
-
-The system includes comprehensive error handling and logging. Check the `logs/` directory for detailed execution logs.
-
-## Contributing
-
-1. Follow the modular architecture
-2. Add comprehensive docstrings
-3. Include error handling
-4. Update tests as needed
-
-## License
-
-This project is for research purposes.
+- **No human validation of scientific correctness.** Deliberate: neither author is a materials
+  scientist, and a non-expert's yes/no would add false confidence. Groundedness is the honest
+  partial answer — it verifies *traceability*, not *truth*.
+- **n = 60 papers, one seed.** No cross-subset stability check yet; no confidence intervals on the
+  reported F1 values.
+- **Matching thresholds (70/85/80, ±10%) are reasonable defaults, not tuned or validated.**
+- **Reasoning effort was uncontrolled** for the 7 Kaggle-Benchmarks models in the current results.
+  The fix is committed (`reasoning="low"`, explicit and uniform) but the re-run is pending — see
+  `LEARNINGS.md` §18.
+- **Latency is not apples-to-apples**: shared Kaggle P100 wall-clock vs. hosted API round-trip.

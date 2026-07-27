@@ -1,0 +1,18 @@
+{
+  "run_key": "deepseek-v3.1",
+  "provider": "deepseek",
+  "model": "deepseek-v3.1",
+  "thinking_level": null,
+  "thinking_enabled": null,
+  "total_papers": 60,
+  "successful_extractions": 60,
+  "failed_extractions": 0,
+  "total_time_s": 158.91,
+  "avg_latency_s": 2.648,
+  "total_input_tokens": 73374,
+  "total_output_tokens": 22582,
+  "est_cost_usd": 0.0824,
+  "pricing": "real metered cost via Kaggle Model Proxy (kaggle_benchmarks Usage), not an estimate table",
+  "generated_at": "2026-07-22T20:59:56.859232",
+  "source": "kaggle_benchmarks (kbench) reference-panel run, see commands.md in this directory"
+}

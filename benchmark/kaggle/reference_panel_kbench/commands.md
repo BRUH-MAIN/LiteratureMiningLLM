@@ -1,5 +1,14 @@
 # Reference panel via Kaggle Benchmarks (kbench)
 
+> ⚠️ **Task version vs. published results.** `task.py` in this directory is **v3** (strips the stray
+> `/no_think` tag, sets an explicit uniform `reasoning="low"`). The results currently in
+> `results/runs/` were produced by **v2**, which had neither fix — so re-running the commands below
+> will NOT reproduce the committed numbers byte-for-byte. The v3 re-run was attempted and partially
+> failed (claude-opus 49/60, gpt-5.6-terra 53/60 — reasoning-enabled calls appear to need a longer
+> per-paper `timeout` than the current 180s, given the manual retry loop also consumes up to 110s of
+> backoff). Nothing was overwritten; v2 data stands until a clean v3 run completes. See
+> `LEARNINGS.md` §10-11 and `DEFENSE.md` §8.5.
+
 Real commands used to build the consensus gold standard from **Claude Opus 4.8**
 + **GPT-5.6 Sol** via Kaggle's `kaggle_benchmarks` SDK / `kaggle benchmarks` CLI,
 replacing the original DeepSeek V4 Pro + Flash panel (see

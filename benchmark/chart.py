@@ -23,17 +23,30 @@ from typing import Any, Dict, List, Optional
 
 import pandas as pd
 
-# Fixed family -> categorical slot assignment (palette.md slots 1-4: blue/green/
-# magenta/yellow). Fixed and hand-maintained rather than derived from whatever
-# families happen to appear in a given run, so a family's color never shifts
-# across regenerations (see dataviz skill: "color follows the entity, never its
-# rank/filter state"). gemini-3.5-flash is reserved here even though it isn't in
-# any run yet (still quota-blocked) so its color is already locked in.
+# Fixed family -> categorical slot assignment (palette.md slots 1-8: blue/green/magenta/
+# yellow/aqua/orange/violet/red - the full safe ceiling for a bar chart's adjacent pairlist,
+# validated via scripts/validate_palette.js). Fixed and hand-maintained rather than derived
+# from whatever families happen to appear in a given run, so a family's color never shifts
+# across regenerations (see dataviz skill: "color follows the entity, never its rank/filter
+# state"). New families are appended to the next free slot, never inserted/resorted, so
+# existing families keep their color.
+#
+# We're now AT the 8-hue ceiling with 8 actively-scored families - adding a 9th would mean
+# a generated hue indistinguishable from an existing one under CVD (the skill explicitly
+# prohibits this: fold into "Other," facet, or use composite encoding instead). gemini-3.5-flash
+# previously held a "reserved" slot 1 despite never having actually been rendered (still
+# quota-blocked, zero real visual presence to date) - that reservation is dropped here to make
+# room; if it ever gets real data, slot assignment needs revisiting rather than silently
+# generating a 9th hue.
 FAMILY_COLOR_SLOTS = {
-    'gemini-3.5-flash': 1,
+    'glm-5': 1,
     'gemma-4-12b-it': 2,
     'gpt-oss-20b': 3,
     'qwen3.6-35b-a3b': 4,
+    'claude-sonnet-4.6': 5,
+    'gpt-5.6-terra': 6,
+    'gemini-3.6-flash': 7,
+    'deepseek-v3.1': 8,
 }
 
 HTML_TEMPLATE = r"""<!doctype html>
@@ -57,7 +70,7 @@ HTML_TEMPLATE = r"""<!doctype html>
     --baseline:         #c3c2b7;
     --border:           rgba(11,11,11,0.10);
     --seq-100: #cde2fb; --seq-250: #86b6ef; --seq-450: #2a78d6; --seq-650: #104281;
-    --cat-1: #2a78d6; --cat-2: #008300; --cat-3: #e87ba4; --cat-4: #eda100;
+    --cat-1: #2a78d6; --cat-2: #008300; --cat-3: #e87ba4; --cat-4: #eda100; --cat-5: #1baf7a; --cat-6: #eb6834; --cat-7: #4a3aa7; --cat-8: #e34948;
     --muted-mark:       #52514e;
   }
   @media (prefers-color-scheme: dark) {
@@ -72,7 +85,7 @@ HTML_TEMPLATE = r"""<!doctype html>
       --baseline:         #383835;
       --border:           rgba(255,255,255,0.10);
       --seq-100: #184f95; --seq-250: #1c5cab; --seq-450: #3987e5; --seq-650: #9ec5f4;
-      --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500;
+      --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500; --cat-5: #199e70; --cat-6: #d95926; --cat-7: #9085e9; --cat-8: #e66767;
       --muted-mark:       #c3c2b7;
     }
   }
@@ -87,7 +100,7 @@ HTML_TEMPLATE = r"""<!doctype html>
     --baseline:         #383835;
     --border:           rgba(255,255,255,0.10);
     --seq-100: #184f95; --seq-250: #1c5cab; --seq-450: #3987e5; --seq-650: #9ec5f4;
-    --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500;
+    --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500; --cat-5: #199e70; --cat-6: #d95926; --cat-7: #9085e9; --cat-8: #e66767;
     --muted-mark:       #c3c2b7;
   }
   .viz-root { max-width: 1080px; margin: 0 auto; padding: 24px 20px 48px; }
@@ -144,6 +157,12 @@ HTML_TEMPLATE = r"""<!doctype html>
   </div>
 
   <div class="panel">
+    <h2>Groundedness (faithfulness to source text)</h2>
+    <p class="note">A second, fully independent axis: what share of each model's extracted items can actually be traced back to the paper text it was given - no gold standard involved (see benchmark/scoring/groundedness.py). High F1 with low groundedness means a model agrees with the panel partly by inferring from domain knowledge rather than reading. Bars show the mean across materials/properties/applications.</p>
+    <svg id="groundedness-chart"></svg>
+  </div>
+
+  <div class="panel">
     <h2>Avg. latency per paper</h2>
     <p class="note">Same rows, same order as the leaderboard above - lower is faster. Kaggle GPU wall-clock times aren't directly comparable to a hosted API's network round-trip, so this is shown separately rather than mixed into the accuracy comparison.</p>
     <svg id="latency-chart"></svg>
@@ -192,6 +211,7 @@ HTML_TEMPLATE = r"""<!doctype html>
       ['Properties F1', r.properties_f1.toFixed(3)],
       ['Applications F1', r.applications_f1.toFixed(3)],
     ];
+    if (r.groundedness_mean != null) lines.push(['Groundedness', r.groundedness_mean.toFixed(3)]);
     if (r.avg_latency_s != null) lines.push(['Avg latency', r.avg_latency_s.toFixed(2) + 's']);
     if (r.est_cost_usd != null) lines.push(['Est. cost', '$' + r.est_cost_usd.toFixed(4)]);
 
@@ -297,7 +317,65 @@ HTML_TEMPLATE = r"""<!doctype html>
     });
   })();
 
-  // ---------- Panel 2: latency leaderboard (same row order) ----------
+  // ---------- Panel 2: groundedness (same row order, independent of gold) ----------
+  (function renderGroundednessChart() {
+    const gRows = rows.filter(r => r.groundedness_mean != null);
+    const container = document.getElementById('groundedness-chart');
+    if (!gRows.length) { container.closest('.panel').style.display = 'none'; return; }
+
+    const margin = { top: 26, right: 56, bottom: 4, left: LABEL_W };
+    const plotW = 560;
+    const width = margin.left + plotW + margin.right;
+    const plotH = gRows.length * ROW_H;
+    const height = margin.top + plotH + margin.bottom;
+
+    const svg = svgEl('svg', { width, height, viewBox: '0 0 ' + width + ' ' + height });
+    container.replaceWith(svg);
+    svg.id = 'groundedness-chart';
+
+    const x = v => margin.left + plotW * v;
+
+    [0, 0.25, 0.5, 0.75, 1.0].forEach(v => {
+      const gx = x(v);
+      svg.appendChild(svgEl('line', {
+        x1: gx, x2: gx, y1: margin.top - 6, y2: margin.top + plotH,
+        class: v === 0 ? 'baseline' : 'grid',
+      }));
+      const t = svgEl('text', { x: gx, y: margin.top - 10, class: 'axis', 'text-anchor': v === 1.0 ? 'end' : 'middle' });
+      t.textContent = v === 1.0 ? '1.00 (fully traceable)' : v.toFixed(2);
+      svg.appendChild(t);
+    });
+
+    gRows.forEach((r, i) => {
+      const rowY = margin.top + i * ROW_H;
+      const barY = rowY + (ROW_H - BAR_H) / 2;
+      const barW = Math.max(plotW * r.groundedness_mean, 2);
+      const slot = r.family_color_slot || 1;
+
+      const nameLbl = svgEl('text', { x: margin.left - 12, y: rowY + ROW_H / 2 - 3, class: 'row-label-name', 'text-anchor': 'end' });
+      nameLbl.textContent = r.family;
+      svg.appendChild(nameLbl);
+      if (r.thinking_level) {
+        const levelLbl = svgEl('text', { x: margin.left - 12, y: rowY + ROW_H / 2 + 11, class: 'row-label-level', 'text-anchor': 'end' });
+        levelLbl.textContent = r.thinking_level;
+        svg.appendChild(levelLbl);
+      }
+
+      const rect = svgEl('rect', {
+        x: margin.left, y: barY, width: barW, height: BAR_H, rx: 4, ry: 4,
+        fill: 'var(--cat-' + slot + ')', class: 'bar-rect',
+      });
+      rect.addEventListener('pointermove', (e) => showTooltip(e, r));
+      rect.addEventListener('mouseleave', hideTooltip);
+      svg.appendChild(rect);
+
+      const valLbl = svgEl('text', { x: margin.left + barW + 8, y: barY + BAR_H / 2 + 4, class: 'value-label' });
+      valLbl.textContent = r.groundedness_mean.toFixed(3);
+      svg.appendChild(valLbl);
+    });
+  })();
+
+  // ---------- Panel 3: latency leaderboard (same row order) ----------
   (function renderLatencyChart() {
     const latRows = rows.filter(r => r.avg_latency_s != null);
     const margin = { top: 26, right: 60, bottom: 4, left: LABEL_W };
@@ -362,7 +440,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 
   // ---------- Data table ----------
   (function renderTable() {
-    const cols = ['model', 'family', 'thinking_level', 'mean_f1', 'materials_f1', 'properties_f1', 'applications_f1', 'avg_latency_s', 'est_cost_usd'];
+    const cols = ['model', 'family', 'thinking_level', 'mean_f1', 'materials_f1', 'properties_f1', 'applications_f1', 'groundedness_mean', 'avg_latency_s', 'est_cost_usd'];
     const table = document.createElement('table');
     table.className = 'data-table';
     const thead = document.createElement('thead');
@@ -404,13 +482,29 @@ THINKING_RANK_HINTS = {
 
 
 def _thinking_rank(level: Optional[str]) -> int:
-    if not level:
+    # pandas reads a missing CSV cell as float('nan'), not None/'' - `not nan` is False in
+    # Python, so a plain falsy check lets it through to .lower() and crashes. isinstance
+    # guards against any non-string (nan included) directly instead.
+    if not isinstance(level, str) or not level:
         return 0
     return THINKING_RANK_HINTS.get(level.lower(), 0)
 
 
+def _groundedness_means(groundedness_report: Optional[Dict[str, Any]]) -> Dict[str, float]:
+    """run_key -> mean groundedness rate across the three categories (None rates skipped)"""
+    if not groundedness_report:
+        return {}
+    means = {}
+    for run_key, entry in groundedness_report.items():
+        rates = [v for v in (entry.get('rates') or {}).values() if v is not None]
+        if rates:
+            means[run_key] = sum(rates) / len(rates)
+    return means
+
+
 def build_chart_data(summary_df: pd.DataFrame, gold_model: str,
-                      reference_agreement_report: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+                      reference_agreement_report: Optional[Dict[str, Any]] = None,
+                      groundedness_report: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     candidate_rows = summary_df[summary_df['model'] != gold_model].copy()
     gold_rows = summary_df[summary_df['model'] == gold_model]
     gold_f1 = float(gold_rows.iloc[0]['mean_f1']) if not gold_rows.empty else 1.0
@@ -424,19 +518,27 @@ def build_chart_data(summary_df: pd.DataFrame, gold_model: str,
             reference_agreement_mean_f1 = sum(f1s) / len(f1s)
         reference_panel = reference_agreement_report.get('reference_panel')
 
+    groundedness_means = _groundedness_means(groundedness_report)
+
     rows: List[Dict[str, Any]] = []
     for _, r in candidate_rows.iterrows():
         family = r.get('family', r['model'])
+        # A single-shot candidate (no thinking-level sweep) has a blank CSV cell here, which
+        # pandas reads as float('nan') rather than None/'' - json.dumps(nan) emits the bare
+        # token `NaN`, which is not valid JSON and breaks JSON.parse() in the browser.
+        raw_level = r.get('thinking_level')
+        thinking_level = raw_level if isinstance(raw_level, str) else None
         rows.append({
             'model': r['model'],
             'family': family,
             'family_color_slot': FAMILY_COLOR_SLOTS.get(family, 1),
-            'thinking_level': r.get('thinking_level'),
-            'thinking_rank': _thinking_rank(r.get('thinking_level')),
+            'thinking_level': thinking_level,
+            'thinking_rank': _thinking_rank(thinking_level),
             'mean_f1': float(r['mean_f1']),
             'materials_f1': float(r['materials_f1']),
             'properties_f1': float(r['properties_f1']),
             'applications_f1': float(r['applications_f1']),
+            'groundedness_mean': groundedness_means.get(r['model']),
             'avg_latency_s': float(r['avg_latency_s']) if pd.notna(r.get('avg_latency_s')) else None,
             'est_cost_usd': float(r['est_cost_usd']) if pd.notna(r.get('est_cost_usd')) else None,
         })
@@ -457,6 +559,8 @@ def main():
     parser = argparse.ArgumentParser(description="Render the benchmark summary into an interactive HTML chart")
     parser.add_argument('--summary-csv', default='results/benchmark_report/summary.csv')
     parser.add_argument('--reference-agreement-json', default='results/benchmark/reference_agreement_report.json')
+    parser.add_argument('--groundedness-json', default='results/benchmark_report/groundedness_report.json',
+                         help="Optional - adds the gold-independent groundedness panel if present")
     parser.add_argument('--gold-model', default='consensus-gold')
     parser.add_argument('--out', default='results/benchmark_report/chart.html')
     args = parser.parse_args()
@@ -468,7 +572,12 @@ def main():
     if ref_path.exists():
         reference_agreement_report = json.load(open(ref_path, encoding='utf-8'))
 
-    chart_data = build_chart_data(summary_df, args.gold_model, reference_agreement_report)
+    groundedness_report = None
+    g_path = Path(args.groundedness_json)
+    if g_path.exists():
+        groundedness_report = json.load(open(g_path, encoding='utf-8'))
+
+    chart_data = build_chart_data(summary_df, args.gold_model, reference_agreement_report, groundedness_report)
     html = render_chart_html(chart_data)
 
     out_path = Path(args.out)

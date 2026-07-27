@@ -1,8 +1,8 @@
 # %%
-# Full 60-paper reference-panel extraction run, used to build the consensus gold
-# standard (see benchmark/consensus.py). Pushed once, then run twice via
-# `kaggle b t run -m claude-opus-4-8-default -m gpt-5.6-sol` so each model
-# independently extracts from all 60 papers under the same task/prompt.
+# Full 60-paper reference-panel/candidate extraction run, used both to build the
+# consensus gold standard (see benchmark/consensus.py) and to score every kbench-run
+# candidate. Pushed once, then run per model via `kaggle b t run -m <model-slug>` so
+# each model independently extracts from all 60 papers under the same task/prompt.
 #
 # v2: the platform forces max_attempts=1 for .evaluate() calls nested inside an
 # already-running task ("max_attempts must be 1 for nested task evaluations"),
@@ -11,6 +11,28 @@
 # claude-opus-4-8-default: 0/60), almost certainly concurrent-request rate
 # limiting with zero retry safety net. Fixed by going fully sequential
 # (n_jobs=1) and adding a manual retry loop inside the per-paper task itself.
+#
+# v3: every prior run through this task left the model's reasoning/thinking effort
+# completely uncontrolled - llm.prompt() was called with no `reasoning=` kwarg, so
+# each of the 7 models (2 reference-panel, 5 candidates) silently used whatever its
+# provider's own default is, unlike every other path in this project (GGUF/API
+# candidates all sweep or explicitly set a thinking level). Compounding this, the
+# shared prompts/extraction_prompt.txt ends with a stray "/no_think" tag - a
+# Qwen-specific chat-template convention (app/prompt_loader.py never strips it,
+# and the GGUF pipeline's build_messages() explicitly swaps it to "/think" only for
+# Qwen's thinking-on variant) that's inert text noise for every non-Qwen model, none
+# of which are Qwen here. Fixed by stripping that tag and setting an explicit,
+# uniform reasoning level on every kbench call - not a full low/medium/high sweep
+# (that would 3x the already-real API spend across 7 models), but at least a fixed,
+# documented, consistent setting instead of an unstated default.
+#
+# reasoning="medium" was tried first and rejected: it reserves cost up-front based on
+# a worst-case max_output_tokens for that reasoning depth, and confirmed live this
+# tripped a 403 PermissionDeniedError ("max estimated cost... exceeds your available
+# quota") for gemini-3.6-flash ($0.49 reservation) and deepseek-v3.1 ($0.06 reservation)
+# once the day's quota was mostly spent - not a model-compatibility problem, a budget
+# one. reasoning="low" confirmed working for all 7 models with a single-paper smoke
+# test before committing to the full 60-paper x 7-model re-run.
 import glob
 import sys
 import time
@@ -39,7 +61,9 @@ import json  # noqa: E402
 with open(BUNDLE_DIR / "benchmark_subset.json", encoding="utf-8") as f:
     papers = json.load(f)
 with open(BUNDLE_DIR / "extraction_prompt.txt", encoding="utf-8") as f:
-    PROMPT_TEMPLATE = f.read()
+    PROMPT_TEMPLATE = f.read().replace("/no_think", "").strip()
+
+REASONING_LEVEL = "low"
 
 validator = Validator()
 
@@ -66,7 +90,7 @@ def extract_one_paper(llm, doi_url: str, title: str, abstract: str, conclusion: 
     for attempt in range(MAX_MANUAL_RETRIES):
         try:
             with kbench.chats.new(f"extract:{doi_url}:{attempt}") as chat:
-                response_text = llm.prompt(prompt)
+                response_text = llm.prompt(prompt, reasoning=REASONING_LEVEL)
                 usage = chat.usage
             break
         except Exception as e:  # noqa: BLE001 - genuinely want to retry any transient failure here

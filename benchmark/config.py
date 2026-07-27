@@ -88,6 +88,33 @@ API_CANDIDATES = {
     },
 }
 
+# Candidates run through Kaggle Benchmarks (kbench) - same mechanism as the reference panel
+# (see benchmark/kaggle/reference_panel_kbench/), just registered as candidates instead of
+# panel members since none of them build the gold standard. Single-shot runs (no thinking-level
+# sweep requested).
+KBENCH_CANDIDATES = {
+    "claude-sonnet-4.6": {
+        "provider": "kbench",
+        "model": "claude-sonnet-4-6-default",
+    },
+    "gpt-5.6-terra": {
+        "provider": "kbench",
+        "model": "gpt-5.6-terra",
+    },
+    "gemini-3.6-flash": {
+        "provider": "kbench",
+        "model": "gemini-3.6-flash",
+    },
+    "glm-5": {
+        "provider": "kbench",
+        "model": "glm-5",
+    },
+    "deepseek-v3.1": {
+        "provider": "kbench",
+        "model": "deepseek-v3.1",
+    },
+}
+
 # Open-weight candidates - run sequentially in one Kaggle notebook (benchmark/kaggle/candidate_run/),
 # each model loaded once via llama.cpp (llama-cpp-python), its thinking-level variants swept
 # while loaded, then the model and its downloaded GGUF file are deleted before the next one

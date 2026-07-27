@@ -1,0 +1,18 @@
+{
+  "run_key": "claude-sonnet-4.6",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6-default",
+  "thinking_level": null,
+  "thinking_enabled": null,
+  "total_papers": 60,
+  "successful_extractions": 60,
+  "failed_extractions": 0,
+  "total_time_s": 534.1,
+  "avg_latency_s": 8.902,
+  "total_input_tokens": 87502,
+  "total_output_tokens": 46016,
+  "est_cost_usd": 0.9527,
+  "pricing": "real metered cost via Kaggle Model Proxy (kaggle_benchmarks Usage), not an estimate table",
+  "generated_at": "2026-07-22T19:31:37.525030",
+  "source": "kaggle_benchmarks (kbench) reference-panel run, see commands.md in this directory"
+}

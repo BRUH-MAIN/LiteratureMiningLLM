@@ -1,0 +1,2579 @@
+{
+  "claude-opus-4.8": {
+    "rates": {
+      "materials": 0.8221476510067114,
+      "properties": 0.9142857142857143,
+      "applications": 0.9790209790209791
+    },
+    "counts": {
+      "materials": {
+        "grounded": 245,
+        "total": 298
+      },
+      "properties": {
+        "grounded": 224,
+        "total": 245
+      },
+      "applications": {
+        "grounded": 140,
+        "total": 143
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "LiF/HCl etching",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "MXene//AC (activated carbon) asymmetrical supercapacitor",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti2CTx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "In-situ hydrothermal growth of NiGa-LDH on V4C3Tx MXene surface via electrostatic interactions",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+        "title": "Enhanced charge storage using in-situ grown NiGa-layered double hydroxide on V4C"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "NiCoMn-LDH/Ti3C2Tx (ternary hydrotalcite and MXene nanohybrid)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Surface engineering of Ta4C3Tx sheets with NGQD (0D/2D nanostructure); asymmetric supercapacitor device fabrication with activated carbon (AC)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+        "title": "Nitrogen doped graphene quantum dots (NGQD) pillared Ta4C3Tx MXene as high-perfo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "wet-spinning of liquid crystal MXene dispersions with one-pot polymerization coagulation",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      }
+    ]
+  },
+  "gpt-5.6-sol": {
+    "rates": {
+      "materials": 0.7208333333333333,
+      "properties": 0.9128205128205128,
+      "applications": 0.9521276595744681
+    },
+    "counts": {
+      "materials": {
+        "grounded": 173,
+        "total": 240
+      },
+      "properties": {
+        "grounded": 178,
+        "total": 195
+      },
+      "applications": {
+        "grounded": 179,
+        "total": 188
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "polypyrrole/Ti3C2Tx/4-O-TEMPO (pMT)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Vacuum filtration to form a self-supported film electrode",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "LiF/HCl etching",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "2-methylimidazole-intercalated porous MXene film",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "In situ formation of 3D MXene microgels induced by 2-methylimidazole, followed by vacuum filtration to form a self-standing porous film",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "M-MXene-5/activated carbon asymmetric supercapacitor",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Assembly of an M-MXene-5 and activated carbon asymmetric supercapacitor device",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "metal-organic frameworks",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "NiGa-LDH/V4C3Tx MXene (NGV-11; Ni:Ga = 1:1)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+        "title": "Enhanced charge storage using in-situ grown NiGa-layered double hydroxide on V4C"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "In situ hydrothermal growth of NiGa-LDH on delaminated V4C3Tx MXene via electrostatic interactions",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+        "title": "Enhanced charge storage using in-situ grown NiGa-layered double hydroxide on V4C"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Hydrothermal reaction followed by phosphorization; asymmetric supercapacitor assembled using MX-3 NCP as the positive electrode and PNC as the negative electrode; planar device fabrication",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Synergistic coupling of Ti3C2Tx MXene nanosheets with ternary NiCoMn-LDH, followed by assembly with activated carbon into a hybrid supercapacitor",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Facile, cost-effective synthesis route; specific MXene synthesis method not stated",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+        "title": "Nitrogen doped graphene quantum dots (NGQD) pillared Ta4C3Tx MXene as high-perfo"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Solvothermal surface engineering of Ta4C3Tx sheets with NGQDs; asymmetric 5-NGQD-Ta4C3Tx/activated carbon supercapacitor fabrication",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+        "title": "Nitrogen doped graphene quantum dots (NGQD) pillared Ta4C3Tx MXene as high-perfo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 32.68,
+        "unit": "nm",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      }
+    ]
+  },
+  "gpt-oss-20b__low": {
+    "rates": {
+      "materials": 0.853448275862069,
+      "properties": 0.9180327868852459,
+      "applications": 0.9692307692307692
+    },
+    "counts": {
+      "materials": {
+        "grounded": 198,
+        "total": 232
+      },
+      "properties": {
+        "grounded": 168,
+        "total": 183
+      },
+      "applications": {
+        "grounded": 126,
+        "total": 130
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "ppy and 4-O-TEMPO modified Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "acrylic acid polymer coated Ti3C2Tx MXene fibers",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "room temperature electrostatic assembly",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+        "title": "Self-assembled MXene(Ti3C2Tx) α-Fe2O3 nanocomposite as negative electrode materi"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      }
+    ]
+  },
+  "gpt-oss-20b__medium": {
+    "rates": {
+      "materials": 0.8681818181818182,
+      "properties": 0.9074074074074074,
+      "applications": 0.934640522875817
+    },
+    "counts": {
+      "materials": {
+        "grounded": 191,
+        "total": 220
+      },
+      "properties": {
+        "grounded": 147,
+        "total": 162
+      },
+      "applications": {
+        "grounded": 143,
+        "total": 153
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "LiF/HCl etching",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "in situ microgel formation via 2-methylimidazole",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "hydrothermal in-situ growth",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+        "title": "Enhanced charge storage using in-situ grown NiGa-layered double hydroxide on V4C"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "asymmetric supercapacitor assembly with MX NCP positive electrode and porous nanocarbon negative electrode",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 66.87,
+        "unit": "A g-1",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "acrylic acid polymer coating",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "Ni3S4, PEDOT",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Ni3S4 and PEDOT doping",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      }
+    ]
+  },
+  "gpt-oss-20b__high": {
+    "rates": {
+      "materials": 0.8852459016393442,
+      "properties": 0.9320987654320988,
+      "applications": 0.9236111111111112
+    },
+    "counts": {
+      "materials": {
+        "grounded": 216,
+        "total": 244
+      },
+      "properties": {
+        "grounded": 151,
+        "total": 162
+      },
+      "applications": {
+        "grounded": 133,
+        "total": 144
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "NiCoMn-LDH/Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "electrode fabrication by coupling",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 66.87,
+        "unit": "A g-1",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "coagulation and spinning fibers",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      }
+    ]
+  },
+  "qwen3.6-35b-a3b__thinking-on": {
+    "rates": {
+      "materials": 0.9040404040404041,
+      "properties": 0.9213483146067416,
+      "applications": 0.8442211055276382
+    },
+    "counts": {
+      "materials": {
+        "grounded": 179,
+        "total": 198
+      },
+      "properties": {
+        "grounded": 246,
+        "total": 267
+      },
+      "applications": {
+        "grounded": 168,
+        "total": 199
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 0.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "integration/composite formation",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 0.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "polyacrylic acid (implied from acrylic acid polymerization)",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Quasi-solid-state device fabrication with (NH4)2SO4-PAMH electrolyte",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+        "title": "A capacitance-enhanced MXene anode for high-performance and dual-functional quas"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "electrodeposition, impregnation, assembly",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+        "title": "A Ti3C2Tx-encapsulated Mn2+-doped Co(OH)2 nanosheets electrode grown on carbon c"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 90.0,
+        "unit": "degrees",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 317.42,
+        "unit": "m2/g",
+        "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+        "title": "MXene tungsten-functionalized graphene oxide nanosheets as conductive platforms "
+      }
+    ]
+  },
+  "qwen3.6-35b-a3b__thinking-off": {
+    "rates": {
+      "materials": 0.9035532994923858,
+      "properties": 0.9209486166007905,
+      "applications": 0.8552036199095022
+    },
+    "counts": {
+      "materials": {
+        "grounded": 178,
+        "total": 197
+      },
+      "properties": {
+        "grounded": 233,
+        "total": 253
+      },
+      "applications": {
+        "grounded": 189,
+        "total": 221
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 0.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "integration/composite formation",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 0.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "Ni-Co phosphide (NCP), porous nanocarbon (PNC)",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F g-1",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "quasi-solid-state device fabrication",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+        "title": "A capacitance-enhanced MXene anode for high-performance and dual-functional quas"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh kg-1",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "electrodeposition, impregnation, assembly",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+        "title": "A Ti3C2Tx-encapsulated Mn2+-doped Co(OH)2 nanosheets electrode grown on carbon c"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": -2.18,
+        "unit": "eV",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 90.0,
+        "unit": "degrees",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      }
+    ]
+  },
+  "gemma-4-12b-it__low": {
+    "rates": {
+      "materials": 0.867579908675799,
+      "properties": 0.9124423963133641,
+      "applications": 0.8125
+    },
+    "counts": {
+      "materials": {
+        "grounded": 190,
+        "total": 219
+      },
+      "properties": {
+        "grounded": 198,
+        "total": 217
+      },
+      "applications": {
+        "grounded": 156,
+        "total": 192
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "MAX phase, F-free etching, fluoride-based etching, HF acid etching",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "planar device fabrication",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "acrylic acid polymer coating",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not mentioned",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+        "title": "Cylindrical janus Mosse CNT intercalated into Mxene: A high-performance supercap"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Not specified",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+        "title": "Self-assembled MXene(Ti3C2Tx) α-Fe2O3 nanocomposite as negative electrode materi"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      }
+    ]
+  },
+  "gemma-4-12b-it__medium": {
+    "rates": {
+      "materials": 0.8565022421524664,
+      "properties": 0.9027777777777778,
+      "applications": 0.7806122448979592
+    },
+    "counts": {
+      "materials": {
+        "grounded": 191,
+        "total": 223
+      },
+      "properties": {
+        "grounded": 195,
+        "total": 216
+      },
+      "applications": {
+        "grounded": 153,
+        "total": 196
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "MAX phase, F-free etching, fluoride-based etching, HF acid etching",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "planar device fabrication",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "acrylic acid polymer coating",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not mentioned",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+        "title": "Cylindrical janus Mosse CNT intercalated into Mxene: A high-performance supercap"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "not mentioned",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+        "title": "Cylindrical janus Mosse CNT intercalated into Mxene: A high-performance supercap"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Not specified",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+        "title": "Self-assembled MXene(Ti3C2Tx) α-Fe2O3 nanocomposite as negative electrode materi"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "quasi-solid-state (QSS) construction",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+        "title": "A capacitance-enhanced MXene anode for high-performance and dual-functional quas"
+      }
+    ]
+  },
+  "gemma-4-12b-it__high": {
+    "rates": {
+      "materials": 0.8616071428571429,
+      "properties": 0.9065420560747663,
+      "applications": 0.8186528497409327
+    },
+    "counts": {
+      "materials": {
+        "grounded": 193,
+        "total": 224
+      },
+      "properties": {
+        "grounded": 194,
+        "total": 214
+      },
+      "applications": {
+        "grounded": 158,
+        "total": 193
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "MAX phase, F-free etching, fluoride-based etching, HF acid etching",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": -1.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "planar device fabrication",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not specified",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "acrylic acid polymer coating",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "one-pot spontaneous polymerization using nitrobenzene diazonium salt",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "not mentioned",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+        "title": "Cylindrical janus Mosse CNT intercalated into Mxene: A high-performance supercap"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "not mentioned",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2024.176273",
+        "title": "Cylindrical janus Mosse CNT intercalated into Mxene: A high-performance supercap"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Not specified",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2018.09.149",
+        "title": "Self-assembled MXene(Ti3C2Tx) α-Fe2O3 nanocomposite as negative electrode materi"
+      }
+    ]
+  },
+  "claude-sonnet-4.6": {
+    "rates": {
+      "materials": 0.6627565982404692,
+      "properties": 0.9180327868852459,
+      "applications": 0.8862559241706162
+    },
+    "counts": {
+      "materials": {
+        "grounded": 226,
+        "total": 341
+      },
+      "properties": {
+        "grounded": 224,
+        "total": 244
+      },
+      "applications": {
+        "grounded": 187,
+        "total": 211
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Not explicitly mentioned",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Vacuum filtration to form self-supported film electrodes",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236895",
+        "title": "Dual-molecule enhanced MXene films for high specific capacitance in supercapacit"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 0.0,
+        "unit": "",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "Porous MXene film with 2-methylimidazole (M-MXene), MXene-AC asymmetric supercapacitor",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "In situ microgel formation induced by 2-methylimidazole (2-MeIM) causing deprotonation and hydrogen bonding interaction to assemble MXene nanosheets into 3D microgel",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Vacuum filtration of MXene microgel suspension to form self-standing porous MXene film",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 8000.0,
+        "unit": "W/kg",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "HF acid etching, fluoride-based etching, F-free etching",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 0.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "In situ hydrothermal growth of NiGa-LDH on V4C3Tx MXene surface via electrostatic interactions",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+        "title": "Enhanced charge storage using in-situ grown NiGa-layered double hydroxide on V4C"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "ZIF-derived carbonization",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "NiCoMn-LDH/Ti3C2Tx (LDH-Ti3C2Tx nanohybrid)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Not explicitly mentioned",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "NGQD Ta4C3Tx (Nitrogen-doped Graphene Quantum Dots / Tantalum Carbide MXene)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+        "title": "Nitrogen doped graphene quantum dots (NGQD) pillared Ta4C3Tx MXene as high-perfo"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Facile synthesis route (etching of Ta4AlC3 MAX phase)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+        "title": "Nitrogen doped graphene quantum dots (NGQD) pillared Ta4C3Tx MXene as high-perfo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      }
+    ]
+  },
+  "gpt-5.6-terra": {
+    "rates": {
+      "materials": 0.7283950617283951,
+      "properties": 0.9343629343629344,
+      "applications": 0.9732620320855615
+    },
+    "counts": {
+      "materials": {
+        "grounded": 177,
+        "total": 243
+      },
+      "properties": {
+        "grounded": 242,
+        "total": 259
+      },
+      "applications": {
+        "grounded": 182,
+        "total": 187
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Fluorinated etching using HF or LiF/HCl; fluoride-free routes mentioned include molten salt etching and electrochemical exfoliation",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Construction of multiscale porous MXene electrode structures through regulation of micropores, mesopores, and macropores",
+        "doi_url": "https://doi.org/10.1016/j.mattod.2025.05.021",
+        "title": "Multiscale porous structured MXene: Synthesis, design and applications in batter"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "2-methylimidazole-intercalated porous Ti3C2Tx MXene film",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "In situ formation of 3D MXene microgels induced by 2-methylimidazole followed by vacuum filtration to produce a self-standing porous MXene film",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "NiGa-LDH/V4C3Tx MXene (NGV-11; Ni:Ga = 1:1)",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+        "title": "Enhanced charge storage using in-situ grown NiGa-layered double hydroxide on V4C"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "In-situ hydrothermal growth of NiGa-LDH on delaminated V4C3Tx MXene nanosheets via electrostatic interactions",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.236688",
+        "title": "Enhanced charge storage using in-situ grown NiGa-layered double hydroxide on V4C"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "2D MXene Ni-Co phosphide (MX NCP) hybrid; MX-3 NCP positive electrode with porous nanocarbon (PNC) negative electrode",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Hydrothermal reaction followed by phosphorization; asymmetric supercapacitor and planar device fabrication",
+        "doi_url": "https://doi.org/10.1016/j.jmst.2024.12.032",
+        "title": "High-performance asymmetric supercapacitors based on 2D MXene NiCoP hybrid and Z"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Assembly of an LDH Ti3C2Tx-2 positive electrode with an activated carbon (AC) electrode into a hybrid supercapacitor",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2024.234940",
+        "title": "Synergistically coupling of ternary hydrotalcite and Ti3C2Tx-MXene nanosheets bo"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Solvothermal surface engineering of Ta4C3Tx sheets with NGQD; asymmetric supercapacitor fabrication using NGQD-Ta4C3Tx as the working electrode",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237190",
+        "title": "Nitrogen doped graphene quantum dots (NGQD) pillared Ta4C3Tx MXene as high-perfo"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 32.68,
+        "unit": "nm",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "poly(acrylic acid)-coated Ti3C2Tx MXene",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "One-pot spontaneous polymerization of acrylic acid onto MXene surfaces facilitated by nitrobenzene diazonium salt, followed by coagulation spinning of liquid-crystal MXene dispersions into densified free-standing fibers",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "MWCNT-FeFe(CN)6 (MWCNT-FeHCF)",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.179788",
+        "title": "A capacitance-enhanced MXene anode for high-performance and dual-functional quas"
+      }
+    ]
+  },
+  "gemini-3.6-flash": {
+    "rates": {
+      "materials": 0.9067357512953368,
+      "properties": 0.9603174603174603,
+      "applications": 0.9428571428571428
+    },
+    "counts": {
+      "materials": {
+        "grounded": 175,
+        "total": 193
+      },
+      "properties": {
+        "grounded": 121,
+        "total": 126
+      },
+      "applications": {
+        "grounded": 198,
+        "total": 210
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "In situ microgel formation induced by 2-methylimidazole followed by vacuum filtration",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.147393",
+        "title": "Self-standing porous MXene film via in situ formed microgel induced by 2- methyl"
+      },
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Electrodeposition, impregnation, electrostatic interaction",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145606",
+        "title": "A Ti3C2Tx-encapsulated Mn2+-doped Co(OH)2 nanosheets electrode grown on carbon c"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": -2.18,
+        "unit": "eV",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 317.42,
+        "unit": "m2/g",
+        "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+        "title": "MXene tungsten-functionalized graphene oxide nanosheets as conductive platforms "
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "multiwalled carbon nanotube (CNT), polymethylmethacrylate (PMMA)",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+        "title": "MXene (Ti3C2Tx) anodes for asymmetric supercapacitors with high active mass load"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Dispersion and mixing in PMMA binder solution",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2021.124748",
+        "title": "MXene (Ti3C2Tx) anodes for asymmetric supercapacitors with high active mass load"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "ionic hetero-assembly / electrostatic attraction connection",
+        "doi_url": "https://doi.org/10.1016/j.nanoen.2021.106633",
+        "title": "Synergistically coupling of 3D FeNi-LDH arrays with Ti3C2Tx-MXene nanosheets tow"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "Fe-BTC, Cu-BTC, Co-BTC, Ni-BTC (Fe-MOF, Cu-MOF, Co-MOF, Ni-MOF)",
+        "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+        "title": "In situ synthesis of M (Fe, Cu, Co and Ni)-MOF MXene composites for enhanced spe"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "3D hierarchical composite assembly",
+        "doi_url": "https://doi.org/10.1016/j.jcis.2025.138011",
+        "title": "Optimizing the electron spin state of hierarchical NiCo2O4 MXene LDH 3D composit"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 782.7,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+        "title": "Perovskite structured LaMnO3 nanoparticles adorned on the MXene 2D sheets: An in"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "introducing dicyandiamide (DCD), high-temperature sintering, and hydrothermal reaction",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.142935",
+        "title": "A novel strategy for high energy density supercapacitors: Formation of cyanuric "
+      }
+    ]
+  },
+  "glm-5": {
+    "rates": {
+      "materials": 0.9552238805970149,
+      "properties": 0.9724770642201835,
+      "applications": 0.9819819819819819
+    },
+    "counts": {
+      "materials": {
+        "grounded": 192,
+        "total": 201
+      },
+      "properties": {
+        "grounded": 212,
+        "total": 218
+      },
+      "applications": {
+        "grounded": 109,
+        "total": 111
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "carbon, polymers, transition metal oxides, MOF, activated carbon, graphene, carbon nanotubes, conducting polymers",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "HF acid etching, fluoride-based etching, F-free etching",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": -2.18,
+        "unit": "eV",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 90.0,
+        "unit": "degrees",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "NiMn0.1HCF, Carbon Cloth",
+        "doi_url": "https://doi.org/10.1016/j.cej.2025.162824",
+        "title": "High-capacity Zn-ion storage in NiMnHCF Ti3C2Tx MXene composite cathode boosted "
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Introducing dicyandiamide (DCD), catalyst-free trimerization reaction, high-temperature sintering, hydrothermal reaction",
+        "doi_url": "https://doi.org/10.1016/j.cej.2023.142935",
+        "title": "A novel strategy for high energy density supercapacitors: Formation of cyanuric "
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "H3PO4",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130974",
+        "title": "Review: 2D MXenes based electrochemical sensors and supercapacitors for biomedic"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Electrospinning and carbonization",
+        "doi_url": "https://doi.org/10.1016/j.apsusc.2021.149710",
+        "title": "High-rate electrospun Ti3C2Tx MXene carbon nanofiber electrodes for flexible sup"
+      },
+      {
+        "category": "materials",
+        "field": "fabrication_method",
+        "value": "Amino functionalization, Zn2+ intercalation, and in-situ growth of NiCo2S4",
+        "doi_url": "https://doi.org/10.1016/j.apsusc.2025.163475",
+        "title": "Synergistically boosting the performance of asymmetric supercapacitors: in-situ "
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 114.2,
+        "unit": "m^2 g^-1",
+        "doi_url": "https://doi.org/10.1016/j.colsurfa.2025.137907",
+        "title": "Rationally constructed CeO2 Ti3C2Tx-MXene heterostructure for rapid and efficien"
+      },
+      {
+        "category": "materials",
+        "field": "synthesis_method",
+        "value": "Acidic etching of MAX-phase precursors followed by hydrothermal and solvothermal treatment",
+        "doi_url": "https://doi.org/10.1016/j.jpowsour.2025.237603",
+        "title": "Synergistic Ti3C2Tx MXene quantum dot nanosheet Hybrid: Elevating supercapacitor"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 16780.0,
+        "unit": "W/kg",
+        "doi_url": "https://doi.org/10.1016/j.jcis.2024.08.093",
+        "title": "Interface engineering based NiCoMoO4 Ti3C2Tx MXene heterostructure for high-perf"
+      }
+    ]
+  },
+  "deepseek-v3.1": {
+    "rates": {
+      "materials": 0.9463414634146341,
+      "properties": 0.9342723004694836,
+      "applications": 0.9130434782608695
+    },
+    "counts": {
+      "materials": {
+        "grounded": 194,
+        "total": 205
+      },
+      "properties": {
+        "grounded": 199,
+        "total": 213
+      },
+      "applications": {
+        "grounded": 105,
+        "total": 115
+      }
+    },
+    "flagged_sample": [
+      {
+        "category": "materials",
+        "field": "mxene_composition",
+        "value": "Ti3C2Tx",
+        "doi_url": "https://doi.org/10.1016/j.mtsust.2024.100963",
+        "title": "Advancements and approaches in developing MXene-based hybrid composites for impr"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1123.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 873.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1020.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 972.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 1125.0,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.matchemphys.2025.130625",
+        "title": "Improving the bimetallic interactions of CeO2 MnO2 MXenes for supercapacitor ele"
+      },
+      {
+        "category": "materials",
+        "field": "composite_material",
+        "value": "poly(acrylic acid) modified MXene",
+        "doi_url": "https://doi.org/10.1016/j.surfcoat.2024.131522",
+        "title": "A one-pot strategy for modifying the surface of Ti3C2Tx MXene"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 60.2,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 86.7,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 53.4,
+        "unit": "Wh/kg",
+        "doi_url": "https://doi.org/10.1016/j.electacta.2024.145155",
+        "title": "Unveiling the potential: Asymmetric supercapacitors with conductive polymers Ti3"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": -2.18,
+        "unit": "eV",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 90.0,
+        "unit": "degrees",
+        "doi_url": "https://doi.org/10.1016/j.jallcom.2025.181953",
+        "title": "Construct interface pollared lared interaction in Co-MOF MXene as high flexibili"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 317.42,
+        "unit": "m²/g",
+        "doi_url": "https://doi.org/10.1016/j.solidstatesciences.2025.107974",
+        "title": "MXene tungsten-functionalized graphene oxide nanosheets as conductive platforms "
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 15000.0,
+        "unit": "cycles",
+        "doi_url": "https://doi.org/10.1016/j.cej.2025.162824",
+        "title": "High-capacity Zn-ion storage in NiMnHCF Ti3C2Tx MXene composite cathode boosted "
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 25000.0,
+        "unit": "cycles",
+        "doi_url": "https://doi.org/10.1016/j.cej.2025.162824",
+        "title": "High-capacity Zn-ion storage in NiMnHCF Ti3C2Tx MXene composite cathode boosted "
+      },
+      {
+        "category": "applications",
+        "field": "value",
+        "value": 10000.0,
+        "unit": "cycles",
+        "doi_url": "https://doi.org/10.1016/j.cej.2024.154009",
+        "title": "In situ synthesis of M (Fe, Cu, Co and Ni)-MOF MXene composites for enhanced spe"
+      },
+      {
+        "category": "properties",
+        "field": "value",
+        "value": 782.7,
+        "unit": "F/g",
+        "doi_url": "https://doi.org/10.1016/j.fuel.2025.136594",
+        "title": "Perovskite structured LaMnO3 nanoparticles adorned on the MXene 2D sheets: An in"
+      }
+    ]
+  }
+}

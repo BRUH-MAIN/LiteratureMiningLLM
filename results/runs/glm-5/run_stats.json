@@ -1,0 +1,18 @@
+{
+  "run_key": "glm-5",
+  "provider": "zai",
+  "model": "glm-5",
+  "thinking_level": null,
+  "thinking_enabled": null,
+  "total_papers": 60,
+  "successful_extractions": 60,
+  "failed_extractions": 0,
+  "total_time_s": 3146.06,
+  "avg_latency_s": 52.434,
+  "total_input_tokens": 75104,
+  "total_output_tokens": 243695,
+  "est_cost_usd": 0.8549,
+  "pricing": "real metered cost via Kaggle Model Proxy (kaggle_benchmarks Usage), not an estimate table",
+  "generated_at": "2026-07-22T20:59:56.311179",
+  "source": "kaggle_benchmarks (kbench) reference-panel run, see commands.md in this directory"
+}

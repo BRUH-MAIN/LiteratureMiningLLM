@@ -19,7 +19,7 @@
     --baseline:         #c3c2b7;
     --border:           rgba(11,11,11,0.10);
     --seq-100: #cde2fb; --seq-250: #86b6ef; --seq-450: #2a78d6; --seq-650: #104281;
-    --cat-1: #2a78d6; --cat-2: #008300; --cat-3: #e87ba4; --cat-4: #eda100;
+    --cat-1: #2a78d6; --cat-2: #008300; --cat-3: #e87ba4; --cat-4: #eda100; --cat-5: #1baf7a; --cat-6: #eb6834; --cat-7: #4a3aa7; --cat-8: #e34948;
     --muted-mark:       #52514e;
   }
   @media (prefers-color-scheme: dark) {
@@ -34,7 +34,7 @@
       --baseline:         #383835;
       --border:           rgba(255,255,255,0.10);
       --seq-100: #184f95; --seq-250: #1c5cab; --seq-450: #3987e5; --seq-650: #9ec5f4;
-      --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500;
+      --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500; --cat-5: #199e70; --cat-6: #d95926; --cat-7: #9085e9; --cat-8: #e66767;
       --muted-mark:       #c3c2b7;
     }
   }
@@ -49,7 +49,7 @@
     --baseline:         #383835;
     --border:           rgba(255,255,255,0.10);
     --seq-100: #184f95; --seq-250: #1c5cab; --seq-450: #3987e5; --seq-650: #9ec5f4;
-    --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500;
+    --cat-1: #3987e5; --cat-2: #008300; --cat-3: #d55181; --cat-4: #c98500; --cat-5: #199e70; --cat-6: #d95926; --cat-7: #9085e9; --cat-8: #e66767;
     --muted-mark:       #c3c2b7;
   }
   .viz-root { max-width: 1080px; margin: 0 auto; padding: 24px 20px 48px; }
@@ -106,6 +106,12 @@
   </div>
 
   <div class="panel">
+    <h2>Groundedness (faithfulness to source text)</h2>
+    <p class="note">A second, fully independent axis: what share of each model's extracted items can actually be traced back to the paper text it was given - no gold standard involved (see benchmark/scoring/groundedness.py). High F1 with low groundedness means a model agrees with the panel partly by inferring from domain knowledge rather than reading. Bars show the mean across materials/properties/applications.</p>
+    <svg id="groundedness-chart"></svg>
+  </div>
+
+  <div class="panel">
     <h2>Avg. latency per paper</h2>
     <p class="note">Same rows, same order as the leaderboard above - lower is faster. Kaggle GPU wall-clock times aren't directly comparable to a hosted API's network round-trip, so this is shown separately rather than mixed into the accuracy comparison.</p>
     <svg id="latency-chart"></svg>
@@ -118,7 +124,7 @@
 
   <div class="tooltip" id="tooltip"></div>
 </div>
-<script id="chart-data" type="application/json">{"rows": [{"model": "gemma-4-12b-it__low", "family": "gemma-4-12b-it", "family_color_slot": 2, "thinking_level": "low", "thinking_rank": 0, "mean_f1": 0.5256621501355508, "materials_f1": 0.5593220338983051, "properties_f1": 0.5491329479768786, "applications_f1": 0.4685314685314685, "avg_latency_s": 48.929, "est_cost_usd": null}, {"model": "gemma-4-12b-it__high", "family": "gemma-4-12b-it", "family_color_slot": 2, "thinking_level": "high", "thinking_rank": 2, "mean_f1": 0.5112672132313255, "materials_f1": 0.540983606557377, "properties_f1": 0.5189504373177842, "applications_f1": 0.4738675958188153, "avg_latency_s": 49.763, "est_cost_usd": null}, {"model": "gemma-4-12b-it__medium", "family": "gemma-4-12b-it", "family_color_slot": 2, "thinking_level": "medium", "thinking_rank": 1, "mean_f1": 0.4966358350879205, "materials_f1": 0.5245901639344263, "properties_f1": 0.5101449275362319, "applications_f1": 0.4551724137931034, "avg_latency_s": 49.704, "est_cost_usd": null}, {"model": "qwen3.6-35b-a3b__thinking-on", "family": "qwen3.6-35b-a3b", "family_color_slot": 4, "thinking_level": "thinking-on", "thinking_rank": 2, "mean_f1": 0.4947870292109435, "materials_f1": 0.5517241379310345, "properties_f1": 0.4343434343434343, "applications_f1": 0.4982935153583617, "avg_latency_s": 128.225, "est_cost_usd": null}, {"model": "qwen3.6-35b-a3b__thinking-off", "family": "qwen3.6-35b-a3b", "family_color_slot": 4, "thinking_level": "thinking-off", "thinking_rank": 0, "mean_f1": 0.4939793919212587, "materials_f1": 0.5689655172413793, "properties_f1": 0.4240837696335078, "applications_f1": 0.4888888888888889, "avg_latency_s": 131.259, "est_cost_usd": null}, {"model": "gpt-oss-20b__medium", "family": "gpt-oss-20b", "family_color_slot": 3, "thinking_level": "medium", "thinking_rank": 1, "mean_f1": 0.4113256972725231, "materials_f1": 0.5714285714285715, "properties_f1": 0.1443298969072165, "applications_f1": 0.5182186234817814, "avg_latency_s": 46.646, "est_cost_usd": null}, {"model": "gpt-oss-20b__high", "family": "gpt-oss-20b", "family_color_slot": 3, "thinking_level": "high", "thinking_rank": 2, "mean_f1": 0.3793909678177656, "materials_f1": 0.5263157894736843, "properties_f1": 0.1580756013745704, "applications_f1": 0.453781512605042, "avg_latency_s": 44.121, "est_cost_usd": null}, {"model": "gpt-oss-20b__low", "family": "gpt-oss-20b", "family_color_slot": 3, "thinking_level": "low", "thinking_rank": 0, "mean_f1": 0.3636010307521936, "materials_f1": 0.4651162790697674, "properties_f1": 0.1346153846153846, "applications_f1": 0.4910714285714286, "avg_latency_s": 41.28, "est_cost_usd": null}], "gold_f1": 1.0, "reference_agreement_mean_f1": 0.5802838571184207, "reference_panel": ["claude-opus-4.8", "gpt-5.6-sol"]}</script>
+<script id="chart-data" type="application/json">{"rows": [{"model": "gpt-5.6-terra", "family": "gpt-5.6-terra", "family_color_slot": 6, "thinking_level": null, "thinking_rank": 0, "mean_f1": 0.6234033495894109, "materials_f1": 0.7050359712230214, "properties_f1": 0.5927835051546392, "applications_f1": 0.5723905723905723, "groundedness_mean": 0.8786733427256302, "avg_latency_s": 4.845, "est_cost_usd": 0.8282}, {"model": "gemini-3.6-flash", "family": "gemini-3.6-flash", "family_color_slot": 7, "thinking_level": null, "thinking_rank": 0, "mean_f1": 0.5769945700825722, "materials_f1": 0.6229508196721312, "properties_f1": 0.5725490196078431, "applications_f1": 0.535483870967742, "groundedness_mean": 0.9366367848233134, "avg_latency_s": 6.378, "est_cost_usd": 0.8799}, {"model": "claude-sonnet-4.6", "family": "claude-sonnet-4.6", "family_color_slot": 5, "thinking_level": null, "thinking_rank": 0, "mean_f1": 0.5736056295384735, "materials_f1": 0.6266666666666667, "properties_f1": 0.5630026809651474, "applications_f1": 0.5311475409836065, "groundedness_mean": 0.8223484364321104, "avg_latency_s": 8.902, "est_cost_usd": 0.9527}, {"model": "gemma-4-12b-it__low", "family": "gemma-4-12b-it", "family_color_slot": 2, "thinking_level": "low", "thinking_rank": 0, "mean_f1": 0.5256621501355508, "materials_f1": 0.5593220338983051, "properties_f1": 0.5491329479768786, "applications_f1": 0.4685314685314685, "groundedness_mean": 0.8641741016630543, "avg_latency_s": 48.929, "est_cost_usd": null}, {"model": "deepseek-v3.1", "family": "deepseek-v3.1", "family_color_slot": 8, "thinking_level": null, "thinking_rank": 0, "mean_f1": 0.519820407474476, "materials_f1": 0.5735294117647058, "properties_f1": 0.5614035087719298, "applications_f1": 0.4245283018867924, "groundedness_mean": 0.9312190807149957, "avg_latency_s": 2.648, "est_cost_usd": 0.0824}, {"model": "gemma-4-12b-it__high", "family": "gemma-4-12b-it", "family_color_slot": 2, "thinking_level": "high", "thinking_rank": 2, "mean_f1": 0.5112672132313255, "materials_f1": 0.540983606557377, "properties_f1": 0.5189504373177842, "applications_f1": 0.4738675958188153, "groundedness_mean": 0.8622673495576141, "avg_latency_s": 49.763, "est_cost_usd": null}, {"model": "gemma-4-12b-it__medium", "family": "gemma-4-12b-it", "family_color_slot": 2, "thinking_level": "medium", "thinking_rank": 1, "mean_f1": 0.4966358350879205, "materials_f1": 0.5245901639344263, "properties_f1": 0.5101449275362319, "applications_f1": 0.4551724137931034, "groundedness_mean": 0.8466307549427344, "avg_latency_s": 49.704, "est_cost_usd": null}, {"model": "glm-5", "family": "glm-5", "family_color_slot": 1, "thinking_level": null, "thinking_rank": 0, "mean_f1": 0.4958869635344685, "materials_f1": 0.4923076923076923, "properties_f1": 0.5360230547550432, "applications_f1": 0.4593301435406698, "groundedness_mean": 0.9698943089330602, "avg_latency_s": 52.434, "est_cost_usd": 0.8549}, {"model": "qwen3.6-35b-a3b__thinking-on", "family": "qwen3.6-35b-a3b", "family_color_slot": 4, "thinking_level": "thinking-on", "thinking_rank": 2, "mean_f1": 0.4947870292109435, "materials_f1": 0.5517241379310345, "properties_f1": 0.4343434343434343, "applications_f1": 0.4982935153583617, "groundedness_mean": 0.8898699413915946, "avg_latency_s": 128.225, "est_cost_usd": null}, {"model": "qwen3.6-35b-a3b__thinking-off", "family": "qwen3.6-35b-a3b", "family_color_slot": 4, "thinking_level": "thinking-off", "thinking_rank": 0, "mean_f1": 0.4939793919212587, "materials_f1": 0.5689655172413793, "properties_f1": 0.4240837696335078, "applications_f1": 0.4888888888888889, "groundedness_mean": 0.8932351786675595, "avg_latency_s": 131.259, "est_cost_usd": null}, {"model": "gpt-oss-20b__medium", "family": "gpt-oss-20b", "family_color_slot": 3, "thinking_level": "medium", "thinking_rank": 1, "mean_f1": 0.4113256972725231, "materials_f1": 0.5714285714285715, "properties_f1": 0.1443298969072165, "applications_f1": 0.5182186234817814, "groundedness_mean": 0.9034099161550143, "avg_latency_s": 46.646, "est_cost_usd": null}, {"model": "gpt-oss-20b__high", "family": "gpt-oss-20b", "family_color_slot": 3, "thinking_level": "high", "thinking_rank": 2, "mean_f1": 0.3793909678177656, "materials_f1": 0.5263157894736843, "properties_f1": 0.1580756013745704, "applications_f1": 0.453781512605042, "groundedness_mean": 0.9136519260608514, "avg_latency_s": 44.121, "est_cost_usd": null}, {"model": "gpt-oss-20b__low", "family": "gpt-oss-20b", "family_color_slot": 3, "thinking_level": "low", "thinking_rank": 0, "mean_f1": 0.3636010307521936, "materials_f1": 0.4651162790697674, "properties_f1": 0.1346153846153846, "applications_f1": 0.4910714285714286, "groundedness_mean": 0.9135706106593614, "avg_latency_s": 41.28, "est_cost_usd": null}], "gold_f1": 1.0, "reference_agreement_mean_f1": 0.5802838571184207, "reference_panel": ["claude-opus-4.8", "gpt-5.6-sol"]}</script>
 <script>
 (function () {
   const data = JSON.parse(document.getElementById('chart-data').textContent);
@@ -154,6 +160,7 @@
       ['Properties F1', r.properties_f1.toFixed(3)],
       ['Applications F1', r.applications_f1.toFixed(3)],
     ];
+    if (r.groundedness_mean != null) lines.push(['Groundedness', r.groundedness_mean.toFixed(3)]);
     if (r.avg_latency_s != null) lines.push(['Avg latency', r.avg_latency_s.toFixed(2) + 's']);
     if (r.est_cost_usd != null) lines.push(['Est. cost', '$' + r.est_cost_usd.toFixed(4)]);
 
@@ -259,7 +266,65 @@
     });
   })();
 
-  // ---------- Panel 2: latency leaderboard (same row order) ----------
+  // ---------- Panel 2: groundedness (same row order, independent of gold) ----------
+  (function renderGroundednessChart() {
+    const gRows = rows.filter(r => r.groundedness_mean != null);
+    const container = document.getElementById('groundedness-chart');
+    if (!gRows.length) { container.closest('.panel').style.display = 'none'; return; }
+
+    const margin = { top: 26, right: 56, bottom: 4, left: LABEL_W };
+    const plotW = 560;
+    const width = margin.left + plotW + margin.right;
+    const plotH = gRows.length * ROW_H;
+    const height = margin.top + plotH + margin.bottom;
+
+    const svg = svgEl('svg', { width, height, viewBox: '0 0 ' + width + ' ' + height });
+    container.replaceWith(svg);
+    svg.id = 'groundedness-chart';
+
+    const x = v => margin.left + plotW * v;
+
+    [0, 0.25, 0.5, 0.75, 1.0].forEach(v => {
+      const gx = x(v);
+      svg.appendChild(svgEl('line', {
+        x1: gx, x2: gx, y1: margin.top - 6, y2: margin.top + plotH,
+        class: v === 0 ? 'baseline' : 'grid',
+      }));
+      const t = svgEl('text', { x: gx, y: margin.top - 10, class: 'axis', 'text-anchor': v === 1.0 ? 'end' : 'middle' });
+      t.textContent = v === 1.0 ? '1.00 (fully traceable)' : v.toFixed(2);
+      svg.appendChild(t);
+    });
+
+    gRows.forEach((r, i) => {
+      const rowY = margin.top + i * ROW_H;
+      const barY = rowY + (ROW_H - BAR_H) / 2;
+      const barW = Math.max(plotW * r.groundedness_mean, 2);
+      const slot = r.family_color_slot || 1;
+
+      const nameLbl = svgEl('text', { x: margin.left - 12, y: rowY + ROW_H / 2 - 3, class: 'row-label-name', 'text-anchor': 'end' });
+      nameLbl.textContent = r.family;
+      svg.appendChild(nameLbl);
+      if (r.thinking_level) {
+        const levelLbl = svgEl('text', { x: margin.left - 12, y: rowY + ROW_H / 2 + 11, class: 'row-label-level', 'text-anchor': 'end' });
+        levelLbl.textContent = r.thinking_level;
+        svg.appendChild(levelLbl);
+      }
+
+      const rect = svgEl('rect', {
+        x: margin.left, y: barY, width: barW, height: BAR_H, rx: 4, ry: 4,
+        fill: 'var(--cat-' + slot + ')', class: 'bar-rect',
+      });
+      rect.addEventListener('pointermove', (e) => showTooltip(e, r));
+      rect.addEventListener('mouseleave', hideTooltip);
+      svg.appendChild(rect);
+
+      const valLbl = svgEl('text', { x: margin.left + barW + 8, y: barY + BAR_H / 2 + 4, class: 'value-label' });
+      valLbl.textContent = r.groundedness_mean.toFixed(3);
+      svg.appendChild(valLbl);
+    });
+  })();
+
+  // ---------- Panel 3: latency leaderboard (same row order) ----------
   (function renderLatencyChart() {
     const latRows = rows.filter(r => r.avg_latency_s != null);
     const margin = { top: 26, right: 60, bottom: 4, left: LABEL_W };
@@ -324,7 +389,7 @@
 
   // ---------- Data table ----------
   (function renderTable() {
-    const cols = ['model', 'family', 'thinking_level', 'mean_f1', 'materials_f1', 'properties_f1', 'applications_f1', 'avg_latency_s', 'est_cost_usd'];
+    const cols = ['model', 'family', 'thinking_level', 'mean_f1', 'materials_f1', 'properties_f1', 'applications_f1', 'groundedness_mean', 'avg_latency_s', 'est_cost_usd'];
     const table = document.createElement('table');
     table.className = 'data-table';
     const thead = document.createElement('thead');
