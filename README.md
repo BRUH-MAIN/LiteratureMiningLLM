@@ -17,6 +17,18 @@ actually do it** against a gold standard built without a single line of human an
 
 **60 papers · 13 candidate models · scored against a two-model consensus gold standard**
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/benchmark_report/leaderboard-dark.svg">
+    <img alt="Benchmark leaderboard: mean F1 vs. consensus gold, paired with groundedness, for 13 models across 60 MXene papers" src="results/benchmark_report/leaderboard-light.svg" width="100%">
+  </picture>
+</p>
+
+Two bars per model on one shared 0–1 scale. **Blue = agreement with the consensus gold standard.
+Green = groundedness**, the share of extracted items actually traceable to the source paper. They
+rank models differently — that divergence is finding #2 below. The dashed line is the noise floor:
+the two gold-standard models' agreement with *each other*.
+
 | # | Model | Mean F1 ↑ | Groundedness ↑ | Latency/paper | Cost (60 papers) |
 |---|---|---|---|---|---|
 | 1 | **GPT-5.6 Terra** | **0.623** | 0.879 | 4.8 s | $0.83 |
@@ -139,8 +151,9 @@ uv run python -m benchmark.run_benchmark
 # 5. Groundedness (no gold needed — works on any run)
 uv run python -m benchmark.groundedness_report --runs gpt-5.6-terra glm-5 ...
 
-# 6. Render the interactive chart
+# 6. Render charts — interactive HTML, plus the static SVGs embedded above
 uv run python -m benchmark.chart
+uv run python -m benchmark.chart_static
 
 uv run pytest benchmark/tests/    # 32 tests
 ```
