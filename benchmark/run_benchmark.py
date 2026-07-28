@@ -63,7 +63,20 @@ def run_benchmark(gold_model: str, candidates: List[str], runs_dir: Path, out_di
     gold_run = load_run(runs_dir, gold_model)
     logger.info(f"Loaded gold-standard run '{gold_model}': {len(gold_run)} papers")
 
-    all_models = [gold_model] + list(candidates)
+    # A registered candidate with no run directory is skipped rather than fatal: the registry in
+    # benchmark/config.py intentionally lists models that haven't been run yet (or whose run was
+    # discarded), and one of those shouldn't block scoring every model that *does* have data.
+    # The gold model is exempt - without it there is nothing to score against.
+    present = []
+    for model in candidates:
+        if (runs_dir / model / 'extractions.json').exists():
+            present.append(model)
+        else:
+            logger.warning(f"Skipping '{model}' - no run found at {runs_dir / model / 'extractions.json'}")
+    if not present:
+        raise FileNotFoundError(f"None of the requested candidates have runs under {runs_dir}")
+
+    all_models = [gold_model] + present
     model_scores = {}
     run_stats = {}
     per_paper_scores: Dict[str, Dict[str, Dict[str, Any]]] = {}

@@ -3,7 +3,7 @@ Prompt loading utilities for the Literature Mining LLM application
 """
 
 import logging
-from typing import Dict, List, Optional
+from typing import Dict, Optional
 from pathlib import Path
 
 
@@ -58,10 +58,3 @@ class PromptLoader:
             self.logger.error(f"Error formatting prompt {prompt_name}: {e}")
             return None
 
-    def list_available_prompts(self) -> List[str]:
-        """List all available prompt files"""
-        try:
-            return sorted(f.stem for f in self.prompts_dir.glob("*.txt"))
-        except Exception as e:
-            self.logger.error(f"Error listing prompts: {e}")
-            return []

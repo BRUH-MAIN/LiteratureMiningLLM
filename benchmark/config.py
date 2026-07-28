@@ -173,12 +173,14 @@ KAGGLE_CANDIDATES = {
 
 
 def all_candidate_run_keys():
-    """Every '<family>__<level>' run key across API and Kaggle candidates"""
+    """Every candidate run key: '<family>__<level>' for the thinking-level sweeps, plus the
+    single-shot kbench candidates (which have no level suffix)."""
     keys = []
     for family, cfg in {**API_CANDIDATES, **KAGGLE_CANDIDATES}.items():
         levels = cfg["thinking_variants"]
         for level in (levels if isinstance(levels, list) else levels.keys()):
             keys.append(f"{family}__{level}")
+    keys.extend(KBENCH_CANDIDATES)
     return keys
 
 

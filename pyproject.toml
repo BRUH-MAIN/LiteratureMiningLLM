@@ -19,11 +19,6 @@ dependencies = [
     "google-genai>=2.12.1",
 ]
 
-[project.optional-dependencies]
-semantic = [
-    "sentence-transformers>=3.0.0",
-]
-
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",

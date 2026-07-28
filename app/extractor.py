@@ -32,11 +32,6 @@ class Extractor:
         provider_info = self.llm.get_provider_info()
         self.logger.info(f"Initialized extractor with {provider_info['provider']} - {provider_info.get('model', 'N/A')}")
 
-    def setup_gemini(self):
-        """Deprecated method - keeping for backward compatibility"""
-        self.logger.warning("setup_gemini() is deprecated. LLM initialization is now handled by LLMInterface")
-        pass
-
     def create_extraction_prompt(self, title: str, abstract: str, conclusion: str) -> str:
         """Create a schema-guided prompt for data extraction from the shared prompts/extraction_prompt.txt template"""
         prompt = self.prompt_loader.format_prompt(

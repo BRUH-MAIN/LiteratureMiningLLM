@@ -40,3 +40,28 @@ def test_run_benchmark_end_to_end(tmp_path):
     gold_row = summary_df[summary_df['model'] == 'consensus-gold'].iloc[0]
     assert gold_row['family'] == 'consensus-gold' and gold_row['thinking_level'] is None
     assert 'consensus-gold' in report_md
+
+
+def test_run_benchmark_skips_candidates_with_no_run(tmp_path):
+    """A registered-but-not-yet-run candidate must not abort scoring of the ones that do have
+    data - benchmark.config lists models whose runs may not exist locally."""
+    runs_dir = tmp_path / 'runs'
+    (runs_dir / 'consensus-gold').mkdir(parents=True)
+    (runs_dir / 'some-candidate').mkdir(parents=True)
+    shutil.copy(FIXTURES_DIR / 'gold_fixture.json', runs_dir / 'consensus-gold' / 'extractions.json')
+    shutil.copy(FIXTURES_DIR / 'candidate_fixture.json', runs_dir / 'some-candidate' / 'extractions.json')
+
+    _, summary_df, _ = run_benchmark(
+        'consensus-gold', ['some-candidate', 'never-run-model'], runs_dir, tmp_path / 'report'
+    )
+
+    assert set(summary_df['model']) == {'consensus-gold', 'some-candidate'}
+
+
+def test_all_candidate_run_keys_includes_kbench_candidates():
+    """The default `run_benchmark` invocation uses this - omitting a registry silently drops
+    those models from the published leaderboard."""
+    from benchmark.config import KBENCH_CANDIDATES, all_candidate_run_keys
+
+    keys = all_candidate_run_keys()
+    assert set(KBENCH_CANDIDATES).issubset(keys)

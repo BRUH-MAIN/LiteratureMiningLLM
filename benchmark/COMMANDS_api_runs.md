@@ -42,9 +42,10 @@ uv run python -m benchmark.run_api_model --run-key gemini-3.5-flash__high
 
 Deferred/incomplete on the free-tier key: hit a 20 req/day quota cap partway
 through (in addition to the 5 req/min limit, which `--request-delay` already
-paces around) - see the quarantined
-`results/runs/_INVALID_gemini-3.5-flash__low_9of60/` from that partial run.
-Not yet retried since the daily quota reset.
+paces around), producing a partial 9-of-60 run that was discarded. Not retried
+since - Gemini is now reachable through Kaggle Benchmarks instead (see
+`benchmark/kaggle/reference_panel_kbench/commands.md`), which is how
+`gemini-3.6-flash` was actually benchmarked.
 
 ## 3. Build consensus gold from a reference panel
 
