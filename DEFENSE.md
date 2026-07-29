@@ -185,7 +185,7 @@ former) and both listed in §9.
 The earlier DeepSeek-panel gold is preserved at `results/runs/consensus-gold-deepseek-panel/` and its
 agreement report is kept alongside the current one, so the comparison is auditable rather than
 overwritten. The switch is *why* we know same-vendor agreement was inflated (0.735 → 0.606,
-LEARNINGS §2). Every candidate was re-scored against the new gold; no numbers are mixed across
+LEARNINGS.md §4.7). Every candidate was re-scored against the new gold; no numbers are mixed across
 gold-standard versions.
 
 > **"What would you do differently with a real budget?"**
@@ -205,7 +205,7 @@ any additional model I could benchmark.
 3. **n = 60, single seed (42).** No cross-subset stability check; no confidence intervals.
 4. **Matching thresholds (70 / 85 / 80, ±10%) are engineering defaults**, not tuned or ablated.
 5. **Reasoning effort was uncontrolled** for the 7 Kaggle-Benchmarks models in the current results —
-   including both panel members. Fix committed, re-run pending (LEARNINGS §10, §11).
+   including both panel members. Fix committed, re-run pending (LEARNINGS.md §4.8, §4.11).
 6. **`/no_think` prompt contamination** reached non-Qwen models in the published runs. Fixed in the
    Kaggle path; the same re-run clears it.
 7. **Latency is not comparable across execution modes** — shared Kaggle P100 wall-clock vs. hosted
@@ -213,7 +213,7 @@ any additional model I could benchmark.
 8. **Open-weight models ran quantized** (Q4_K_M / IQ4_XS GGUF), so their scores reflect the quantized
    variants, not full-precision weights.
 9. **gpt-oss-20b uses a different extraction path** (no grammar constraint) than Qwen/Gemma — a
-   protocol asymmetry that partly explains its low properties F1 (LEARNINGS §4).
+   protocol asymmetry that partly explains its low properties F1 (LEARNINGS.md §4.1).
 10. **Single prompt, no prompt-sensitivity analysis.** Results measure model × *this* prompt.
 
 ---

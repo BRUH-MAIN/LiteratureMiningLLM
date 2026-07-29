@@ -355,6 +355,6 @@ Stated up front — full treatment in [`DEFENSE.md`](DEFENSE.md).
 - **n = 60 papers, one seed.** No cross-subset stability check, no confidence intervals yet.
 - **Matching thresholds (70/85/80, ±10%) are engineering defaults**, not tuned or ablated.
 - **Reasoning effort was uncontrolled** for the 7 Kaggle-Benchmarks models in these results. Fix is
-  committed; the re-run is pending (`LEARNINGS.md` §10–11).
+  committed; the re-run is pending ([`LEARNINGS.md` §4.8, §4.11](LEARNINGS.md#48--uncontrolled-variables-hide-in-defaults)).
 - **Latency isn't apples-to-apples** — shared Kaggle P100 wall-clock vs. hosted API round-trip.
 - **Open-weight models ran quantized** (Q4_K_M / IQ4_XS), so scores reflect the quantized variants.
